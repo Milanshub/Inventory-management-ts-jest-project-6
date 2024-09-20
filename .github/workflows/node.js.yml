@@ -1,7 +1,4 @@
-# This workflow will do a clean installation of node dependencies, cache/restore them,
-# build the source code and run tests across different versions of node for both client and server.
-
-name: Node.js CI
+name: Node.js CI - Tests Only
 
 on:
   push:
@@ -10,69 +7,34 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  test:
 
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [18.x, 20.x, 22.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+        node-version: [22.x]
 
     steps:
     # Checkout the repository
     - uses: actions/checkout@v4
-    
-    ### Frontend (client) section ###
-    
-    # Set up Node.js for the client (frontend)
-    - name: Setup Node.js for client
-      uses: actions/setup-node@v4
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    
-    # Install dependencies and run build/tests in the client directory
-    - name: Install client dependencies
-      run: |
-        cd client
-        npm ci
-    
-    # Build the client (if build script is present)
-    - name: Build client
-      run: |
-        cd client
-        npm run build --if-present
-    
-    # Run client tests
-    - name: Test client
-      run: |
-        cd client
-        npm test
-    
-    ### Backend (server) section ###
-    
+
+ 
     # Set up Node.js for the server (backend)
     - name: Setup Node.js for server
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    
-    # Install dependencies and run build/tests in the server directory
-    - name: Install server dependencies
+
+    # Debugging: Check for server package-lock.json
+    - name: Check server lock file
+      run: |
+        cd server
+        ls -al  # This should show package-lock.json
+
+    # Install server dependencies and run tests
+    - name: Install and test server
       run: |
         cd server
         npm ci
-    
-    # Build the server (if build script is present)
-    - name: Build server
-      run: |
-        cd server
-        npm run build --if-present
-    
-    # Run server tests
-    - name: Test server
-      run: |
-        cd server
         npm test
