@@ -1,11 +1,11 @@
 import { describe, it, beforeAll, afterAll, beforeEach, expect } from 'vitest';
 import mongoose from 'mongoose';
-import { Product, IProduct } from '../../src/models/productModel'; // Adjust the path as needed
+import { Product, IProduct } from '../../src/models/productModel'; 
 import { MongoMemoryServer } from 'mongodb-memory-server';
 
 let mongoServer: MongoMemoryServer;
 
-describe('Product Model Test', () => {
+describe('Product model test suite', () => {
     beforeAll(async () => {
         // Start MongoDB Memory Server
         mongoServer = await MongoMemoryServer.create();
