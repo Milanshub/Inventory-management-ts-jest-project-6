@@ -1,7 +1,6 @@
 import { logger } from "../utils/logger";
 import { IUser, IUserInput, User } from "../models/userModel";
 import mongoose from "mongoose";
-import { Product } from "../models/productModel";
 
 export const addUser = async (userData: IUserInput): Promise<IUser> => {
     try {
@@ -22,14 +21,14 @@ export const addUser = async (userData: IUserInput): Promise<IUser> => {
 export const getUserById = async (id: string): Promise <IUser | null> => {
     try {
         if (!mongoose.Types.ObjectId.isValid(id)) {
-            throw new Error("Invaluid user ID"); 
+            throw new Error("Invalid user ID"); 
         }
         const user = await User.findById(id); 
         if (!user) {
             logger.error(`User with ${id} not found`);
             return null; 
         }
-        logger.info(`Retreiver user: ${JSON.stringify(user)}`); 
+        logger.info(`Retreived user: ${JSON.stringify(user)}`); 
         return user;
     } catch (error) {
         if (error instanceof Error) {
@@ -59,20 +58,20 @@ export const getAllUsers = async (): Promise<IUser[]> => {
 export const updateUser = async (id: string, update: Partial<IUserInput>): Promise <IUser | null> => {
     try {
         if (!mongoose.Types.ObjectId.isValid(id)) {
-            throw new Error('Invalid product ID!'); 
+            throw new Error('Invalid user ID!'); 
         }
         const updateUser = await User.findByIdAndUpdate(id, update, {new: true});
         if (!updateUser) {
-            logger.error(`Product with id ${id} not found`); 
+            logger.error(`User with id ${id} not found`); 
             return null;
         }
-        logger.info(`Updated new product with id ${JSON.stringify(updateUser)}`); 
+        logger.info(`Updated new user with id ${JSON.stringify(updateUser)}`); 
         return updateUser;
     } catch (error) {
         if (error instanceof Error) {
-            logger.error(`Failed to update new product with id ${id}: ${error.message}`); 
+            logger.error(`Failed to update new user with id ${id}: ${error.message}`); 
         } else {
-            logger.error(`An unknown error occurred while update product with id ${id}`); 
+            logger.error(`An unknown error occurred while update user with id ${id}`); 
         }
         throw error; 
     }
@@ -81,18 +80,18 @@ export const updateUser = async (id: string, update: Partial<IUserInput>): Promi
 export const deleteUser = async (id: string): Promise<boolean> => {
     try {
         if (!mongoose.Types.ObjectId.isValid(id)){
-            throw new Error("Invalid product ID!"); 
+            throw new Error("Invalid user ID!"); 
         }
         const deletedUser = await User.findByIdAndDelete(id); 
-        if (!deleteUser) {
+        if (!deletedUser) {
             logger.error(`Product with id ${id} is not found!`); 
             return false 
         }
-        logger.info(`Deleted user with id ${JSON.stringify(deleteUser)}`);
+        logger.info(`Deleted user with id ${JSON.stringify(deletedUser)}`);
         return true;
     } catch (error) {
         if (error instanceof Error) {
-            logger.error(`Failed to delete user with id ${id}: ${error.message} `); 
+            logger.error(`Failed to delete user with id ${id}: ${error.message}`); 
         } else {
             logger.error(`An unknown error has occurred while deleting user with id ${id}`); 
         }

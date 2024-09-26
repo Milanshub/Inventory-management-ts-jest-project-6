@@ -32,6 +32,8 @@ describe('Product Service Tests', () => {
     beforeEach(async () => {
         // Clear the collection before each test
         await Product.deleteMany({});
+        // Clear all mock calls before each test
+        vi.clearAllMocks();
     });
 
     // creates mock object and check if it is added successfully 
@@ -48,6 +50,15 @@ describe('Product Service Tests', () => {
         expect(logger.info).toHaveBeenCalledWith(`Added product: ${JSON.stringify(result)}`)
     });
 
+    it('should fail to add a product and log an error', async () => {
+        const mockProductInput = { name: 'Sample Product', quantity: 100, price: 50 };
+
+        vi.spyOn(Product.prototype, 'save').mockRejectedValueOnce(new Error('Save error'));
+
+        await expect(addProduct(mockProductInput)).rejects.toThrow('Save error');
+        
+        expect(logger.error).toHaveBeenCalledWith("failed to add product: Save error")
+    }); 
 
     // creates mock object with no 'name' and tries to add 
     it('it should fail to add a product with missing name',async () => {
@@ -96,6 +107,14 @@ describe('Product Service Tests', () => {
         expect(logger.info).toHaveBeenCalledWith(`Retrieved product: ${JSON.stringify(result)}`)
     });
 
+    it('should log an error and throw if getProductById is called with invalid ID', async () => {
+        const invalidId = 'invalidId123';
+    
+        await expect(getProductById(invalidId)).rejects.toThrow('Invalid product ID');
+    
+        expect(logger.error).toHaveBeenCalledWith('Failed to retreive products invalidId123: Invalid product ID');
+      });
+
     // Returns null if invalid ID 
     it('should return null for an invalid ID', async () => {
         const invalidId = '123456789012345678901234'; // Example of an invalid MongoDB ID
@@ -123,6 +142,14 @@ describe('Product Service Tests', () => {
         expect(logger.info).toHaveBeenCalledWith(`Retrieved all products: ${products.length} found`)
     });
 
+    it('should fail to getAllProducts and log an error', async () => {
+        vi.spyOn(Product, 'find').mockRejectedValueOnce(new Error('Find error'));
+
+        await expect(getAllProducts()).rejects.toThrow('Find error');
+    
+        expect(logger.error).toHaveBeenCalledWith('Failed to retrieve all products: Find error');
+    })
+
     // created a mock object and adds updated data using updateProduct
     it('should update a product successfully', async () => {
         const mockProductInput = { name: 'Sample Product', quantity: 100, price: 50 };
@@ -142,6 +169,15 @@ describe('Product Service Tests', () => {
         expect(updatedProductWithId.name).toBe(mockProductInput.name);
         
     });
+
+    it('should log an error and throw if updateProduct is called with invalid ID', async () => {
+        const invalidId = 'invalidId123';
+        const updateData = { name: 'someName' };
+    
+        await expect(updateProduct(invalidId, updateData)).rejects.toThrow('Invalid product ID!');
+    
+        expect(logger.error).toHaveBeenCalledWith('Failed to update new product with id invalidId123: Invalid product ID!');
+      });
 
     // returns null if updating with incorrect id 
     it('should return null when updating a non-existent product', async () => {
@@ -166,6 +202,14 @@ describe('Product Service Tests', () => {
         expect(checkDeletedProduct).toBeNull();
 
     });
+
+    it('should log an error and throw if deleteProduct is called with invalid ID', async () => {
+        const invalidId = 'invalidId123';
+    
+        await expect(deleteProduct(invalidId)).rejects.toThrow('Invalid product ID!');
+    
+        expect(logger.error).toHaveBeenCalledWith('Failed to delete product with id invalidId123: Invalid product ID!');
+      });
 
     // Returns null non-existing product 
     it('should return false when deleting a non-existent product', async () => {

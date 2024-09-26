@@ -32,7 +32,7 @@ export const getProductById = async (id: string): Promise< IProduct | null> => {
         return product; 
     } catch (error) {
         if (error instanceof Error) {
-            logger.error(`Failed to retrieve products ${id}: ${error.message}`);
+            logger.error(`Failed to retreive products ${id}: ${error.message}`);
         } else {
             logger.error(`An unknown error occurred while retrieving products with id ${id}`)
         }
@@ -48,7 +48,7 @@ export const getAllProducts = async (): Promise <IProduct[]> => {
         return products
     } catch (error) {
         if (error instanceof Error) {
-            logger.error(`Failed to retrieve products: ${error.message}`); 
+            logger.error(`Failed to retrieve all products: ${error.message}`); 
         } else {
             logger.error('An uknown error occured while retrieving products')
         }
@@ -92,7 +92,7 @@ export const deleteProduct = async (id: string): Promise<boolean> => {
         return true; 
     } catch (error) {
         if (error instanceof Error) {
-            logger.error(`Failed to delete  product with id ${id}: ${error.message}`);
+            logger.error(`Failed to delete product with id ${id}: ${error.message}`);
         } else {
             logger.error(`An unknown error occurred while deleting product with id ${id}`); 
         }
