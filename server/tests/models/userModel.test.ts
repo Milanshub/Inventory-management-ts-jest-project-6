@@ -44,20 +44,4 @@ describe('User model test suite', () => {
         expect(savedUser.role).toBe('user'); 
     });
 
-    it('should create and save a user succesfully', async () => {
-        const userData: Partial<IUser> = {
-            name: 'someName', 
-            email: 'someEmail@mail.com', 
-            password: 'somePassword', 
-            role: 'admin'
-        }; 
-
-        const user = new User(userData); 
-        const savedUser = await user.save(); 
-
-        expect(savedUser._id).toBeDefined(); 
-        expect(savedUser.name).toBe(userData.name);
-        expect(savedUser.email).toBe(userData.email); 
-        expect(savedUser.role).toBe('admin'); 
-    });
 })

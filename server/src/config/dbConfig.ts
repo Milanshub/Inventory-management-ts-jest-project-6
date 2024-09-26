@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 import dotenv from 'dotenv'; 
+import { logger } from "../utils/logger";
 
 dotenv.config(); 
 
@@ -15,9 +16,9 @@ export const connectToMongoDb = async () => {
             socketTimeoutMS: 60000, // Timeout for socket inactivity
             bufferCommands: false, // Disable buffering
         });
-        console.log("Connected to MongoDB Atlas");
+        logger.info("Connected to MongoDB Atlas");
     } catch (error) {
-        console.log(`Error connecting to MongoDB Atlas: ${error}`);
+        logger.info(`Error connecting to MongoDB Atlas: ${error}`);
         throw error;
     }
 };

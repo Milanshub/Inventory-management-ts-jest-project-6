@@ -9,6 +9,13 @@ export interface IUser extends Document {
     createdAt?: Date;
 }; 
 
+export interface IUserInput {
+    name: string; 
+    email: string; 
+    password: string; 
+    role?: 'user' | 'admin'; 
+}
+
 // create schema for the above interface 
 const userSchema: Schema = new Schema<IUser>({
     name: {type: String, required: true}, 

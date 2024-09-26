@@ -1,0 +1,164 @@
+2024-09-23T13:47:04.961Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f17158c03fe3bd1f6804bb","__v":0}
+2024-09-23T13:48:57.361Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f171c8042f438a30f8a2c9","__v":0}
+2024-09-23T13:50:05.103Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f1720c4d586a47f13b5e82","__v":0}
+2024-09-23T13:53:50.996Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f172ee81c7469d55dbcd77","__v":0}
+2024-09-23T13:59:14.806Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f174328d5c51dfa0af274c","__v":0}
+2024-09-23T14:23:53.936Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f179f932a2e9d2b8eead2e","__v":0}
+2024-09-23T14:23:53.949Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f179f932a2e9d2b8eead30","__v":0}
+2024-09-23T14:23:53.970Z [[32minfo[39m]: Retrieved product: {"_id":"66f179f932a2e9d2b8eead30","name":"Sample Product","quantity":100,"price":50,"__v":0}
+2024-09-23T14:27:11.076Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f17abec88a644f63df8acd","__v":0}
+2024-09-23T14:27:11.091Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f17abfc88a644f63df8acf","__v":0}
+2024-09-23T14:27:11.107Z [[32minfo[39m]: Retrieved product: {"_id":"66f17abfc88a644f63df8acf","name":"Sample Product","quantity":100,"price":50,"__v":0}
+2024-09-23T14:27:11.113Z [[31merror[39m]: Product with 123456789012345678901234 not found
+2024-09-23T14:30:52.392Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f17b9bf0f7029e72cb27a7","__v":0}
+2024-09-23T14:30:52.411Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f17b9cf0f7029e72cb27a9","__v":0}
+2024-09-23T14:30:52.433Z [[32minfo[39m]: Retrieved product: {"_id":"66f17b9cf0f7029e72cb27a9","name":"Sample Product","quantity":100,"price":50,"__v":0}
+2024-09-23T14:30:52.442Z [[31merror[39m]: Product with 123456789012345678901234 not found
+2024-09-23T14:30:52.447Z [[32minfo[39m]: Added product: {"name":"Product 1","quantity":10,"price":25,"_id":"66f17b9cf0f7029e72cb27ad","__v":0}
+2024-09-23T14:30:52.452Z [[32minfo[39m]: Added product: {"name":"Product 2","quantity":5,"price":15,"_id":"66f17b9cf0f7029e72cb27af","__v":0}
+2024-09-23T14:30:52.490Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-09-23T14:30:52.514Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f17b9cf0f7029e72cb27b2","__v":0}
+2024-09-23T14:30:52.525Z [[32minfo[39m]: Updated new product with id {"_id":"66f17b9cf0f7029e72cb27b2","name":"Sample Product","quantity":200,"price":50,"__v":0}
+2024-09-23T14:30:52.528Z [[31merror[39m]: Product with id 123456789012345678901234 not found!
+2024-09-23T14:30:52.531Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f17b9cf0f7029e72cb27b6","__v":0}
+2024-09-23T14:30:52.538Z [[32minfo[39m]: Deleted new product with id {"_id":"66f17b9cf0f7029e72cb27b6","name":"Sample Product","quantity":100,"price":50,"__v":0}
+2024-09-23T14:30:52.541Z [[31merror[39m]: Product with 66f17b9cf0f7029e72cb27b6 not found
+2024-09-23T14:30:52.542Z [[31merror[39m]: Product with id 123456789012345678901234 is not found
+2024-09-24T12:17:28.744Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2add7722ac23ac1efbefe","__v":0}
+2024-09-24T12:17:28.808Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2add8722ac23ac1efbf01","__v":0}
+2024-09-24T12:17:28.850Z [[32minfo[39m]: Retrieved product: {"_id":"66f2add8722ac23ac1efbf01","name":"Sample Product","quantity":100,"price":50,"__v":0}
+2024-09-24T12:17:28.861Z [[31merror[39m]: Product with 123456789012345678901234 not found
+2024-09-24T12:17:28.868Z [[32minfo[39m]: Added product: {"name":"Product 1","quantity":10,"price":25,"_id":"66f2add8722ac23ac1efbf07","__v":0}
+2024-09-24T12:17:28.872Z [[32minfo[39m]: Added product: {"name":"Product 2","quantity":5,"price":15,"_id":"66f2add8722ac23ac1efbf09","__v":0}
+2024-09-24T12:17:28.876Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-09-24T12:17:28.887Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2add8722ac23ac1efbf0d","__v":0}
+2024-09-24T12:17:28.954Z [[32minfo[39m]: Updated new product with id {"_id":"66f2add8722ac23ac1efbf0d","name":"Sample Product","quantity":200,"price":50,"__v":0}
+2024-09-24T12:17:28.965Z [[31merror[39m]: Product with id 123456789012345678901234 not found!
+2024-09-24T12:17:29.006Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2add8722ac23ac1efbf13","__v":0}
+2024-09-24T12:17:29.026Z [[32minfo[39m]: Deleted new product with id {"_id":"66f2add8722ac23ac1efbf13","name":"Sample Product","quantity":100,"price":50,"__v":0}
+2024-09-24T12:17:29.033Z [[31merror[39m]: Product with 66f2add8722ac23ac1efbf13 not found
+2024-09-24T12:17:29.041Z [[31merror[39m]: Product with id 123456789012345678901234 is not found
+2024-09-24T12:42:43.078Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b3c2a2d39511917150db","__v":0}
+2024-09-24T12:42:43.133Z [[31merror[39m]: failed to add product: Product validation failed: name: Path `name` is required.
+2024-09-24T12:42:43.159Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b3c3a2d39511917150e0","__v":0}
+2024-09-24T12:42:43.229Z [[32minfo[39m]: Retrieved product: {"_id":"66f2b3c3a2d39511917150e0","name":"Sample Product","quantity":100,"price":50,"__v":0}
+2024-09-24T12:42:43.249Z [[31merror[39m]: Product with 123456789012345678901234 not found
+2024-09-24T12:42:43.262Z [[32minfo[39m]: Added product: {"name":"Product 1","quantity":10,"price":25,"_id":"66f2b3c3a2d39511917150e6","__v":0}
+2024-09-24T12:42:43.265Z [[32minfo[39m]: Added product: {"name":"Product 2","quantity":5,"price":15,"_id":"66f2b3c3a2d39511917150e8","__v":0}
+2024-09-24T12:42:43.298Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-09-24T12:42:43.372Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b3c3a2d39511917150ec","__v":0}
+2024-09-24T12:42:43.406Z [[32minfo[39m]: Updated new product with id {"_id":"66f2b3c3a2d39511917150ec","name":"Sample Product","quantity":200,"price":50,"__v":0}
+2024-09-24T12:42:43.436Z [[31merror[39m]: Product with id 123456789012345678901234 not found!
+2024-09-24T12:42:43.448Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b3c3a2d39511917150f2","__v":0}
+2024-09-24T12:42:43.451Z [[32minfo[39m]: Deleted new product with id {"_id":"66f2b3c3a2d39511917150f2","name":"Sample Product","quantity":100,"price":50,"__v":0}
+2024-09-24T12:42:43.454Z [[31merror[39m]: Product with 66f2b3c3a2d39511917150f2 not found
+2024-09-24T12:42:43.458Z [[31merror[39m]: Product with id 123456789012345678901234 is not found
+2024-09-24T12:44:25.902Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b429d4dbf13d66ac9a7b","__v":0}
+2024-09-24T12:44:25.918Z [[31merror[39m]: failed to add product: Product validation failed: name: Path `name` is required.
+2024-09-24T12:44:25.938Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b429d4dbf13d66ac9a80","__v":0}
+2024-09-24T12:44:25.963Z [[32minfo[39m]: Retrieved product: {"_id":"66f2b429d4dbf13d66ac9a80","name":"Sample Product","quantity":100,"price":50,"__v":0}
+2024-09-24T12:44:25.972Z [[31merror[39m]: Product with 123456789012345678901234 not found
+2024-09-24T12:44:25.977Z [[32minfo[39m]: Added product: {"name":"Product 1","quantity":10,"price":25,"_id":"66f2b429d4dbf13d66ac9a86","__v":0}
+2024-09-24T12:44:25.983Z [[32minfo[39m]: Added product: {"name":"Product 2","quantity":5,"price":15,"_id":"66f2b429d4dbf13d66ac9a88","__v":0}
+2024-09-24T12:44:25.987Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-09-24T12:44:25.995Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b429d4dbf13d66ac9a8c","__v":0}
+2024-09-24T12:44:26.008Z [[32minfo[39m]: Updated new product with id {"_id":"66f2b429d4dbf13d66ac9a8c","name":"Sample Product","quantity":200,"price":50,"__v":0}
+2024-09-24T12:44:26.017Z [[31merror[39m]: Product with id 123456789012345678901234 not found!
+2024-09-24T12:44:26.022Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b42ad4dbf13d66ac9a92","__v":0}
+2024-09-24T12:44:26.025Z [[32minfo[39m]: Deleted new product with id {"_id":"66f2b42ad4dbf13d66ac9a92","name":"Sample Product","quantity":100,"price":50,"__v":0}
+2024-09-24T12:44:26.030Z [[31merror[39m]: Product with 66f2b42ad4dbf13d66ac9a92 not found
+2024-09-24T12:44:26.035Z [[31merror[39m]: Product with id 123456789012345678901234 is not found
+2024-09-24T12:51:49.076Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b5e4bf1abb02bc12c5cc","__v":0}
+2024-09-24T12:51:49.098Z [[31merror[39m]: failed to add product: Product validation failed: name: Path `name` is required.
+2024-09-24T12:51:49.110Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b5e5bf1abb02bc12c5d1","__v":0}
+2024-09-24T12:51:49.132Z [[32minfo[39m]: Retrieved product: {"_id":"66f2b5e5bf1abb02bc12c5d1","name":"Sample Product","quantity":100,"price":50,"__v":0}
+2024-09-24T12:51:49.142Z [[31merror[39m]: Product with 123456789012345678901234 not found
+2024-09-24T12:51:49.156Z [[32minfo[39m]: Added product: {"name":"Product 1","quantity":10,"price":25,"_id":"66f2b5e5bf1abb02bc12c5d7","__v":0}
+2024-09-24T12:51:49.162Z [[32minfo[39m]: Added product: {"name":"Product 2","quantity":5,"price":15,"_id":"66f2b5e5bf1abb02bc12c5d9","__v":0}
+2024-09-24T12:51:49.166Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-09-24T12:51:49.183Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b5e5bf1abb02bc12c5dd","__v":0}
+2024-09-24T12:51:49.209Z [[32minfo[39m]: Updated new product with id {"_id":"66f2b5e5bf1abb02bc12c5dd","name":"Sample Product","quantity":200,"price":50,"__v":0}
+2024-09-24T12:51:49.229Z [[31merror[39m]: Product with id 123456789012345678901234 not found!
+2024-09-24T12:51:49.244Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b5e5bf1abb02bc12c5e3","__v":0}
+2024-09-24T12:51:49.249Z [[32minfo[39m]: Deleted new product with id {"_id":"66f2b5e5bf1abb02bc12c5e3","name":"Sample Product","quantity":100,"price":50,"__v":0}
+2024-09-24T12:51:49.263Z [[31merror[39m]: Product with 66f2b5e5bf1abb02bc12c5e3 not found
+2024-09-24T12:51:49.272Z [[31merror[39m]: Product with id 123456789012345678901234 is not found
+2024-09-24T12:56:03.630Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b6e30ceb5aa9262ca155","__v":0}
+2024-09-24T12:56:03.650Z [[31merror[39m]: failed to add product: Product validation failed: name: Path `name` is required.
+2024-09-24T12:56:03.669Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b6e30ceb5aa9262ca15a","__v":0}
+2024-09-24T12:56:03.703Z [[32minfo[39m]: Retrieved product: {"_id":"66f2b6e30ceb5aa9262ca15a","name":"Sample Product","quantity":100,"price":50,"__v":0}
+2024-09-24T12:56:03.723Z [[31merror[39m]: Product with 123456789012345678901234 not found
+2024-09-24T12:56:03.755Z [[32minfo[39m]: Added product: {"name":"Product 1","quantity":10,"price":25,"_id":"66f2b6e30ceb5aa9262ca160","__v":0}
+2024-09-24T12:56:03.763Z [[32minfo[39m]: Added product: {"name":"Product 2","quantity":5,"price":15,"_id":"66f2b6e30ceb5aa9262ca162","__v":0}
+2024-09-24T12:56:03.774Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-09-24T12:56:03.784Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b6e30ceb5aa9262ca166","__v":0}
+2024-09-24T12:56:03.802Z [[32minfo[39m]: Updated new product with id {"_id":"66f2b6e30ceb5aa9262ca166","name":"Sample Product","quantity":200,"price":50,"__v":0}
+2024-09-24T12:56:03.816Z [[31merror[39m]: Product with id 123456789012345678901234 not found!
+2024-09-24T12:56:03.821Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b6e30ceb5aa9262ca16c","__v":0}
+2024-09-24T12:56:03.825Z [[32minfo[39m]: Deleted new product with id {"_id":"66f2b6e30ceb5aa9262ca16c","name":"Sample Product","quantity":100,"price":50,"__v":0}
+2024-09-24T12:56:03.829Z [[31merror[39m]: Product with 66f2b6e30ceb5aa9262ca16c not found
+2024-09-24T12:56:03.833Z [[31merror[39m]: Product with id 123456789012345678901234 is not found
+2024-09-24T12:57:01.707Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b71de157621add88a6ad","__v":0}
+2024-09-24T12:57:01.724Z [[31merror[39m]: failed to add product: Product validation failed: name: Path `name` is required.
+2024-09-24T12:57:01.731Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b71de157621add88a6b2","__v":0}
+2024-09-24T12:57:01.781Z [[32minfo[39m]: Retrieved product: {"_id":"66f2b71de157621add88a6b2","name":"Sample Product","quantity":100,"price":50,"__v":0}
+2024-09-24T12:57:01.796Z [[31merror[39m]: Product with 123456789012345678901234 not found
+2024-09-24T12:57:01.809Z [[32minfo[39m]: Added product: {"name":"Product 1","quantity":10,"price":25,"_id":"66f2b71de157621add88a6b8","__v":0}
+2024-09-24T12:57:01.814Z [[32minfo[39m]: Added product: {"name":"Product 2","quantity":5,"price":15,"_id":"66f2b71de157621add88a6ba","__v":0}
+2024-09-24T12:57:01.825Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-09-24T12:57:01.847Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b71de157621add88a6be","__v":0}
+2024-09-24T12:57:01.860Z [[32minfo[39m]: Updated new product with id {"_id":"66f2b71de157621add88a6be","name":"Sample Product","quantity":200,"price":50,"__v":0}
+2024-09-24T12:57:01.869Z [[31merror[39m]: Product with id 123456789012345678901234 not found!
+2024-09-24T12:57:01.874Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b71de157621add88a6c4","__v":0}
+2024-09-24T12:57:01.884Z [[32minfo[39m]: Deleted new product with id {"_id":"66f2b71de157621add88a6c4","name":"Sample Product","quantity":100,"price":50,"__v":0}
+2024-09-24T12:57:01.890Z [[31merror[39m]: Product with 66f2b71de157621add88a6c4 not found
+2024-09-24T12:57:01.899Z [[31merror[39m]: Product with id 123456789012345678901234 is not found
+2024-09-24T12:59:02.406Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b796164b939f768f8a79","__v":0}
+2024-09-24T12:59:02.423Z [[31merror[39m]: failed to add product: Product validation failed: name: Path `name` is required.
+2024-09-24T12:59:02.444Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":-10,"price":50,"_id":"66f2b796164b939f768f8a7e","__v":0}
+2024-09-24T12:59:02.479Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b796164b939f768f8a81","__v":0}
+2024-09-24T12:59:02.498Z [[32minfo[39m]: Retrieved product: {"_id":"66f2b796164b939f768f8a81","name":"Sample Product","quantity":100,"price":50,"__v":0}
+2024-09-24T12:59:02.508Z [[31merror[39m]: Product with 123456789012345678901234 not found
+2024-09-24T12:59:02.517Z [[32minfo[39m]: Added product: {"name":"Product 1","quantity":10,"price":25,"_id":"66f2b796164b939f768f8a87","__v":0}
+2024-09-24T12:59:02.525Z [[32minfo[39m]: Added product: {"name":"Product 2","quantity":5,"price":15,"_id":"66f2b796164b939f768f8a89","__v":0}
+2024-09-24T12:59:02.528Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-09-24T12:59:02.548Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b796164b939f768f8a8d","__v":0}
+2024-09-24T12:59:02.558Z [[32minfo[39m]: Updated new product with id {"_id":"66f2b796164b939f768f8a8d","name":"Sample Product","quantity":200,"price":50,"__v":0}
+2024-09-24T12:59:02.566Z [[31merror[39m]: Product with id 123456789012345678901234 not found!
+2024-09-24T12:59:02.590Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b796164b939f768f8a93","__v":0}
+2024-09-24T12:59:02.594Z [[32minfo[39m]: Deleted new product with id {"_id":"66f2b796164b939f768f8a93","name":"Sample Product","quantity":100,"price":50,"__v":0}
+2024-09-24T12:59:02.604Z [[31merror[39m]: Product with 66f2b796164b939f768f8a93 not found
+2024-09-24T12:59:02.610Z [[31merror[39m]: Product with id 123456789012345678901234 is not found
+2024-09-24T13:04:06.484Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b8c63ff3674c1ad9e604","__v":0}
+2024-09-24T13:04:06.501Z [[31merror[39m]: failed to add product: Product validation failed: name: Path `name` is required.
+2024-09-24T13:04:06.506Z [[31merror[39m]: failed to add product: Product validation failed: quantity: Path `quantity` (-10) is less than minimum allowed value (0).
+2024-09-24T13:04:06.524Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b8c63ff3674c1ad9e60b","__v":0}
+2024-09-24T13:04:06.539Z [[32minfo[39m]: Retrieved product: {"_id":"66f2b8c63ff3674c1ad9e60b","name":"Sample Product","quantity":100,"price":50,"__v":0}
+2024-09-24T13:04:06.565Z [[31merror[39m]: Product with 123456789012345678901234 not found
+2024-09-24T13:04:06.570Z [[32minfo[39m]: Added product: {"name":"Product 1","quantity":10,"price":25,"_id":"66f2b8c63ff3674c1ad9e611","__v":0}
+2024-09-24T13:04:06.576Z [[32minfo[39m]: Added product: {"name":"Product 2","quantity":5,"price":15,"_id":"66f2b8c63ff3674c1ad9e613","__v":0}
+2024-09-24T13:04:06.583Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-09-24T13:04:06.607Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b8c63ff3674c1ad9e617","__v":0}
+2024-09-24T13:04:06.621Z [[32minfo[39m]: Updated new product with id {"_id":"66f2b8c63ff3674c1ad9e617","name":"Sample Product","quantity":200,"price":50,"__v":0}
+2024-09-24T13:04:06.628Z [[31merror[39m]: Product with id 123456789012345678901234 not found!
+2024-09-24T13:04:06.636Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b8c63ff3674c1ad9e61d","__v":0}
+2024-09-24T13:04:06.641Z [[32minfo[39m]: Deleted new product with id {"_id":"66f2b8c63ff3674c1ad9e61d","name":"Sample Product","quantity":100,"price":50,"__v":0}
+2024-09-24T13:04:06.646Z [[31merror[39m]: Product with 66f2b8c63ff3674c1ad9e61d not found
+2024-09-24T13:04:06.650Z [[31merror[39m]: Product with id 123456789012345678901234 is not found
+2024-09-24T13:08:05.645Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b9b54899d9076ac77214","__v":0}
+2024-09-24T13:08:05.662Z [[31merror[39m]: failed to add product: Product validation failed: name: Path `name` is required.
+2024-09-24T13:08:05.667Z [[31merror[39m]: failed to add product: Product validation failed: quantity: Path `quantity` (-10) is less than minimum allowed value (0).
+2024-09-24T13:08:05.672Z [[31merror[39m]: failed to add product: Product validation failed: price: Path `price` (-50) is less than minimum allowed value (0).
+2024-09-24T13:08:05.679Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b9b54899d9076ac7721d","__v":0}
+2024-09-24T13:08:05.689Z [[32minfo[39m]: Retrieved product: {"_id":"66f2b9b54899d9076ac7721d","name":"Sample Product","quantity":100,"price":50,"__v":0}
+2024-09-24T13:08:05.697Z [[31merror[39m]: Product with 123456789012345678901234 not found
+2024-09-24T13:08:05.703Z [[32minfo[39m]: Added product: {"name":"Product 1","quantity":10,"price":25,"_id":"66f2b9b54899d9076ac77223","__v":0}
+2024-09-24T13:08:05.707Z [[32minfo[39m]: Added product: {"name":"Product 2","quantity":5,"price":15,"_id":"66f2b9b54899d9076ac77225","__v":0}
+2024-09-24T13:08:05.711Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-09-24T13:08:05.731Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b9b54899d9076ac77229","__v":0}
+2024-09-24T13:08:05.752Z [[32minfo[39m]: Updated new product with id {"_id":"66f2b9b54899d9076ac77229","name":"Sample Product","quantity":200,"price":50,"__v":0}
+2024-09-24T13:08:05.758Z [[31merror[39m]: Product with id 123456789012345678901234 not found!
+2024-09-24T13:08:05.766Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b9b54899d9076ac7722f","__v":0}
+2024-09-24T13:08:05.770Z [[32minfo[39m]: Deleted new product with id {"_id":"66f2b9b54899d9076ac7722f","name":"Sample Product","quantity":100,"price":50,"__v":0}
+2024-09-24T13:08:05.773Z [[31merror[39m]: Product with 66f2b9b54899d9076ac7722f not found
+2024-09-24T13:08:05.776Z [[31merror[39m]: Product with id 123456789012345678901234 is not found
