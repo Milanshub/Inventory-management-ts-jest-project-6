@@ -17,6 +17,8 @@ export const addProductController: ExpressRequestHandle = async (req, res) => {
 export const getProductByIdController: ExpressRequestHandle = async (req, res) => {
     try {
         const productId = req.params.id; 
+        console.log('Request Params:', req.params); // Add this line for debugging
+        console.log('Fetching product with ID:', productId); 
         const product = await productService.getProductById(productId); 
         if (product) {
             res.status(200).json(product); 
