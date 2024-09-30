@@ -1,4 +1,4 @@
-import { describe, it, vi, expect, beforeAll, afterAll, beforeEach } from 'vitest';
+import { describe, it, vi, expect, beforeEach } from 'vitest';
 import { Request, Response } from 'express';
 import * as productService from '../../src/services/productService'; 
 import {
