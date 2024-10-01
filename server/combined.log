@@ -162,3 +162,5 @@
 2024-09-24T13:08:05.770Z [[32minfo[39m]: Deleted new product with id {"_id":"66f2b9b54899d9076ac7722f","name":"Sample Product","quantity":100,"price":50,"__v":0}
 2024-09-24T13:08:05.773Z [[31merror[39m]: Product with 66f2b9b54899d9076ac7722f not found
 2024-09-24T13:08:05.776Z [[31merror[39m]: Product with id 123456789012345678901234 is not found
+2024-10-01T14:51:08.170Z [[31merror[39m]: 400 = Custom error message
+2024-10-01T14:51:08.204Z [[31merror[39m]: 500 - Something went wrong
