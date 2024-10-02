@@ -3,14 +3,14 @@ import * as userController from '../../src/controllers/userController';
 
 const userRouter: Router = Router(); 
 
-userRouter.post('/', userController.addUserController); 
+userRouter.post('/users', userController.addUserController); 
 
-userRouter.get('/:id', userController.getUserByIdController); 
+userRouter.get('/users/:id', userController.getUserByIdController); 
 
-userRouter.get('/', userController.getAllUsersController); 
+userRouter.get('/users', userController.getAllUsersController); 
 
-userRouter.put('/:id', userController.updateUserController); 
+userRouter.put('/users/:id', userController.updateUserController); 
 
-userRouter.delete('/:d', userController.deleteUserController); 
+userRouter.delete('/users/:d', userController.deleteUserController); 
 
 export default userRouter; 

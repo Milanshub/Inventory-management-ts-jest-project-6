@@ -164,3 +164,63 @@
 2024-09-24T13:08:05.776Z [[31merror[39m]: Product with id 123456789012345678901234 is not found
 2024-10-01T14:51:08.170Z [[31merror[39m]: 400 = Custom error message
 2024-10-01T14:51:08.204Z [[31merror[39m]: 500 - Something went wrong
+2024-10-02T09:43:53.710Z [[31merror[39m]: failed to add product: Product validation failed: price: Path `price` is required., quantity: Path `quantity` is required.
+2024-10-02T09:44:45.492Z [[31merror[39m]: failed to add product: Product validation failed: price: Path `price` is required., quantity: Path `quantity` is required.
+2024-10-02T12:16:19.539Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-10-02T12:17:14.857Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-10-02T12:20:13.048Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-10-02T12:20:13.110Z [[32minfo[39m]: Server running on port 5000 in development mode
+2024-10-02T12:26:07.259Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-10-02T12:26:07.267Z [[32minfo[39m]: Server running on port 5000 in development mode
+2024-10-02T12:26:16.168Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":10,"price":19.99,"_id":"66fd3be822c3d04858e717ac","__v":0}
+2024-10-02T12:27:22.052Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-02T12:27:55.799Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-02T12:28:16.585Z [[32minfo[39m]: Retrieved product: {"_id":"66fd3be822c3d04858e717ac","name":"Sample Product","quantity":10,"price":19.99,"__v":0}
+2024-10-02T12:28:22.150Z [[32minfo[39m]: Deleted new product with id {"_id":"66fd3be822c3d04858e717ac","name":"Sample Product","quantity":10,"price":19.99,"__v":0}
+2024-10-02T12:31:00.850Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-10-02T12:31:00.866Z [[32minfo[39m]: Retreived all users: 0 found
+2024-10-02T12:33:58.293Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-10-02T12:33:58.320Z [[32minfo[39m]: Retreived all users: 0 found
+2024-10-02T12:36:06.031Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-10-02T12:36:06.123Z [[32minfo[39m]: Retreived all users: 0 found
+2024-10-02T12:40:48.421Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-10-02T12:40:48.497Z [[32minfo[39m]: Retreived all users: 0 found
+2024-10-02T12:43:45.398Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-10-02T12:43:45.430Z [[32minfo[39m]: Retreived all users: 0 found
+2024-10-02T12:43:52.679Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-10-02T12:43:52.785Z [[32minfo[39m]: Retreived all users: 0 found
+2024-10-02T12:44:22.757Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-10-02T12:44:22.774Z [[32minfo[39m]: Retreived all users: 0 found
+2024-10-02T12:44:25.819Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-10-02T12:44:25.846Z [[32minfo[39m]: Retreived all users: 0 found
+2024-10-02T12:47:55.346Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-10-02T12:47:55.375Z [[32minfo[39m]: Retreived all users: 0 found
+2024-10-02T12:48:01.931Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-10-02T12:48:01.952Z [[32minfo[39m]: Retreived all users: 0 found
+2024-10-02T12:50:20.216Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-10-02T12:50:20.261Z [[32minfo[39m]: Retreived all users: 0 found
+2024-10-02T12:50:20.269Z [[32minfo[39m]: Error connecting to MongoDB Atlas: MongooseError: Can't call `openUri()` on an active connection with different connection strings. Make sure you aren't calling `mongoose.connect()` multiple times. See: https://mongoosejs.com/docs/connections.html#multiple_connections
+2024-10-02T12:50:25.843Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-10-02T12:50:25.862Z [[32minfo[39m]: Retreived all users: 0 found
+2024-10-02T13:00:10.970Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-10-02T13:00:11.032Z [[32minfo[39m]: Retreived all users: 0 found
+2024-10-02T13:00:11.080Z [[32minfo[39m]: Server running on port 5000
+2024-10-02T13:00:11.084Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-10-02T13:00:16.400Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-10-02T13:00:16.441Z [[32minfo[39m]: Retreived all users: 0 found
+2024-10-02T13:01:14.887Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-10-02T13:01:14.915Z [[32minfo[39m]: Retreived all users: 0 found
+2024-10-02T13:01:14.919Z [[32minfo[39m]: Server running on port 5000
+2024-10-02T13:01:14.927Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-10-02T13:01:22.125Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-10-02T13:01:22.146Z [[32minfo[39m]: Retreived all users: 0 found
+2024-10-02T13:07:22.860Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-10-02T13:07:22.885Z [[32minfo[39m]: Retreived all users: 0 found
+2024-10-02T13:07:22.895Z [[32minfo[39m]: Server running on port 5000
+2024-10-02T13:07:22.901Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-10-02T13:07:30.634Z [[32minfo[39m]: Error connecting to MongoDB Atlas: MongooseError: Can't call `openUri()` on an active connection with different connection strings. Make sure you aren't calling `mongoose.connect()` multiple times. See: https://mongoosejs.com/docs/connections.html#multiple_connections
+2024-10-02T13:07:30.637Z [[31merror[39m]: Error starting server: Can't call `openUri()` on an active connection with different connection strings. Make sure you aren't calling `mongoose.connect()` multiple times. See: https://mongoosejs.com/docs/connections.html#multiple_connections
+2024-10-02T13:09:18.428Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-10-02T13:09:18.508Z [[32minfo[39m]: Retreived all users: 0 found
+2024-10-02T13:09:18.515Z [[32minfo[39m]: Server running on port 5000
+2024-10-02T13:09:18.520Z [[32minfo[39m]: Retrieved all products: 0 found

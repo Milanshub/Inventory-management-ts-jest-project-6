@@ -3,14 +3,14 @@ import * as productController from '../../src/controllers/productController';
 
 const productRouter: Router = Router(); 
 
-productRouter.post('/', productController.addProductController); 
+productRouter.post('/products', productController.addProductController); 
 
-productRouter.get('/:id', productController.getProductByIdController); 
+productRouter.get('/products/:id', productController.getProductByIdController); 
 
-productRouter.get('/', productController.getAllProductsController); 
+productRouter.get('/products', productController.getAllProductsController); 
 
-productRouter.put('/:id', productController.updateProductController); 
+productRouter.put('/products/:id', productController.updateProductController); 
 
-productRouter.delete('/:id', productController.deleteProductController); 
+productRouter.delete('/products/:id', productController.deleteProductController); 
 
 export default productRouter;
