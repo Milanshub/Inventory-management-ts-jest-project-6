@@ -10,8 +10,8 @@ export interface IProduct extends Document {
 
 export interface IProductInput {
     name: string; 
-    quantity: number, 
-    price: number
+    quantity: number; 
+    price: number;
 }
 
 // create schema for the above interface 

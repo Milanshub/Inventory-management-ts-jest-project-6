@@ -66,3 +66,17 @@ export const deleteUserController: ExpressRequestHandle = async (req, res) => {
         res.status(500).json({ message: error instanceof Error ? error.message : 'An unknown error occurred'}); 
     }
 }; 
+
+export const loginUserController: ExpressRequestHandle = async (req, res) => {
+    try {
+        const {email, password} = req.body; 
+        const user = await userService.loginUser(email, password); 
+        if (user) {
+            res.status(200).json({message: 'Login successful', user}); 
+        } else {
+            res.status(401).json('Invalud email or password'); 
+        }
+    } catch (error) {
+        res.status(500).json({ message: error instanceof Error ? error.message : 'An unknown error occurred'});
+    }
+};

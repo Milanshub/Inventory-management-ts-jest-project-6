@@ -5,9 +5,9 @@ import dotenv from 'dotenv';
 import productRouter from '../src/routes/productRouters';
 import userRouter from '../src/routes/userRouters';
 import { MongoMemoryServer } from 'mongodb-memory-server';
-import { logger } from './../src/utils/logger';
-import { connectToMongoDb } from './../src/config/dbConfig'; // Import your MongoDB connection
-import { serverConfig } from './../src/config/serverConfig';
+import { logger } from '../src/utils/logger';
+import { connectToMongoDb } from '../src/config/dbConfig'; // Import your MongoDB connection
+import { serverConfig } from '../src/config/serverConfig';
 import { vi } from 'vitest';
 import {app, startServer} from '../src/app'
 

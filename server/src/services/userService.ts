@@ -1,10 +1,12 @@
 import { logger } from "../utils/logger";
 import { IUser, IUserInput, User } from "../models/userModel";
 import mongoose from "mongoose";
+import bcrypt from 'bcryptjs'; 
 
 export const addUser = async (userData: IUserInput): Promise<IUser> => {
     try {
-        const newUser = new User(userData); 
+        const hashedPassword = await bcrypt.hash(userData.password, 10); 
+        const newUser = new User({...userData, password: hashedPassword}); 
         await newUser.save(); 
         logger.info(`Added user: ${JSON.stringify(newUser)}`); 
         return newUser
@@ -97,4 +99,30 @@ export const deleteUser = async (id: string): Promise<boolean> => {
         }
         throw error; 
     }
-}
+}; 
+
+export const loginUser = async (email: string, password: string): Promise <IUser | null> => {
+    try {
+        const user = await User.findOne({email}); 
+        if (!user) {
+            logger.error(`User with email ${email} not found`); 
+            return null; 
+        }
+
+        const isMatch = await bcrypt.compare(password, user.password); 
+        if (!isMatch) {
+            logger.error(`Invalid password for user ${email}`); 
+            return null; 
+        }
+
+        logger.info(`User ${email} logged in successfully`); 
+        return user;
+    } catch (error) {
+        if (error instanceof Error) {
+            logger.error(`Failed to login user ${email}: ${error.message}`); 
+        } else {
+            logger.error(`An unknown error occurred while logging in user ${email}`); 
+        }
+        throw error; 
+    }
+}; 

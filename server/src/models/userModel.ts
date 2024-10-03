@@ -14,12 +14,12 @@ export interface IUserInput {
     email: string; 
     password: string; 
     role?: 'user' | 'admin'; 
-}
+}; 
 
 // create schema for the above interface 
 const userSchema: Schema = new Schema<IUser>({
     name: {type: String, required: true}, 
-    email: {type: String, required: true}, 
+    email: {type: String, required: true, unique: true, match: /.+\@.+\..+/}, 
     password: {type: String, required: true}, 
     role: {type: String, enum: ['user', 'admin'], default: 'user'}
 },

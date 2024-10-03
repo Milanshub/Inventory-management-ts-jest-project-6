@@ -224,3 +224,22 @@
 2024-10-02T13:09:18.508Z [[32minfo[39m]: Retreived all users: 0 found
 2024-10-02T13:09:18.515Z [[32minfo[39m]: Server running on port 5000
 2024-10-02T13:09:18.520Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-10-03T09:16:05.799Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-10-03T09:16:05.827Z [[32minfo[39m]: Retreived all users: 0 found
+2024-10-03T09:16:05.831Z [[32minfo[39m]: Server running on port 5000
+2024-10-03T09:16:05.840Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-10-03T09:18:40.384Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-10-03T09:18:40.419Z [[32minfo[39m]: Retreived all users: 0 found
+2024-10-03T09:18:40.424Z [[32minfo[39m]: Server running on port 5000
+2024-10-03T09:18:40.433Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-10-03T10:04:12.001Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-10-03T10:04:12.059Z [[32minfo[39m]: Retreived all users: 0 found
+2024-10-03T10:04:12.064Z [[32minfo[39m]: Server running on port 5000
+2024-10-03T10:04:12.067Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-10-03T11:18:01.721Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-10-03T11:18:01.731Z [[32minfo[39m]: Server running on port 5000 in development mode
+2024-10-03T11:19:32.048Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-10-03T11:19:32.054Z [[32minfo[39m]: Server running on port 5000 in development mode
+2024-10-03T11:19:53.216Z [[32minfo[39m]: Added user: {"name":"John Doe","email":"john@example.com","password":"$2a$10$h8FgyEvsuL/xnHDMoJ47J.XsAgCMlO1Zrj33dnSRIQjMNz2UDj4s6","role":"user","_id":"66fe7dd9cd6725bb161f914b","createdAt":"2024-10-03T11:19:53.161Z","updatedAt":"2024-10-03T11:19:53.161Z","__v":0}
+2024-10-03T11:20:46.862Z [[32minfo[39m]: User john@example.com logged in successfully
+2024-10-03T11:20:59.544Z [[32minfo[39m]: Retreived all users: 1 found
