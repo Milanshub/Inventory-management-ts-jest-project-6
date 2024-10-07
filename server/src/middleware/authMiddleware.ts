@@ -1,19 +1,31 @@
 import { Response, Request, NextFunction } from "express";
 import jwt from 'jsonwebtoken';
+import dotenv from 'dotenv'; 
 
-export const authMiddleware = (req: Request, res: Response, next: NextFunction) => {
-  const authHeader = req.headers.authorization;
+dotenv.config();
 
-  if (!authHeader?.startsWith('Bearer ')) {
-    return next(new Error('Invalid or missing authorization header'));
-  }
+// This should be the same secret key used to sign the tokens
+const JWT_SECRET = process.env.JWT_SECRET;
 
-  const token = authHeader.slice(7); // Assuming token is after "Bearer "
+// Extend the Request type to include userId
+interface AuthenticatedRequest extends Request {
+    userId?: string; // Add userId as an optional property
+}
 
-  try {
-    jwt.verify(token, process.env.JWT_SECRET as string); // Verify token (ignoring payload extraction)
-    next();
-  } catch (error) {
-    return next(new Error('Invalid token'));
-  }
+export const authMiddleware = (req: AuthenticatedRequest, res: Response, next: NextFunction): void => {
+    const token = req.headers.authorization?.split(' ')[1]; // Get token from Authorization header
+
+    if (!token) {
+        return res.status(401).json({ message: 'No token provided' }); // Send error response
+    }
+
+    jwt.verify(token, JWT_SECRET!, (err, decoded) => {
+        if (err || !decoded) {
+            return res.status(401).json({ message: 'Unauthorized' }); // Send error response
+        }
+
+        // Type assertion to treat decoded as jwt.JwtPayload
+        req.userId = (decoded as jwt.JwtPayload).id; // Save user ID from decoded token
+        next(); // Call next() to pass control to the next middleware/route handler
+    });
 };

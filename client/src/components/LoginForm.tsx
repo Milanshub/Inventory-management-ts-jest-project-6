@@ -11,7 +11,7 @@ import { Alert } from '@mui/material';
 import Link from '@mui/material/Link';
 import { Link as RouterLink } from 'react-router-dom'; 
 import log from '@/utils/logger';
-import { loginUser } from '@/services/userService';
+import { loginUser } from '@/services/authService';
 
 // Creating a custom-styled component called 'Item' based on the 'Paper' component
 const Item = styled(Paper)(({ theme }) => ({

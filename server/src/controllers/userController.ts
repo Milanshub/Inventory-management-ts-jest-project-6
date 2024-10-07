@@ -1,6 +1,12 @@
 import { Request, Response } from "express";
 import * as userService from '../services/userService'; 
 import { IUserInput } from "../models/userModel";
+import  jwt  from "jsonwebtoken";
+import dotenv from 'dotenv'; 
+
+dotenv.config(); 
+
+const JWT_SECRET = process.env.JWT_SECRET;
 
 type ExpressRequestHandle = (req: Request, res: Response ) => Promise <void>; 
 
@@ -72,7 +78,11 @@ export const loginUserController: ExpressRequestHandle = async (req, res) => {
         const {email, password} = req.body; 
         const user = await userService.loginUser(email, password); 
         if (user) {
-            res.status(200).json({message: 'Login successful', user}); 
+            // Create a token
+            const token = jwt.sign({ id: user._id, email: user.email }, JWT_SECRET!, {
+                expiresIn: '1h', // Token expires in 1 hour
+            });
+            res.status(200).json({message: 'Login successful',token, user}); 
         } else {
             res.status(401).json('Invalud email or password'); 
         }

@@ -243,3 +243,5 @@
 2024-10-03T11:19:53.216Z [[32minfo[39m]: Added user: {"name":"John Doe","email":"john@example.com","password":"$2a$10$h8FgyEvsuL/xnHDMoJ47J.XsAgCMlO1Zrj33dnSRIQjMNz2UDj4s6","role":"user","_id":"66fe7dd9cd6725bb161f914b","createdAt":"2024-10-03T11:19:53.161Z","updatedAt":"2024-10-03T11:19:53.161Z","__v":0}
 2024-10-03T11:20:46.862Z [[32minfo[39m]: User john@example.com logged in successfully
 2024-10-03T11:20:59.544Z [[32minfo[39m]: Retreived all users: 1 found
+2024-10-06T07:23:17.473Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-10-06T07:23:17.480Z [[32minfo[39m]: Server running on port 5000 in development mode

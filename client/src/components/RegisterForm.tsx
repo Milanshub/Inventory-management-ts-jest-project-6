@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { TextField, Button, Typography, Box, Stack, Paper } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import { registerUser } from '@/services/userService';
+import { registerUser } from '@/services/authService';
 import log from '@/utils/logger';
 
 // Creating a custom-styled component called 'Item' based on the 'Paper' component

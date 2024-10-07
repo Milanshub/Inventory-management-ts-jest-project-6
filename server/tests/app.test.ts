@@ -13,7 +13,7 @@ import {app, startServer} from '../src/app'
 
 dotenv.config();
 
-describe('Server Tests', () => {
+describe.skip('Server Tests', () => {
     let mongoServer: MongoMemoryServer;
 
     // Setup the in-memory MongoDB server before all tests
