@@ -1,5 +1,5 @@
 
-import * as React from 'react';
+import React, { useContext, useState } from 'react';  
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
@@ -11,7 +11,7 @@ import { Alert } from '@mui/material';
 import Link from '@mui/material/Link';
 import { Link as RouterLink } from 'react-router-dom'; 
 import log from '@/utils/logger';
-import { loginUser } from '@/services/authService';
+import { AuthContext } from '@/context/AuthContext';
 
 // Creating a custom-styled component called 'Item' based on the 'Paper' component
 const Item = styled(Paper)(({ theme }) => ({
@@ -23,6 +23,13 @@ const Item = styled(Paper)(({ theme }) => ({
   }));
 
 const LoginForm = () => {
+  const authContext = useContext(AuthContext);
+
+  // Ensure authContext is defined
+  if (!authContext) {
+    throw new Error('AuthContext must be used within an AuthProvider'); // Safety check
+  }
+  const { login } = authContext!;  // Access the login function from AuthContext
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
   const [error, setError] = React.useState<string | null>(null); 
@@ -31,9 +38,7 @@ const LoginForm = () => {
     event.preventDefault(); 
 
     try {
-        const user = await loginUser(email, password); 
-
-        log.info('Logged in user', user);
+        await login(email, password); 
 
         setEmail('');
         setPassword(''); 

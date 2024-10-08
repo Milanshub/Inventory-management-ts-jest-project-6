@@ -1,8 +1,9 @@
-import React, {useState} from 'react'
+import React, {useState, useContext} from 'react'
 import { TextField, Button, Typography, Box, Stack, Paper } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import { registerUser } from '@/services/authService';
 import log from '@/utils/logger';
+import { AuthContext } from '@/context/AuthContext';  // Import the AuthContext
+
 
 // Creating a custom-styled component called 'Item' based on the 'Paper' component
 const Item = styled(Paper)(({ theme }) => ({
@@ -19,11 +20,22 @@ const RegisterForm: React.FC = () => {
     const [password, setPassword] = useState(''); 
     const [error, setError] = useState(''); 
 
+    // Get the register function from the context
+    const authContext = useContext(AuthContext);
+
+    // Ensure the authContext is not undefined
+    if (!authContext) {
+      throw new Error('AuthContext must be used within an AuthProvider');
+    }
+
+    const { register } = authContext;  // Destructure the register method from context
+
+
     const handleSubmit =async (e: React.FormEvent) => {
         e.preventDefault(); 
 
         try {
-            await registerUser({ name, email, password}); 
+            await register({ name, email, password}); 
 
             log.info('Registration successful!');
             setName('');
