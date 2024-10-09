@@ -1,5 +1,5 @@
 import api from './api';
-import log from '@/utils/logger';
+import log from '../utils/logger';
 import {IUser} from '../models/userModel'
 
 

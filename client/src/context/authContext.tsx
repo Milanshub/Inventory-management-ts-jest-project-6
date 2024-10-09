@@ -1,4 +1,4 @@
-import React, { createContext, useState, useEffect, ReactNode } from 'react';
+import React, { createContext, useState, ReactNode } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { loginUser, registerUser } from '../services/authService';  
 import { IUser, IUserInput } from '../models/userModel';           
@@ -27,6 +27,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
       navigate('/dashboard');  // Navigate to the dashboard after login
     } catch (error) {
       console.error("Login failed", error);  // Handle login errors
+      // You might want to add user feedback here
     }
   };
 
@@ -44,6 +45,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
       navigate('/dashboard');  // Navigate to the dashboard after registration
     } catch (error) {
       console.error("Registration failed", error);  // Handle registration errors
+      // Consider adding user feedback here as well
     }
   };
 
