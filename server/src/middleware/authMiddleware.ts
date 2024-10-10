@@ -16,7 +16,8 @@ export const authMiddleware = (req: AuthenticatedRequest, res: Response, next: N
     const token = req.headers.authorization?.split(' ')[1]; // Get token from Authorization header
 
     if (!token) {
-        return res.status(401).json({ message: 'No token provided' }); // Send error response
+        res.status(401).json({ message: 'No token provided' }); 
+        return;// Send error response
     }
 
     jwt.verify(token, JWT_SECRET!, (err, decoded) => {

@@ -245,3 +245,37 @@
 2024-10-03T11:20:59.544Z [[32minfo[39m]: Retreived all users: 1 found
 2024-10-06T07:23:17.473Z [[32minfo[39m]: Connected to MongoDB Atlas
 2024-10-06T07:23:17.480Z [[32minfo[39m]: Server running on port 5000 in development mode
+2024-10-09T20:18:26.335Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-10-09T20:18:26.343Z [[32minfo[39m]: Server running on port 5000 in development mode
+2024-10-09T20:29:36.155Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-10-09T20:29:36.163Z [[32minfo[39m]: Server running on port 5000 in development mode
+2024-10-09T20:30:59.990Z [[32minfo[39m]: Added user: {"name":"milan","email":"shubaevmilan@gmail.com","password":"$2a$10$IPgV7ZEt9S//IBQww0HhsuY2O3PdQBLP.PTvNRSI065/ijTiO28Tm","role":"user","_id":"6706e80342cd0227b4ef6eee","createdAt":"2024-10-09T20:30:59.912Z","updatedAt":"2024-10-09T20:30:59.912Z","__v":0}
+2024-10-09T20:39:30.357Z [[31merror[39m]: failed to add user: E11000 duplicate key error collection: milanshub.users index: email_1 dup key: { email: "shubaevmilan@gmail.com" }
+2024-10-09T20:41:13.406Z [[31merror[39m]: failed to add user: E11000 duplicate key error collection: milanshub.users index: email_1 dup key: { email: "shubaevmilan@gmail.com" }
+2024-10-09T20:43:19.014Z [[31merror[39m]: failed to add user: User validation failed: email: Path `email` is invalid (m@m).
+2024-10-09T20:46:14.443Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-10-09T20:46:14.453Z [[32minfo[39m]: Server running on port 5000 in development mode
+2024-10-09T20:46:34.361Z [[31merror[39m]: failed to add user: User validation failed: email: Path `email` is invalid (go@go).
+2024-10-09T20:46:57.207Z [[31merror[39m]: failed to add user: E11000 duplicate key error collection: milanshub.users index: email_1 dup key: { email: "shubaevmilan@gmail.com" }
+2024-10-09T20:48:06.597Z [[32minfo[39m]: Added user: {"name":"milan","email":"shubaevmilan@gmail.com","password":"$2a$10$PqKItZpypyioNx6Gx3TEVuvDF2hcNAoHENCtJPOiYVJLy2pnTSpr.","role":"user","_id":"6706ec069c0db89b5b275fef","createdAt":"2024-10-09T20:48:06.548Z","updatedAt":"2024-10-09T20:48:06.548Z","__v":0}
+2024-10-09T20:50:39.560Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-09T20:57:04.949Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-09T20:57:53.980Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-09T20:58:29.011Z [[31merror[39m]: failed to add user: User validation failed: email: Path `email` is invalid (m@m).
+2024-10-09T20:58:44.928Z [[31merror[39m]: User with email m@m not found
+2024-10-09T20:58:50.297Z [[31merror[39m]: User with email m@m not found
+2024-10-09T20:59:27.368Z [[32minfo[39m]: Added user: {"name":"44","email":"4@4.com","password":"$2a$10$6l428iBq9DS5xhasDa0.le79S8TgebEXMf/YUx3A.527tgmdjWueO","role":"user","_id":"6706eeaf9c0db89b5b275ff7","createdAt":"2024-10-09T20:59:27.311Z","updatedAt":"2024-10-09T20:59:27.311Z","__v":0}
+2024-10-09T20:59:56.883Z [[32minfo[39m]: User 4@4.com logged in successfully
+2024-10-10T08:47:41.317Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-10-10T08:47:41.323Z [[32minfo[39m]: Server running on port 5000 in development mode
+2024-10-10T08:48:02.318Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-10T15:28:18.981Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-10-10T15:28:18.987Z [[32minfo[39m]: Server running on port 5000 in development mode
+2024-10-10T15:29:23.276Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-10T15:43:18.573Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-10T15:44:38.892Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-10T15:48:38.319Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-10T15:53:16.853Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-10T15:53:52.778Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-10T16:07:45.009Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-10T16:07:55.347Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully

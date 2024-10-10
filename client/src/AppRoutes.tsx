@@ -1,26 +1,33 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import HomePage from './pages/HomePage'; // Home page
-import LoginPage from './pages/LoginPage'; // Login page
-import RegisterPage from './pages/RegisterPage'; // Register page
-import Dashboard from './pages/Dashboard'; // Dashboard component
-import NotFoundPage from './pages/NotFoundPage'; // 404 Page
-import ProtectedRoute from './components/ProtectedRoute'; // Protected routes
+import HomePage from './pages/HomePage';
+import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
+import Dashboard from './pages/Dashboard';
+import NotFoundPage from './pages/NotFoundPage';
+import ProtectedRoute from './components/ProtectedRoute';
+import MainLayout from './layouts/MainLayout';
 
 const AppRoutes: React.FC = () => {
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />} /> {/* Home Page */}
-      <Route path="/login" element={<LoginPage />} /> {/* Login Page */}
-      <Route path="/register" element={<RegisterPage />} /> {/* Register Page */}
+    <Routes> 
+      <Route path="/" element={<HomePage />} />
+      <Route path="/login" element={<LoginPage />} />
+      <Route path="/register" element={<RegisterPage />} />
       
-      {/* Protected Routes */}
+      {/* Wrap Dashboard in ProtectedRoute */}
       <Route
         path="/dashboard"
-        element={<ProtectedRoute element={<Dashboard />} />} // Protect the dashboard
+        element={
+          <ProtectedRoute>
+            <MainLayout>
+              <Dashboard />
+            </MainLayout>
+          </ProtectedRoute>
+        }
       />
-      
-      <Route path="*" element={<NotFoundPage />} /> {/* 404 Page */}
+
+      <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );
 };
