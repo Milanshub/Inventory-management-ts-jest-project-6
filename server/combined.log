@@ -1,281 +1,1452 @@
-2024-09-23T13:47:04.961Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f17158c03fe3bd1f6804bb","__v":0}
-2024-09-23T13:48:57.361Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f171c8042f438a30f8a2c9","__v":0}
-2024-09-23T13:50:05.103Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f1720c4d586a47f13b5e82","__v":0}
-2024-09-23T13:53:50.996Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f172ee81c7469d55dbcd77","__v":0}
-2024-09-23T13:59:14.806Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f174328d5c51dfa0af274c","__v":0}
-2024-09-23T14:23:53.936Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f179f932a2e9d2b8eead2e","__v":0}
-2024-09-23T14:23:53.949Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f179f932a2e9d2b8eead30","__v":0}
-2024-09-23T14:23:53.970Z [[32minfo[39m]: Retrieved product: {"_id":"66f179f932a2e9d2b8eead30","name":"Sample Product","quantity":100,"price":50,"__v":0}
-2024-09-23T14:27:11.076Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f17abec88a644f63df8acd","__v":0}
-2024-09-23T14:27:11.091Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f17abfc88a644f63df8acf","__v":0}
-2024-09-23T14:27:11.107Z [[32minfo[39m]: Retrieved product: {"_id":"66f17abfc88a644f63df8acf","name":"Sample Product","quantity":100,"price":50,"__v":0}
-2024-09-23T14:27:11.113Z [[31merror[39m]: Product with 123456789012345678901234 not found
-2024-09-23T14:30:52.392Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f17b9bf0f7029e72cb27a7","__v":0}
-2024-09-23T14:30:52.411Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f17b9cf0f7029e72cb27a9","__v":0}
-2024-09-23T14:30:52.433Z [[32minfo[39m]: Retrieved product: {"_id":"66f17b9cf0f7029e72cb27a9","name":"Sample Product","quantity":100,"price":50,"__v":0}
-2024-09-23T14:30:52.442Z [[31merror[39m]: Product with 123456789012345678901234 not found
-2024-09-23T14:30:52.447Z [[32minfo[39m]: Added product: {"name":"Product 1","quantity":10,"price":25,"_id":"66f17b9cf0f7029e72cb27ad","__v":0}
-2024-09-23T14:30:52.452Z [[32minfo[39m]: Added product: {"name":"Product 2","quantity":5,"price":15,"_id":"66f17b9cf0f7029e72cb27af","__v":0}
-2024-09-23T14:30:52.490Z [[32minfo[39m]: Retrieved all products: 4 found
-2024-09-23T14:30:52.514Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f17b9cf0f7029e72cb27b2","__v":0}
-2024-09-23T14:30:52.525Z [[32minfo[39m]: Updated new product with id {"_id":"66f17b9cf0f7029e72cb27b2","name":"Sample Product","quantity":200,"price":50,"__v":0}
-2024-09-23T14:30:52.528Z [[31merror[39m]: Product with id 123456789012345678901234 not found!
-2024-09-23T14:30:52.531Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f17b9cf0f7029e72cb27b6","__v":0}
-2024-09-23T14:30:52.538Z [[32minfo[39m]: Deleted new product with id {"_id":"66f17b9cf0f7029e72cb27b6","name":"Sample Product","quantity":100,"price":50,"__v":0}
-2024-09-23T14:30:52.541Z [[31merror[39m]: Product with 66f17b9cf0f7029e72cb27b6 not found
-2024-09-23T14:30:52.542Z [[31merror[39m]: Product with id 123456789012345678901234 is not found
-2024-09-24T12:17:28.744Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2add7722ac23ac1efbefe","__v":0}
-2024-09-24T12:17:28.808Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2add8722ac23ac1efbf01","__v":0}
-2024-09-24T12:17:28.850Z [[32minfo[39m]: Retrieved product: {"_id":"66f2add8722ac23ac1efbf01","name":"Sample Product","quantity":100,"price":50,"__v":0}
-2024-09-24T12:17:28.861Z [[31merror[39m]: Product with 123456789012345678901234 not found
-2024-09-24T12:17:28.868Z [[32minfo[39m]: Added product: {"name":"Product 1","quantity":10,"price":25,"_id":"66f2add8722ac23ac1efbf07","__v":0}
-2024-09-24T12:17:28.872Z [[32minfo[39m]: Added product: {"name":"Product 2","quantity":5,"price":15,"_id":"66f2add8722ac23ac1efbf09","__v":0}
-2024-09-24T12:17:28.876Z [[32minfo[39m]: Retrieved all products: 2 found
-2024-09-24T12:17:28.887Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2add8722ac23ac1efbf0d","__v":0}
-2024-09-24T12:17:28.954Z [[32minfo[39m]: Updated new product with id {"_id":"66f2add8722ac23ac1efbf0d","name":"Sample Product","quantity":200,"price":50,"__v":0}
-2024-09-24T12:17:28.965Z [[31merror[39m]: Product with id 123456789012345678901234 not found!
-2024-09-24T12:17:29.006Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2add8722ac23ac1efbf13","__v":0}
-2024-09-24T12:17:29.026Z [[32minfo[39m]: Deleted new product with id {"_id":"66f2add8722ac23ac1efbf13","name":"Sample Product","quantity":100,"price":50,"__v":0}
-2024-09-24T12:17:29.033Z [[31merror[39m]: Product with 66f2add8722ac23ac1efbf13 not found
-2024-09-24T12:17:29.041Z [[31merror[39m]: Product with id 123456789012345678901234 is not found
-2024-09-24T12:42:43.078Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b3c2a2d39511917150db","__v":0}
-2024-09-24T12:42:43.133Z [[31merror[39m]: failed to add product: Product validation failed: name: Path `name` is required.
-2024-09-24T12:42:43.159Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b3c3a2d39511917150e0","__v":0}
-2024-09-24T12:42:43.229Z [[32minfo[39m]: Retrieved product: {"_id":"66f2b3c3a2d39511917150e0","name":"Sample Product","quantity":100,"price":50,"__v":0}
-2024-09-24T12:42:43.249Z [[31merror[39m]: Product with 123456789012345678901234 not found
-2024-09-24T12:42:43.262Z [[32minfo[39m]: Added product: {"name":"Product 1","quantity":10,"price":25,"_id":"66f2b3c3a2d39511917150e6","__v":0}
-2024-09-24T12:42:43.265Z [[32minfo[39m]: Added product: {"name":"Product 2","quantity":5,"price":15,"_id":"66f2b3c3a2d39511917150e8","__v":0}
-2024-09-24T12:42:43.298Z [[32minfo[39m]: Retrieved all products: 2 found
-2024-09-24T12:42:43.372Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b3c3a2d39511917150ec","__v":0}
-2024-09-24T12:42:43.406Z [[32minfo[39m]: Updated new product with id {"_id":"66f2b3c3a2d39511917150ec","name":"Sample Product","quantity":200,"price":50,"__v":0}
-2024-09-24T12:42:43.436Z [[31merror[39m]: Product with id 123456789012345678901234 not found!
-2024-09-24T12:42:43.448Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b3c3a2d39511917150f2","__v":0}
-2024-09-24T12:42:43.451Z [[32minfo[39m]: Deleted new product with id {"_id":"66f2b3c3a2d39511917150f2","name":"Sample Product","quantity":100,"price":50,"__v":0}
-2024-09-24T12:42:43.454Z [[31merror[39m]: Product with 66f2b3c3a2d39511917150f2 not found
-2024-09-24T12:42:43.458Z [[31merror[39m]: Product with id 123456789012345678901234 is not found
-2024-09-24T12:44:25.902Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b429d4dbf13d66ac9a7b","__v":0}
-2024-09-24T12:44:25.918Z [[31merror[39m]: failed to add product: Product validation failed: name: Path `name` is required.
-2024-09-24T12:44:25.938Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b429d4dbf13d66ac9a80","__v":0}
-2024-09-24T12:44:25.963Z [[32minfo[39m]: Retrieved product: {"_id":"66f2b429d4dbf13d66ac9a80","name":"Sample Product","quantity":100,"price":50,"__v":0}
-2024-09-24T12:44:25.972Z [[31merror[39m]: Product with 123456789012345678901234 not found
-2024-09-24T12:44:25.977Z [[32minfo[39m]: Added product: {"name":"Product 1","quantity":10,"price":25,"_id":"66f2b429d4dbf13d66ac9a86","__v":0}
-2024-09-24T12:44:25.983Z [[32minfo[39m]: Added product: {"name":"Product 2","quantity":5,"price":15,"_id":"66f2b429d4dbf13d66ac9a88","__v":0}
-2024-09-24T12:44:25.987Z [[32minfo[39m]: Retrieved all products: 2 found
-2024-09-24T12:44:25.995Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b429d4dbf13d66ac9a8c","__v":0}
-2024-09-24T12:44:26.008Z [[32minfo[39m]: Updated new product with id {"_id":"66f2b429d4dbf13d66ac9a8c","name":"Sample Product","quantity":200,"price":50,"__v":0}
-2024-09-24T12:44:26.017Z [[31merror[39m]: Product with id 123456789012345678901234 not found!
-2024-09-24T12:44:26.022Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b42ad4dbf13d66ac9a92","__v":0}
-2024-09-24T12:44:26.025Z [[32minfo[39m]: Deleted new product with id {"_id":"66f2b42ad4dbf13d66ac9a92","name":"Sample Product","quantity":100,"price":50,"__v":0}
-2024-09-24T12:44:26.030Z [[31merror[39m]: Product with 66f2b42ad4dbf13d66ac9a92 not found
-2024-09-24T12:44:26.035Z [[31merror[39m]: Product with id 123456789012345678901234 is not found
-2024-09-24T12:51:49.076Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b5e4bf1abb02bc12c5cc","__v":0}
-2024-09-24T12:51:49.098Z [[31merror[39m]: failed to add product: Product validation failed: name: Path `name` is required.
-2024-09-24T12:51:49.110Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b5e5bf1abb02bc12c5d1","__v":0}
-2024-09-24T12:51:49.132Z [[32minfo[39m]: Retrieved product: {"_id":"66f2b5e5bf1abb02bc12c5d1","name":"Sample Product","quantity":100,"price":50,"__v":0}
-2024-09-24T12:51:49.142Z [[31merror[39m]: Product with 123456789012345678901234 not found
-2024-09-24T12:51:49.156Z [[32minfo[39m]: Added product: {"name":"Product 1","quantity":10,"price":25,"_id":"66f2b5e5bf1abb02bc12c5d7","__v":0}
-2024-09-24T12:51:49.162Z [[32minfo[39m]: Added product: {"name":"Product 2","quantity":5,"price":15,"_id":"66f2b5e5bf1abb02bc12c5d9","__v":0}
-2024-09-24T12:51:49.166Z [[32minfo[39m]: Retrieved all products: 2 found
-2024-09-24T12:51:49.183Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b5e5bf1abb02bc12c5dd","__v":0}
-2024-09-24T12:51:49.209Z [[32minfo[39m]: Updated new product with id {"_id":"66f2b5e5bf1abb02bc12c5dd","name":"Sample Product","quantity":200,"price":50,"__v":0}
-2024-09-24T12:51:49.229Z [[31merror[39m]: Product with id 123456789012345678901234 not found!
-2024-09-24T12:51:49.244Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b5e5bf1abb02bc12c5e3","__v":0}
-2024-09-24T12:51:49.249Z [[32minfo[39m]: Deleted new product with id {"_id":"66f2b5e5bf1abb02bc12c5e3","name":"Sample Product","quantity":100,"price":50,"__v":0}
-2024-09-24T12:51:49.263Z [[31merror[39m]: Product with 66f2b5e5bf1abb02bc12c5e3 not found
-2024-09-24T12:51:49.272Z [[31merror[39m]: Product with id 123456789012345678901234 is not found
-2024-09-24T12:56:03.630Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b6e30ceb5aa9262ca155","__v":0}
-2024-09-24T12:56:03.650Z [[31merror[39m]: failed to add product: Product validation failed: name: Path `name` is required.
-2024-09-24T12:56:03.669Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b6e30ceb5aa9262ca15a","__v":0}
-2024-09-24T12:56:03.703Z [[32minfo[39m]: Retrieved product: {"_id":"66f2b6e30ceb5aa9262ca15a","name":"Sample Product","quantity":100,"price":50,"__v":0}
-2024-09-24T12:56:03.723Z [[31merror[39m]: Product with 123456789012345678901234 not found
-2024-09-24T12:56:03.755Z [[32minfo[39m]: Added product: {"name":"Product 1","quantity":10,"price":25,"_id":"66f2b6e30ceb5aa9262ca160","__v":0}
-2024-09-24T12:56:03.763Z [[32minfo[39m]: Added product: {"name":"Product 2","quantity":5,"price":15,"_id":"66f2b6e30ceb5aa9262ca162","__v":0}
-2024-09-24T12:56:03.774Z [[32minfo[39m]: Retrieved all products: 2 found
-2024-09-24T12:56:03.784Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b6e30ceb5aa9262ca166","__v":0}
-2024-09-24T12:56:03.802Z [[32minfo[39m]: Updated new product with id {"_id":"66f2b6e30ceb5aa9262ca166","name":"Sample Product","quantity":200,"price":50,"__v":0}
-2024-09-24T12:56:03.816Z [[31merror[39m]: Product with id 123456789012345678901234 not found!
-2024-09-24T12:56:03.821Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b6e30ceb5aa9262ca16c","__v":0}
-2024-09-24T12:56:03.825Z [[32minfo[39m]: Deleted new product with id {"_id":"66f2b6e30ceb5aa9262ca16c","name":"Sample Product","quantity":100,"price":50,"__v":0}
-2024-09-24T12:56:03.829Z [[31merror[39m]: Product with 66f2b6e30ceb5aa9262ca16c not found
-2024-09-24T12:56:03.833Z [[31merror[39m]: Product with id 123456789012345678901234 is not found
-2024-09-24T12:57:01.707Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b71de157621add88a6ad","__v":0}
-2024-09-24T12:57:01.724Z [[31merror[39m]: failed to add product: Product validation failed: name: Path `name` is required.
-2024-09-24T12:57:01.731Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b71de157621add88a6b2","__v":0}
-2024-09-24T12:57:01.781Z [[32minfo[39m]: Retrieved product: {"_id":"66f2b71de157621add88a6b2","name":"Sample Product","quantity":100,"price":50,"__v":0}
-2024-09-24T12:57:01.796Z [[31merror[39m]: Product with 123456789012345678901234 not found
-2024-09-24T12:57:01.809Z [[32minfo[39m]: Added product: {"name":"Product 1","quantity":10,"price":25,"_id":"66f2b71de157621add88a6b8","__v":0}
-2024-09-24T12:57:01.814Z [[32minfo[39m]: Added product: {"name":"Product 2","quantity":5,"price":15,"_id":"66f2b71de157621add88a6ba","__v":0}
-2024-09-24T12:57:01.825Z [[32minfo[39m]: Retrieved all products: 2 found
-2024-09-24T12:57:01.847Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b71de157621add88a6be","__v":0}
-2024-09-24T12:57:01.860Z [[32minfo[39m]: Updated new product with id {"_id":"66f2b71de157621add88a6be","name":"Sample Product","quantity":200,"price":50,"__v":0}
-2024-09-24T12:57:01.869Z [[31merror[39m]: Product with id 123456789012345678901234 not found!
-2024-09-24T12:57:01.874Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b71de157621add88a6c4","__v":0}
-2024-09-24T12:57:01.884Z [[32minfo[39m]: Deleted new product with id {"_id":"66f2b71de157621add88a6c4","name":"Sample Product","quantity":100,"price":50,"__v":0}
-2024-09-24T12:57:01.890Z [[31merror[39m]: Product with 66f2b71de157621add88a6c4 not found
-2024-09-24T12:57:01.899Z [[31merror[39m]: Product with id 123456789012345678901234 is not found
-2024-09-24T12:59:02.406Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b796164b939f768f8a79","__v":0}
-2024-09-24T12:59:02.423Z [[31merror[39m]: failed to add product: Product validation failed: name: Path `name` is required.
-2024-09-24T12:59:02.444Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":-10,"price":50,"_id":"66f2b796164b939f768f8a7e","__v":0}
-2024-09-24T12:59:02.479Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b796164b939f768f8a81","__v":0}
-2024-09-24T12:59:02.498Z [[32minfo[39m]: Retrieved product: {"_id":"66f2b796164b939f768f8a81","name":"Sample Product","quantity":100,"price":50,"__v":0}
-2024-09-24T12:59:02.508Z [[31merror[39m]: Product with 123456789012345678901234 not found
-2024-09-24T12:59:02.517Z [[32minfo[39m]: Added product: {"name":"Product 1","quantity":10,"price":25,"_id":"66f2b796164b939f768f8a87","__v":0}
-2024-09-24T12:59:02.525Z [[32minfo[39m]: Added product: {"name":"Product 2","quantity":5,"price":15,"_id":"66f2b796164b939f768f8a89","__v":0}
-2024-09-24T12:59:02.528Z [[32minfo[39m]: Retrieved all products: 2 found
-2024-09-24T12:59:02.548Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b796164b939f768f8a8d","__v":0}
-2024-09-24T12:59:02.558Z [[32minfo[39m]: Updated new product with id {"_id":"66f2b796164b939f768f8a8d","name":"Sample Product","quantity":200,"price":50,"__v":0}
-2024-09-24T12:59:02.566Z [[31merror[39m]: Product with id 123456789012345678901234 not found!
-2024-09-24T12:59:02.590Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b796164b939f768f8a93","__v":0}
-2024-09-24T12:59:02.594Z [[32minfo[39m]: Deleted new product with id {"_id":"66f2b796164b939f768f8a93","name":"Sample Product","quantity":100,"price":50,"__v":0}
-2024-09-24T12:59:02.604Z [[31merror[39m]: Product with 66f2b796164b939f768f8a93 not found
-2024-09-24T12:59:02.610Z [[31merror[39m]: Product with id 123456789012345678901234 is not found
-2024-09-24T13:04:06.484Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b8c63ff3674c1ad9e604","__v":0}
-2024-09-24T13:04:06.501Z [[31merror[39m]: failed to add product: Product validation failed: name: Path `name` is required.
-2024-09-24T13:04:06.506Z [[31merror[39m]: failed to add product: Product validation failed: quantity: Path `quantity` (-10) is less than minimum allowed value (0).
-2024-09-24T13:04:06.524Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b8c63ff3674c1ad9e60b","__v":0}
-2024-09-24T13:04:06.539Z [[32minfo[39m]: Retrieved product: {"_id":"66f2b8c63ff3674c1ad9e60b","name":"Sample Product","quantity":100,"price":50,"__v":0}
-2024-09-24T13:04:06.565Z [[31merror[39m]: Product with 123456789012345678901234 not found
-2024-09-24T13:04:06.570Z [[32minfo[39m]: Added product: {"name":"Product 1","quantity":10,"price":25,"_id":"66f2b8c63ff3674c1ad9e611","__v":0}
-2024-09-24T13:04:06.576Z [[32minfo[39m]: Added product: {"name":"Product 2","quantity":5,"price":15,"_id":"66f2b8c63ff3674c1ad9e613","__v":0}
-2024-09-24T13:04:06.583Z [[32minfo[39m]: Retrieved all products: 2 found
-2024-09-24T13:04:06.607Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b8c63ff3674c1ad9e617","__v":0}
-2024-09-24T13:04:06.621Z [[32minfo[39m]: Updated new product with id {"_id":"66f2b8c63ff3674c1ad9e617","name":"Sample Product","quantity":200,"price":50,"__v":0}
-2024-09-24T13:04:06.628Z [[31merror[39m]: Product with id 123456789012345678901234 not found!
-2024-09-24T13:04:06.636Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b8c63ff3674c1ad9e61d","__v":0}
-2024-09-24T13:04:06.641Z [[32minfo[39m]: Deleted new product with id {"_id":"66f2b8c63ff3674c1ad9e61d","name":"Sample Product","quantity":100,"price":50,"__v":0}
-2024-09-24T13:04:06.646Z [[31merror[39m]: Product with 66f2b8c63ff3674c1ad9e61d not found
-2024-09-24T13:04:06.650Z [[31merror[39m]: Product with id 123456789012345678901234 is not found
-2024-09-24T13:08:05.645Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b9b54899d9076ac77214","__v":0}
-2024-09-24T13:08:05.662Z [[31merror[39m]: failed to add product: Product validation failed: name: Path `name` is required.
-2024-09-24T13:08:05.667Z [[31merror[39m]: failed to add product: Product validation failed: quantity: Path `quantity` (-10) is less than minimum allowed value (0).
-2024-09-24T13:08:05.672Z [[31merror[39m]: failed to add product: Product validation failed: price: Path `price` (-50) is less than minimum allowed value (0).
-2024-09-24T13:08:05.679Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b9b54899d9076ac7721d","__v":0}
-2024-09-24T13:08:05.689Z [[32minfo[39m]: Retrieved product: {"_id":"66f2b9b54899d9076ac7721d","name":"Sample Product","quantity":100,"price":50,"__v":0}
-2024-09-24T13:08:05.697Z [[31merror[39m]: Product with 123456789012345678901234 not found
-2024-09-24T13:08:05.703Z [[32minfo[39m]: Added product: {"name":"Product 1","quantity":10,"price":25,"_id":"66f2b9b54899d9076ac77223","__v":0}
-2024-09-24T13:08:05.707Z [[32minfo[39m]: Added product: {"name":"Product 2","quantity":5,"price":15,"_id":"66f2b9b54899d9076ac77225","__v":0}
-2024-09-24T13:08:05.711Z [[32minfo[39m]: Retrieved all products: 2 found
-2024-09-24T13:08:05.731Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b9b54899d9076ac77229","__v":0}
-2024-09-24T13:08:05.752Z [[32minfo[39m]: Updated new product with id {"_id":"66f2b9b54899d9076ac77229","name":"Sample Product","quantity":200,"price":50,"__v":0}
-2024-09-24T13:08:05.758Z [[31merror[39m]: Product with id 123456789012345678901234 not found!
-2024-09-24T13:08:05.766Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":100,"price":50,"_id":"66f2b9b54899d9076ac7722f","__v":0}
-2024-09-24T13:08:05.770Z [[32minfo[39m]: Deleted new product with id {"_id":"66f2b9b54899d9076ac7722f","name":"Sample Product","quantity":100,"price":50,"__v":0}
-2024-09-24T13:08:05.773Z [[31merror[39m]: Product with 66f2b9b54899d9076ac7722f not found
-2024-09-24T13:08:05.776Z [[31merror[39m]: Product with id 123456789012345678901234 is not found
-2024-10-01T14:51:08.170Z [[31merror[39m]: 400 = Custom error message
-2024-10-01T14:51:08.204Z [[31merror[39m]: 500 - Something went wrong
-2024-10-02T09:43:53.710Z [[31merror[39m]: failed to add product: Product validation failed: price: Path `price` is required., quantity: Path `quantity` is required.
-2024-10-02T09:44:45.492Z [[31merror[39m]: failed to add product: Product validation failed: price: Path `price` is required., quantity: Path `quantity` is required.
-2024-10-02T12:16:19.539Z [[32minfo[39m]: Connected to MongoDB Atlas
-2024-10-02T12:17:14.857Z [[32minfo[39m]: Connected to MongoDB Atlas
-2024-10-02T12:20:13.048Z [[32minfo[39m]: Connected to MongoDB Atlas
-2024-10-02T12:20:13.110Z [[32minfo[39m]: Server running on port 5000 in development mode
-2024-10-02T12:26:07.259Z [[32minfo[39m]: Connected to MongoDB Atlas
-2024-10-02T12:26:07.267Z [[32minfo[39m]: Server running on port 5000 in development mode
-2024-10-02T12:26:16.168Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":10,"price":19.99,"_id":"66fd3be822c3d04858e717ac","__v":0}
-2024-10-02T12:27:22.052Z [[32minfo[39m]: Retrieved all products: 1 found
-2024-10-02T12:27:55.799Z [[32minfo[39m]: Retrieved all products: 1 found
-2024-10-02T12:28:16.585Z [[32minfo[39m]: Retrieved product: {"_id":"66fd3be822c3d04858e717ac","name":"Sample Product","quantity":10,"price":19.99,"__v":0}
-2024-10-02T12:28:22.150Z [[32minfo[39m]: Deleted new product with id {"_id":"66fd3be822c3d04858e717ac","name":"Sample Product","quantity":10,"price":19.99,"__v":0}
-2024-10-02T12:31:00.850Z [[32minfo[39m]: Retrieved all products: 0 found
-2024-10-02T12:31:00.866Z [[32minfo[39m]: Retreived all users: 0 found
-2024-10-02T12:33:58.293Z [[32minfo[39m]: Retrieved all products: 0 found
-2024-10-02T12:33:58.320Z [[32minfo[39m]: Retreived all users: 0 found
-2024-10-02T12:36:06.031Z [[32minfo[39m]: Retrieved all products: 0 found
-2024-10-02T12:36:06.123Z [[32minfo[39m]: Retreived all users: 0 found
-2024-10-02T12:40:48.421Z [[32minfo[39m]: Retrieved all products: 0 found
-2024-10-02T12:40:48.497Z [[32minfo[39m]: Retreived all users: 0 found
-2024-10-02T12:43:45.398Z [[32minfo[39m]: Retrieved all products: 0 found
-2024-10-02T12:43:45.430Z [[32minfo[39m]: Retreived all users: 0 found
-2024-10-02T12:43:52.679Z [[32minfo[39m]: Retrieved all products: 0 found
-2024-10-02T12:43:52.785Z [[32minfo[39m]: Retreived all users: 0 found
-2024-10-02T12:44:22.757Z [[32minfo[39m]: Retrieved all products: 0 found
-2024-10-02T12:44:22.774Z [[32minfo[39m]: Retreived all users: 0 found
-2024-10-02T12:44:25.819Z [[32minfo[39m]: Retrieved all products: 0 found
-2024-10-02T12:44:25.846Z [[32minfo[39m]: Retreived all users: 0 found
-2024-10-02T12:47:55.346Z [[32minfo[39m]: Retrieved all products: 0 found
-2024-10-02T12:47:55.375Z [[32minfo[39m]: Retreived all users: 0 found
-2024-10-02T12:48:01.931Z [[32minfo[39m]: Retrieved all products: 0 found
-2024-10-02T12:48:01.952Z [[32minfo[39m]: Retreived all users: 0 found
-2024-10-02T12:50:20.216Z [[32minfo[39m]: Retrieved all products: 0 found
-2024-10-02T12:50:20.261Z [[32minfo[39m]: Retreived all users: 0 found
-2024-10-02T12:50:20.269Z [[32minfo[39m]: Error connecting to MongoDB Atlas: MongooseError: Can't call `openUri()` on an active connection with different connection strings. Make sure you aren't calling `mongoose.connect()` multiple times. See: https://mongoosejs.com/docs/connections.html#multiple_connections
-2024-10-02T12:50:25.843Z [[32minfo[39m]: Retrieved all products: 0 found
-2024-10-02T12:50:25.862Z [[32minfo[39m]: Retreived all users: 0 found
-2024-10-02T13:00:10.970Z [[32minfo[39m]: Retrieved all products: 0 found
-2024-10-02T13:00:11.032Z [[32minfo[39m]: Retreived all users: 0 found
-2024-10-02T13:00:11.080Z [[32minfo[39m]: Server running on port 5000
-2024-10-02T13:00:11.084Z [[32minfo[39m]: Retrieved all products: 0 found
-2024-10-02T13:00:16.400Z [[32minfo[39m]: Retrieved all products: 0 found
-2024-10-02T13:00:16.441Z [[32minfo[39m]: Retreived all users: 0 found
-2024-10-02T13:01:14.887Z [[32minfo[39m]: Retrieved all products: 0 found
-2024-10-02T13:01:14.915Z [[32minfo[39m]: Retreived all users: 0 found
-2024-10-02T13:01:14.919Z [[32minfo[39m]: Server running on port 5000
-2024-10-02T13:01:14.927Z [[32minfo[39m]: Retrieved all products: 0 found
-2024-10-02T13:01:22.125Z [[32minfo[39m]: Retrieved all products: 0 found
-2024-10-02T13:01:22.146Z [[32minfo[39m]: Retreived all users: 0 found
-2024-10-02T13:07:22.860Z [[32minfo[39m]: Retrieved all products: 0 found
-2024-10-02T13:07:22.885Z [[32minfo[39m]: Retreived all users: 0 found
-2024-10-02T13:07:22.895Z [[32minfo[39m]: Server running on port 5000
-2024-10-02T13:07:22.901Z [[32minfo[39m]: Retrieved all products: 0 found
-2024-10-02T13:07:30.634Z [[32minfo[39m]: Error connecting to MongoDB Atlas: MongooseError: Can't call `openUri()` on an active connection with different connection strings. Make sure you aren't calling `mongoose.connect()` multiple times. See: https://mongoosejs.com/docs/connections.html#multiple_connections
-2024-10-02T13:07:30.637Z [[31merror[39m]: Error starting server: Can't call `openUri()` on an active connection with different connection strings. Make sure you aren't calling `mongoose.connect()` multiple times. See: https://mongoosejs.com/docs/connections.html#multiple_connections
-2024-10-02T13:09:18.428Z [[32minfo[39m]: Retrieved all products: 0 found
-2024-10-02T13:09:18.508Z [[32minfo[39m]: Retreived all users: 0 found
-2024-10-02T13:09:18.515Z [[32minfo[39m]: Server running on port 5000
-2024-10-02T13:09:18.520Z [[32minfo[39m]: Retrieved all products: 0 found
-2024-10-03T09:16:05.799Z [[32minfo[39m]: Retrieved all products: 0 found
-2024-10-03T09:16:05.827Z [[32minfo[39m]: Retreived all users: 0 found
-2024-10-03T09:16:05.831Z [[32minfo[39m]: Server running on port 5000
-2024-10-03T09:16:05.840Z [[32minfo[39m]: Retrieved all products: 0 found
-2024-10-03T09:18:40.384Z [[32minfo[39m]: Retrieved all products: 0 found
-2024-10-03T09:18:40.419Z [[32minfo[39m]: Retreived all users: 0 found
-2024-10-03T09:18:40.424Z [[32minfo[39m]: Server running on port 5000
-2024-10-03T09:18:40.433Z [[32minfo[39m]: Retrieved all products: 0 found
-2024-10-03T10:04:12.001Z [[32minfo[39m]: Retrieved all products: 0 found
-2024-10-03T10:04:12.059Z [[32minfo[39m]: Retreived all users: 0 found
-2024-10-03T10:04:12.064Z [[32minfo[39m]: Server running on port 5000
-2024-10-03T10:04:12.067Z [[32minfo[39m]: Retrieved all products: 0 found
-2024-10-03T11:18:01.721Z [[32minfo[39m]: Connected to MongoDB Atlas
-2024-10-03T11:18:01.731Z [[32minfo[39m]: Server running on port 5000 in development mode
-2024-10-03T11:19:32.048Z [[32minfo[39m]: Connected to MongoDB Atlas
-2024-10-03T11:19:32.054Z [[32minfo[39m]: Server running on port 5000 in development mode
-2024-10-03T11:19:53.216Z [[32minfo[39m]: Added user: {"name":"John Doe","email":"john@example.com","password":"$2a$10$h8FgyEvsuL/xnHDMoJ47J.XsAgCMlO1Zrj33dnSRIQjMNz2UDj4s6","role":"user","_id":"66fe7dd9cd6725bb161f914b","createdAt":"2024-10-03T11:19:53.161Z","updatedAt":"2024-10-03T11:19:53.161Z","__v":0}
-2024-10-03T11:20:46.862Z [[32minfo[39m]: User john@example.com logged in successfully
-2024-10-03T11:20:59.544Z [[32minfo[39m]: Retreived all users: 1 found
-2024-10-06T07:23:17.473Z [[32minfo[39m]: Connected to MongoDB Atlas
-2024-10-06T07:23:17.480Z [[32minfo[39m]: Server running on port 5000 in development mode
-2024-10-09T20:18:26.335Z [[32minfo[39m]: Connected to MongoDB Atlas
-2024-10-09T20:18:26.343Z [[32minfo[39m]: Server running on port 5000 in development mode
-2024-10-09T20:29:36.155Z [[32minfo[39m]: Connected to MongoDB Atlas
-2024-10-09T20:29:36.163Z [[32minfo[39m]: Server running on port 5000 in development mode
-2024-10-09T20:30:59.990Z [[32minfo[39m]: Added user: {"name":"milan","email":"shubaevmilan@gmail.com","password":"$2a$10$IPgV7ZEt9S//IBQww0HhsuY2O3PdQBLP.PTvNRSI065/ijTiO28Tm","role":"user","_id":"6706e80342cd0227b4ef6eee","createdAt":"2024-10-09T20:30:59.912Z","updatedAt":"2024-10-09T20:30:59.912Z","__v":0}
-2024-10-09T20:39:30.357Z [[31merror[39m]: failed to add user: E11000 duplicate key error collection: milanshub.users index: email_1 dup key: { email: "shubaevmilan@gmail.com" }
-2024-10-09T20:41:13.406Z [[31merror[39m]: failed to add user: E11000 duplicate key error collection: milanshub.users index: email_1 dup key: { email: "shubaevmilan@gmail.com" }
-2024-10-09T20:43:19.014Z [[31merror[39m]: failed to add user: User validation failed: email: Path `email` is invalid (m@m).
-2024-10-09T20:46:14.443Z [[32minfo[39m]: Connected to MongoDB Atlas
-2024-10-09T20:46:14.453Z [[32minfo[39m]: Server running on port 5000 in development mode
-2024-10-09T20:46:34.361Z [[31merror[39m]: failed to add user: User validation failed: email: Path `email` is invalid (go@go).
-2024-10-09T20:46:57.207Z [[31merror[39m]: failed to add user: E11000 duplicate key error collection: milanshub.users index: email_1 dup key: { email: "shubaevmilan@gmail.com" }
-2024-10-09T20:48:06.597Z [[32minfo[39m]: Added user: {"name":"milan","email":"shubaevmilan@gmail.com","password":"$2a$10$PqKItZpypyioNx6Gx3TEVuvDF2hcNAoHENCtJPOiYVJLy2pnTSpr.","role":"user","_id":"6706ec069c0db89b5b275fef","createdAt":"2024-10-09T20:48:06.548Z","updatedAt":"2024-10-09T20:48:06.548Z","__v":0}
-2024-10-09T20:50:39.560Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
-2024-10-09T20:57:04.949Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
-2024-10-09T20:57:53.980Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
-2024-10-09T20:58:29.011Z [[31merror[39m]: failed to add user: User validation failed: email: Path `email` is invalid (m@m).
-2024-10-09T20:58:44.928Z [[31merror[39m]: User with email m@m not found
-2024-10-09T20:58:50.297Z [[31merror[39m]: User with email m@m not found
-2024-10-09T20:59:27.368Z [[32minfo[39m]: Added user: {"name":"44","email":"4@4.com","password":"$2a$10$6l428iBq9DS5xhasDa0.le79S8TgebEXMf/YUx3A.527tgmdjWueO","role":"user","_id":"6706eeaf9c0db89b5b275ff7","createdAt":"2024-10-09T20:59:27.311Z","updatedAt":"2024-10-09T20:59:27.311Z","__v":0}
-2024-10-09T20:59:56.883Z [[32minfo[39m]: User 4@4.com logged in successfully
-2024-10-10T08:47:41.317Z [[32minfo[39m]: Connected to MongoDB Atlas
-2024-10-10T08:47:41.323Z [[32minfo[39m]: Server running on port 5000 in development mode
-2024-10-10T08:48:02.318Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
-2024-10-10T15:28:18.981Z [[32minfo[39m]: Connected to MongoDB Atlas
-2024-10-10T15:28:18.987Z [[32minfo[39m]: Server running on port 5000 in development mode
-2024-10-10T15:29:23.276Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
-2024-10-10T15:43:18.573Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
-2024-10-10T15:44:38.892Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
-2024-10-10T15:48:38.319Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
-2024-10-10T15:53:16.853Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
-2024-10-10T15:53:52.778Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
-2024-10-10T16:07:45.009Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
-2024-10-10T16:07:55.347Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-14T17:09:08.936Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-10-14T17:09:08.945Z [[32minfo[39m]: Server running on port 5000 in development mode
+2024-10-14T17:09:09.805Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-14T17:09:11.626Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:11.702Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:11.746Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:11.785Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:11.823Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:11.859Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:11.896Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:11.933Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:12.012Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:12.053Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:12.146Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:12.186Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:12.222Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:12.264Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:12.318Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:12.365Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:12.402Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:12.439Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:12.475Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:12.522Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:12.585Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:12.640Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:12.676Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:12.711Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:12.751Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:12.817Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:12.864Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:12.900Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:12.936Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:12.970Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:13.028Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:13.080Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:13.127Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:13.162Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:13.197Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:13.233Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:13.313Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:13.351Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:13.401Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:13.435Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:13.470Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:13.505Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:13.545Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:13.582Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:13.617Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:13.653Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:13.688Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:13.725Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:13.763Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:13.798Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:13.834Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:13.870Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:13.905Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:13.940Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:13.975Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:14.011Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:14.070Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:14.115Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:14.149Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:14.185Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:14.220Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:14.259Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:14.308Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:14.349Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:14.400Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:14.435Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:14.471Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:14.512Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:14.550Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:14.586Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:14.622Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:14.660Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:14.704Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:14.738Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:14.787Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:14.842Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:14.893Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:14.928Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:14.963Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:14.999Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:15.043Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:15.078Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:15.113Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:15.183Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:15.238Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:15.276Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:15.316Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:15.352Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:15.388Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:15.423Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:15.459Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:15.494Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:15.530Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:15.565Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:15.600Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:15.650Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:15.743Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:15.779Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:15.814Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:15.849Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:15.888Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:15.947Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:15.995Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:16.030Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:16.065Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:16.132Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:16.169Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:16.207Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:16.247Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:16.308Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:16.355Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:16.400Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:16.435Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:16.469Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:16.506Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:16.552Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:16.594Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:16.628Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:16.665Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:16.703Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:16.738Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:16.773Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:16.809Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:16.844Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:16.880Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:16.935Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:16.994Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:17.033Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:17.067Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:17.101Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:17.137Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:17.173Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:17.209Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:17.245Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:17.280Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:17.315Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:17.351Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:17.398Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:17.466Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:17.514Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:17.550Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:17.584Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:17.629Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:17.683Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:17.735Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:17.786Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:17.836Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:17.890Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:17.938Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:18.026Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:18.061Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:18.097Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:18.132Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:18.167Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:18.203Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:18.239Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:18.279Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:18.324Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:18.377Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:18.417Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:18.452Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:18.486Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:18.522Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:18.556Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:18.592Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:18.628Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:18.685Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:18.728Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:18.776Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:18.811Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:18.847Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:18.903Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:18.965Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:19.005Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:19.040Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:19.074Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:19.109Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:19.144Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:19.179Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:19.215Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:19.254Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:19.288Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:19.324Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:19.358Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:19.395Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:19.440Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:19.477Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:19.515Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:19.551Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:19.586Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:19.622Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:19.657Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:19.693Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:19.731Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:19.766Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:19.821Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:19.880Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:19.930Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:20.141Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:20.177Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:20.214Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:20.249Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:20.286Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:20.320Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:20.355Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:20.390Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:20.424Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:20.459Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:20.494Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:20.579Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:20.645Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:20.713Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:20.780Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:20.815Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:20.853Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:20.890Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:20.925Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:20.960Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:21.000Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:21.051Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:21.087Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:21.123Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:21.159Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:21.194Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:21.229Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:21.265Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:21.299Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:21.334Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:21.368Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:21.423Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:21.466Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:21.501Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:21.536Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:21.570Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:21.604Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:21.640Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:21.674Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:21.709Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:21.744Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:21.794Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:21.843Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:21.883Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:21.919Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:21.954Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:21.988Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:22.028Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:22.076Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:22.117Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:22.154Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:22.189Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:22.223Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:22.260Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:22.312Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:22.357Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:22.398Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:22.435Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:22.469Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:22.511Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:22.561Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:22.614Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:22.654Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:22.688Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:22.723Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:22.763Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:22.811Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:22.864Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:22.904Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:22.939Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:22.974Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:23.012Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:23.057Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:23.096Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:23.134Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:23.168Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:23.202Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:23.236Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:23.272Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:23.308Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:23.343Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:23.377Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:23.413Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:23.448Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:23.483Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:23.518Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:23.553Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:23.588Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:23.628Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:23.678Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:23.719Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:23.762Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:23.796Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:23.831Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:23.865Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:23.903Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:23.941Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:23.976Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:24.012Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:24.047Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:24.082Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:24.116Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:24.152Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:24.188Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:24.223Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:24.281Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:24.326Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:24.360Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:24.396Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:24.451Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:24.494Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:24.538Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:24.573Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:24.609Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:24.659Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:24.693Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:24.814Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:24.887Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:24.965Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:25.039Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:25.075Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:25.110Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:25.151Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:25.241Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:25.282Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:25.328Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:25.362Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:25.402Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:25.436Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:25.472Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:25.510Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:25.551Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:25.594Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:25.631Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:25.665Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:25.700Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:25.735Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:25.770Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:25.820Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:25.908Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:25.958Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:26.008Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:26.060Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:26.123Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:26.161Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:26.206Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:26.270Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:26.324Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:26.402Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:26.457Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:26.508Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:26.563Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:26.617Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:26.676Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:26.747Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:26.801Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:26.852Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:26.907Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:26.959Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:27.011Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:27.055Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:27.101Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:27.145Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:27.185Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:27.223Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:27.260Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:27.301Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:27.355Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:27.396Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:27.441Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:27.480Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:27.519Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:27.554Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:27.588Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:27.623Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:27.659Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:27.694Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:27.729Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:27.764Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:27.800Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:27.835Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:27.870Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:27.905Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:27.942Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:27.977Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:28.011Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:28.047Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:28.082Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:28.118Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:28.153Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:28.189Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:28.225Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:28.261Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:28.296Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:28.331Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:28.366Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:28.401Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:28.438Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:28.473Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:28.508Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:28.543Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:28.579Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:28.614Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:28.650Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:28.689Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:28.724Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:28.759Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:28.794Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:28.829Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:28.864Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:28.900Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:28.935Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:28.972Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:29.015Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:29.064Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:29.120Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:29.171Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:29.224Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:29.273Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:29.311Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:29.348Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:29.389Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:29.437Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:29.476Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:29.515Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:29.558Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:29.593Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:29.630Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:29.667Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:29.704Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:29.742Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:29.778Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:29.814Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:29.849Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:29.884Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:29.918Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:29.953Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:29.988Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:30.026Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:30.061Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:30.097Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:30.133Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:30.180Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:30.219Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:30.260Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:30.294Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:30.329Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:30.363Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:30.399Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:30.434Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:30.470Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:30.506Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:30.541Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:30.576Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:30.611Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:30.646Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:30.681Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:30.716Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:30.751Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:30.785Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:30.827Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:30.863Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:30.901Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:30.945Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:30.984Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:31.028Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:31.099Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:31.139Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:31.184Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:31.224Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:31.263Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:31.299Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:31.345Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:31.381Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:31.420Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:31.454Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:31.489Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:31.525Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:31.559Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:31.595Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:31.630Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:31.665Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:31.700Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:31.735Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:31.770Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:31.805Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:31.841Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:31.878Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:31.914Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:31.951Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:31.986Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:32.021Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:32.055Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:32.089Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:32.124Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:32.159Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:32.193Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:32.228Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:32.264Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:32.299Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:32.335Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:32.370Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:32.406Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:32.441Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:32.484Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:32.520Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:32.555Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:32.589Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:32.625Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:32.660Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:32.697Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:32.736Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:32.772Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:32.807Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:32.842Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:32.876Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:32.912Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:32.954Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:32.991Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:33.027Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:33.062Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:33.096Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:33.130Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:33.165Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:33.199Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:33.233Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:33.267Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:33.302Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:33.336Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:33.371Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:33.416Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:33.474Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:33.530Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:33.568Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:33.603Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:33.644Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:33.747Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:33.755Z [[31merror[39m]: Failed to update new product with id undefined: Invalid product ID!
+2024-10-14T17:09:33.786Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:33.821Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:33.857Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:33.894Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:33.932Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:33.971Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:34.013Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:34.051Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:34.087Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:34.122Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:34.158Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:34.193Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:34.230Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:34.266Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:34.301Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:34.336Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:34.371Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:34.407Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:34.445Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:34.493Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:34.536Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:34.570Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:34.605Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:34.653Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:34.709Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:34.754Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:34.791Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:34.825Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:34.859Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:34.903Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:34.960Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:35.007Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:35.042Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:35.076Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:35.111Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:35.146Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:35.181Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:35.217Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:35.272Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:35.309Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:35.345Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:35.388Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:35.425Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:35.459Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:35.494Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:35.530Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:35.590Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:35.635Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:35.671Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:35.709Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:35.743Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:35.778Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:35.823Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:35.868Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:35.910Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:35.944Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:35.978Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:36.013Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:36.048Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:36.085Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:36.120Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:36.156Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:36.191Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:36.225Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:36.267Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:36.314Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:36.356Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:36.397Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:36.432Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:36.467Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:36.501Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:36.539Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:36.574Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:36.608Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:36.647Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:36.692Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:36.751Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:36.791Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:36.831Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:36.869Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:36.905Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:36.940Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:36.976Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:37.012Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:37.046Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:37.082Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:37.120Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:37.156Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:37.191Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:37.228Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:37.264Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:37.303Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:37.342Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:37.382Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:37.420Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:37.454Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:37.519Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:37.560Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:37.595Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:37.630Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:37.722Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:37.772Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:37.822Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:37.874Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:38.284Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:38.339Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:38.389Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:38.446Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:38.509Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:38.560Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:38.612Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:38.663Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:38.699Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:38.735Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:38.770Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:38.819Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:38.870Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:38.926Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:38.978Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:39.029Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:39.064Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:39.108Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:39.144Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:39.178Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:39.213Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:39.248Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:39.286Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:39.329Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:39.392Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:39.439Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:39.481Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:39.535Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:39.584Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:39.650Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:39.686Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:39.725Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:39.764Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:39.800Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:39.835Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:39.870Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:39.907Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:39.954Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:40.002Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:40.046Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:40.080Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:40.115Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:40.156Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:40.199Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:40.246Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:40.289Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:40.324Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:40.358Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:40.397Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:40.446Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:40.500Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:40.538Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:40.577Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:40.616Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:40.651Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:40.686Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:40.721Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:40.756Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:40.791Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:40.826Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:40.862Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:40.899Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:40.935Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:40.971Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:41.010Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:41.044Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:41.079Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:41.113Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:41.148Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:41.183Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:41.218Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:41.253Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:41.298Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:41.335Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:41.370Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:41.404Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:41.440Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:41.475Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:41.513Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:41.552Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:41.600Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:41.655Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:41.706Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:41.752Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:41.789Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:41.829Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:41.866Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:41.906Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:41.950Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:41.985Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:42.019Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:42.055Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:42.091Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:42.126Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:42.161Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:42.197Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:42.232Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:42.268Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:42.302Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:42.338Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:42.372Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:42.407Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:42.442Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:42.479Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:42.515Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:42.553Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:42.589Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:42.630Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:42.665Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:42.699Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:42.733Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:42.769Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:42.808Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:42.848Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:42.885Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:42.920Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:42.955Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:42.993Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:43.030Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:43.122Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:43.156Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:43.190Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:43.225Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:43.259Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:43.320Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:43.361Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:43.404Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:43.438Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:43.472Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:43.506Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:43.547Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:43.594Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:43.643Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:43.695Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:43.745Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:43.787Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:43.821Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:43.856Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:43.893Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:43.938Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:43.976Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:44.017Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:44.053Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:44.087Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:44.123Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:44.158Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:44.198Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:44.234Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:44.270Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:44.304Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:44.339Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:44.374Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:44.411Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:44.455Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:44.498Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:44.536Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:44.571Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:44.638Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:44.674Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:44.709Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:44.745Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:44.781Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:44.817Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:44.853Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:44.889Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:44.926Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:44.961Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:45.002Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:45.037Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:45.073Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:45.107Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:45.152Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:45.197Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:45.245Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:45.291Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:45.325Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:45.359Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:45.398Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:45.441Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:45.486Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:45.526Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:45.562Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:45.596Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:45.631Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:45.665Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:45.717Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:45.769Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:45.815Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:45.856Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:45.895Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:45.941Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:45.979Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:46.024Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:46.059Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:46.094Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:46.128Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:46.165Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:46.211Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:46.261Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:46.296Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:46.330Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:46.365Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:46.433Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:46.474Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:46.518Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:46.554Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:46.590Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:46.625Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:46.667Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:46.712Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:46.762Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:46.797Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:46.832Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:46.867Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:46.908Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:46.945Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:46.982Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:47.020Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:47.062Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:47.096Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:47.131Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:47.166Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:47.203Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:47.237Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:47.273Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:47.308Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:47.343Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:47.379Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:47.417Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:47.454Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:47.491Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:47.525Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:47.561Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:47.596Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:47.631Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:47.673Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:47.772Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:47.809Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:47.844Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:47.879Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:47.921Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:47.969Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:48.047Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:48.084Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:48.122Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:48.175Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:48.226Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:48.278Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:48.313Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:48.348Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:48.391Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:48.425Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:48.461Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:48.497Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:48.570Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:48.623Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:48.673Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:48.711Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:48.746Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:48.781Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:48.818Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:48.882Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:48.918Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:48.953Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:48.987Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:49.024Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:49.073Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:49.133Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:49.174Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:49.210Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:49.244Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:49.286Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:49.341Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:49.392Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:49.426Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:49.460Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:49.495Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:49.530Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:49.566Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:49.601Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:49.636Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:49.678Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:49.755Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:49.871Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:49.922Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:49.959Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:50.001Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:50.072Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:50.126Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:50.208Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:50.243Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:50.281Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:50.324Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:50.359Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:50.395Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:50.431Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:50.466Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:50.501Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:50.536Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:50.571Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:50.605Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:50.640Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:50.683Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:50.724Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:50.767Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:50.803Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:50.838Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:50.873Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:50.908Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:50.942Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:50.977Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:51.014Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:51.048Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:51.083Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:51.118Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:51.155Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:51.190Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:51.224Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:51.259Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:51.306Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:51.342Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:51.377Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:51.418Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:51.459Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:51.498Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:51.537Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:51.584Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:51.621Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:51.656Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:51.692Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:51.728Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:51.764Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:51.799Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:51.833Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:51.868Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:51.902Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:51.936Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:51.972Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:52.007Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:52.042Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:52.077Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:52.112Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:52.157Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:52.210Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:52.253Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:52.294Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:52.329Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:52.363Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:52.399Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:52.434Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:52.469Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:52.505Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:52.540Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:52.576Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:52.611Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:52.647Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:52.683Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:52.757Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:52.792Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:52.831Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:52.865Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:52.900Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:52.934Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:52.969Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:53.026Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:53.066Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:53.101Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:53.137Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:53.186Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:53.313Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:53.352Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:53.392Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:53.426Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:53.461Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:53.496Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:53.533Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:53.577Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:53.625Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:53.666Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:53.703Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:53.739Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:53.777Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:53.814Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:53.884Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:53.926Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:53.960Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:53.998Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:54.034Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:54.069Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:54.104Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:54.140Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:54.182Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:54.216Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:54.251Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:54.287Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:54.328Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:54.373Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:54.425Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:54.460Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:54.494Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:54.531Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:54.584Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:54.667Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:54.709Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:54.743Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:54.778Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:54.814Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:54.848Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:54.883Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:54.923Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:54.974Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:55.027Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:55.062Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:55.097Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:55.132Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:55.170Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:55.213Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:55.253Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:55.293Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:55.328Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:55.364Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:55.401Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:55.440Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:55.521Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:55.555Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:55.589Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:55.624Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:55.661Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:55.707Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:55.744Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:55.783Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:55.816Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:55.856Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:55.893Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:55.931Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:56.001Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:56.039Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:56.111Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:56.201Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:56.244Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:56.397Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:56.435Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:56.470Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:56.506Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:56.544Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:56.590Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:56.639Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:56.680Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:56.718Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:56.752Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:56.791Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:56.837Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:56.884Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:57.010Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:57.148Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:57.185Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:57.220Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:57.258Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:57.309Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:57.399Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:57.457Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:57.495Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:57.543Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:57.616Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:57.653Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:57.687Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:57.724Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:57.759Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:57.793Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:57.834Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:57.869Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:57.909Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:57.948Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:57.984Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:58.018Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:58.117Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:58.173Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:58.207Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:58.241Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:58.324Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:58.364Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:58.405Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:58.439Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:58.476Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:58.513Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:58.556Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:58.607Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:58.658Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:58.698Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:58.735Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:58.770Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:58.812Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:58.867Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:58.907Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:58.941Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:58.978Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:59.013Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:59.059Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:59.100Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:59.137Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:59.174Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:59.209Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:59.245Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:59.345Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:59.390Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:59.431Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:59.467Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:59.502Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:59.539Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:59.575Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:59.622Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:59.668Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:59.704Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:59.740Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:59.823Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:59.893Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:59.933Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:09:59.971Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:00.007Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:00.054Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:00.103Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:00.177Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:00.212Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:00.249Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:00.288Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:00.324Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:00.363Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:00.399Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:00.435Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:00.480Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:00.515Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:00.551Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:00.599Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:00.645Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:00.682Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:00.717Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:00.752Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:00.788Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:00.822Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:00.858Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:00.893Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:00.928Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:00.963Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:00.998Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:01.033Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:01.069Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:01.103Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:01.138Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:01.185Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:01.237Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:01.281Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:01.316Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:01.351Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:01.385Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:01.423Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:01.458Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:01.492Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:01.526Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:01.561Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:01.595Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:01.629Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:01.665Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:10:01.701Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:17:33.558Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-10-14T17:17:33.564Z [[32minfo[39m]: Server running on port 5000 in development mode
+2024-10-14T17:17:41.789Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-14T17:17:47.731Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:17:47.856Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:17:48.002Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:17:48.045Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:17:48.129Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:17:48.305Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:17:48.345Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:17:48.551Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:17:48.771Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:17:48.821Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:17:48.880Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:17:48.931Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:17:48.980Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:17:49.034Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:20:48.628Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-14T17:20:51.305Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:20:51.418Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:20:51.495Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:20:51.533Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:20:51.570Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:20:51.610Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:20:51.782Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:20:51.819Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:20:51.856Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:20:51.893Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:27:04.649Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-14T17:27:06.717Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:27:06.779Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:27:06.881Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:27:06.929Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:27:06.981Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:27:07.019Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:27:07.056Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:27:07.093Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:27:07.130Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:27:07.191Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:27:07.228Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:27:07.265Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:27:54.377Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-14T17:27:59.394Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:27:59.459Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:27:59.617Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:27:59.664Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:27:59.701Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:27:59.776Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:27:59.837Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:27:59.877Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:27:59.915Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:27:59.954Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:27:59.995Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:28:00.038Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:28:00.080Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:28:00.132Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:28:00.173Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:28:00.239Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:28:22.491Z [[31merror[39m]: Failed to update new product with id undefined: Invalid product ID!
+2024-10-14T17:29:03.070Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-10-14T17:29:03.082Z [[32minfo[39m]: Server running on port 5000 in development mode
+2024-10-14T17:29:18.514Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-14T17:29:20.047Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:29:20.092Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:29:20.133Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:29:20.169Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:29:20.206Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:29:20.243Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:29:20.286Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:29:20.327Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:29:20.390Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:29:20.427Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:29:20.463Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:29:20.508Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:32:58.241Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-14T17:32:59.963Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:33:00.001Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:33:00.048Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:33:00.184Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:33:00.222Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:33:00.258Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:33:00.415Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:33:00.450Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:33:00.577Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:33:00.618Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:34:27.488Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-10-14T17:34:27.514Z [[32minfo[39m]: Server running on port 5000 in development mode
+2024-10-14T17:34:49.969Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-14T17:34:56.562Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:34:56.599Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:34:56.651Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:34:56.731Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:34:56.845Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:34:57.061Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:42:16.407Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-14T17:42:18.221Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:42:18.337Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:42:18.373Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:42:18.407Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:42:18.474Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:42:18.564Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:45:35.513Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-14T17:45:37.015Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:45:37.074Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:45:37.113Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:45:37.155Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:45:37.238Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:45:37.286Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:45:37.376Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:46:00.793Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-14T17:46:02.340Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:46:02.397Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:46:02.430Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:46:02.467Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:46:02.523Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:46:02.622Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:47:11.121Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-14T17:47:12.923Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:47:12.971Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:47:13.005Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:47:13.048Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:47:13.139Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:47:13.369Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:47:46.242Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-14T17:47:48.002Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:47:48.035Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:47:48.069Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:47:48.137Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:47:48.279Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:47:48.369Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:48:06.633Z [[31merror[39m]: Failed to update new product with id undefined: Invalid product ID!
+2024-10-14T17:48:31.785Z [[31merror[39m]: Failed to update new product with id undefined: Invalid product ID!
+2024-10-14T17:51:30.387Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-14T17:51:32.430Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:51:32.472Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:51:32.506Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:51:32.538Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:51:32.717Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:51:32.762Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T17:51:49.015Z [[31merror[39m]: Failed to update new product with id undefined: Invalid product ID!
+2024-10-14T17:52:37.253Z [[32minfo[39m]: Added product: {"name":"44","quantity":1,"price":1,"_id":"670d5a655ec8316cd3924176","__v":0}
+2024-10-14T17:52:37.385Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T17:52:37.495Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T17:52:59.885Z [[31merror[39m]: Failed to update new product with id undefined: Invalid product ID!
+2024-10-14T17:54:28.003Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-14T17:54:29.786Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T17:54:29.834Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T17:54:29.912Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T17:54:29.952Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T17:54:30.100Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T17:54:30.136Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T17:54:56.900Z [[31merror[39m]: Failed to update new product with id undefined: Invalid product ID!
+2024-10-14T17:57:47.754Z [[31merror[39m]: Failed to update new product with id undefined: Invalid product ID!
+2024-10-14T17:57:54.601Z [[31merror[39m]: Failed to update new product with id undefined: Invalid product ID!
+2024-10-14T17:59:07.694Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-14T17:59:09.776Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T17:59:09.829Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T17:59:09.869Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T17:59:09.910Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T17:59:10.051Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T17:59:10.179Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:01:42.521Z [[31merror[39m]: Failed to update new product with id undefined: Invalid product ID!
+2024-10-14T18:01:53.725Z [[31merror[39m]: Failed to update new product with id undefined: Invalid product ID!
+2024-10-14T18:07:12.064Z [[31merror[39m]: failed to add product: Product validation failed: price: Path `price` is required., quantity: Path `quantity` is required., name: Path `name` is required.
+2024-10-14T18:07:36.466Z [[32minfo[39m]: Added product: {"name":"Sample Product","quantity":10,"price":19.99,"_id":"670d5de85ec8316cd3924189","__v":0}
+2024-10-14T18:08:33.993Z [[32minfo[39m]: Retrieved product: {"_id":"670d5de85ec8316cd3924189","name":"Sample Product","quantity":10,"price":19.99,"__v":0}
+2024-10-14T18:08:46.742Z [[32minfo[39m]: Deleted new product with id {"_id":"670d5de85ec8316cd3924189","name":"Sample Product","quantity":10,"price":19.99,"__v":0}
+2024-10-14T18:09:02.087Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:10:04.321Z [[32minfo[39m]: Updated new product with id {"_id":"670d22758ca14a9494465602","name":"table1","quantity":1,"price":10,"__v":0}
+2024-10-14T18:10:19.360Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-14T18:10:21.099Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:10:21.179Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:10:21.222Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:10:21.259Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:10:21.483Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:10:21.593Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:21:06.157Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-14T18:21:08.313Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:21:08.351Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:21:08.391Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:21:08.430Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:21:08.672Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:21:08.883Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:30:46.813Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-14T18:30:48.781Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:30:48.821Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:30:48.863Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:30:48.915Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:30:49.069Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:30:49.304Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:33:25.459Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-14T18:33:27.149Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:33:27.188Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:33:27.224Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:33:27.265Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:33:27.627Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:33:27.807Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:37:06.629Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:37:06.666Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:37:23.818Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-14T18:37:26.061Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:37:26.103Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:37:26.169Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:37:26.210Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:37:26.463Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:37:26.606Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:37:49.704Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:37:49.742Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:44:48.104Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:44:48.144Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:44:58.240Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-14T18:45:00.512Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:45:00.549Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:45:00.588Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:45:00.624Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:45:00.839Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:45:01.026Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:47:20.106Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-14T18:47:22.647Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:47:22.687Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:47:22.731Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:47:22.770Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:47:23.063Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:47:23.190Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:47:56.555Z [[32minfo[39m]: Added product: {"name":"heyya Milannn","quantity":1,"price":11,"_id":"670d675c5ec8316cd39241c6","__v":0}
+2024-10-14T18:47:56.767Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-14T18:47:56.945Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-14T18:52:29.276Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-14T18:52:32.771Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-14T18:52:32.853Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-14T18:52:32.900Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-14T18:52:33.002Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-14T18:52:33.090Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-14T18:52:33.127Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-14T18:52:33.164Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-14T18:52:35.232Z [[32minfo[39m]: Deleted new product with id {"_id":"670d22758ca14a9494465602","name":"table1","quantity":1,"price":10,"__v":0}
+2024-10-14T18:52:35.381Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-14T18:52:37.097Z [[32minfo[39m]: Deleted new product with id {"_id":"670d5a655ec8316cd3924176","name":"44","quantity":1,"price":1,"__v":0}
+2024-10-14T18:52:37.184Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T18:52:42.573Z [[32minfo[39m]: Deleted new product with id {"_id":"670d675c5ec8316cd39241c6","name":"heyya Milannn","quantity":1,"price":11,"__v":0}
+2024-10-14T18:52:42.704Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-10-14T18:52:42.741Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-10-14T18:52:50.300Z [[32minfo[39m]: Added product: {"name":"heyya Milannn","quantity":1,"price":10,"_id":"670d68825ec8316cd39241d9","__v":0}
+2024-10-14T18:52:50.394Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T18:52:50.604Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-14T18:52:56.510Z [[31merror[39m]: Failed to update new product with id undefined: Invalid product ID!

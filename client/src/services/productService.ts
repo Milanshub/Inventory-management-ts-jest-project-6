@@ -42,12 +42,12 @@ export const updateProduct = async (id: string, update: Partial<IProduct>): Prom
     }
 }; 
 
-export const deleteProduct = async (id: string): Promise<void> => {
-    if (!id) {
+export const deleteProduct = async (_id: string): Promise<void> => {
+    if (!_id) {
         throw new Error('Product ID is required');
     }
     try {
-        await api.delete(`/products/${id}`);
+        await api.delete(`/products/${_id}`);
     } catch (error) {
         log.error('Error deleting product', error); 
         throw error; 

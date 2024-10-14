@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import Dashboard from './pages/Dashboard';
+import ProductPage from './pages/ProductPage'; // Import your ProductPage
 import NotFoundPage from './pages/NotFoundPage';
 import ProtectedRoute from './components/ProtectedRoute';
 import MainLayout from './layouts/MainLayout';
@@ -22,6 +23,18 @@ const AppRoutes: React.FC = () => {
           <ProtectedRoute>
             <MainLayout>
               <Dashboard />
+            </MainLayout>
+          </ProtectedRoute>
+        }
+      />
+
+      {/* Wrap ProductPage with MainLayout */}
+      <Route
+        path="/products"
+        element={
+          <ProtectedRoute>
+            <MainLayout>
+              <ProductPage />  {/* ProductPage now accessible */}
             </MainLayout>
           </ProtectedRoute>
         }
