@@ -20,6 +20,7 @@ import {
 } from '@mui/material';
 import { ProductContext } from '../context/ProductContext'; // Import the ProductContext
 import log from '../utils/logger'; // Import the logger for error handling
+import { IProduct } from '../models/productModel';
 
 const ProductList: React.FC = () => {
     const productContext = useContext(ProductContext); // Use the context
@@ -69,23 +70,24 @@ const ProductList: React.FC = () => {
         setSelectedProduct(null);
     };
 
-    const handleUpdate = async () => {
-        if (selectedProduct) {
-            const updateData = {
-                name,
-                quantity,
-                price,
-            };
-            console.log("Updating product with ID:", selectedProduct.id, "Data:", updateData); // Log ID and data
-    
-            try {
-                await updateProduct(selectedProduct.id, updateData);
-                handleCloseDialog(); // Close the dialog on success
-            } catch (error) {
-                log.error('Failed to update product', error);
-            }
+    const handleUpdate = () => {
+        if (!selectedProduct || !selectedProduct._id) {
+            console.error("Product ID is not defined.");
+            return;
         }
+    
+        const updateData = {
+            name: name,     
+            quantity: quantity,
+            price: price
+        };
+    
+       
+        updateProduct(selectedProduct._id, updateData);
+        handleCloseDialog();  
     };
+    
+    
     
 
     const handleDelete = (_id: string) => {

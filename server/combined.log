@@ -1450,3 +1450,82 @@
 2024-10-14T18:52:50.394Z [[32minfo[39m]: Retrieved all products: 1 found
 2024-10-14T18:52:50.604Z [[32minfo[39m]: Retrieved all products: 1 found
 2024-10-14T18:52:56.510Z [[31merror[39m]: Failed to update new product with id undefined: Invalid product ID!
+2024-10-15T05:39:40.243Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-10-15T05:39:40.266Z [[32minfo[39m]: Server running on port 5000 in development mode
+2024-10-15T05:40:42.836Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-15T05:40:45.083Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-15T05:40:45.126Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-15T05:40:45.172Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-15T05:40:45.223Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-15T05:40:45.263Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-15T05:40:45.404Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-15T05:40:45.499Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-15T05:40:49.444Z [[32minfo[39m]: Deleted new product with id {"_id":"670d68825ec8316cd39241d9","name":"heyya Milannn","quantity":1,"price":10,"__v":0}
+2024-10-15T05:40:49.530Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-10-15T05:40:49.573Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-10-15T05:40:58.277Z [[32minfo[39m]: Added product: {"name":"heyya Milannn","quantity":1,"price":1,"_id":"670e006ab4b8248eca2e7a66","__v":0}
+2024-10-15T05:40:58.400Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-15T05:40:58.529Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-15T05:41:05.949Z [[32minfo[39m]: Updated new product with id {"_id":"670e006ab4b8248eca2e7a66","name":"heyya ","quantity":1,"price":1,"__v":0}
+2024-10-15T05:41:06.192Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-15T05:41:48.211Z [[32minfo[39m]: Updated new product with id {"_id":"670e006ab4b8248eca2e7a66","name":"heyya Milan","quantity":1,"price":1,"__v":0}
+2024-10-15T05:41:48.450Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-15T05:42:11.548Z [[32minfo[39m]: Added product: {"name":"heyya Milannn","quantity":1,"price":0,"_id":"670e00b3b4b8248eca2e7a6e","__v":0}
+2024-10-15T05:42:11.632Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-15T05:42:11.752Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-15T05:42:17.779Z [[32minfo[39m]: Added product: {"name":"c","quantity":0,"price":0,"_id":"670e00b9b4b8248eca2e7a72","__v":0}
+2024-10-15T05:42:17.901Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-15T05:42:18.039Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-15T06:51:42.022Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-10-15T06:51:42.029Z [[32minfo[39m]: Server running on port 5000 in development mode
+2024-10-15T06:52:42.876Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-15T06:52:43.106Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-15T06:52:43.163Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-15T06:52:55.282Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-15T06:52:55.321Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-15T06:53:12.805Z [[32minfo[39m]: Added product: {"name":"44","quantity":10,"price":500,"_id":"670e1158edeb5bd506416eec","__v":0}
+2024-10-15T06:53:12.924Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-15T06:53:13.047Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-15T06:53:27.414Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-15T06:53:27.462Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-15T06:53:56.323Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-15T06:53:56.369Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-15T06:54:03.019Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-15T06:54:03.066Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-15T07:06:01.011Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-10-15T07:06:01.026Z [[32minfo[39m]: Server running on port 5000 in development mode
+2024-10-15T07:06:32.678Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-15T07:06:32.837Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-15T07:06:32.916Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-15T07:06:36.215Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-15T07:06:36.264Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-15T07:06:54.272Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-15T07:06:54.317Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-15T09:58:44.242Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-10-15T09:58:44.257Z [[32minfo[39m]: Server running on port 5000 in development mode
+2024-10-15T10:00:19.949Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-15T10:00:20.210Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-15T10:00:20.287Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-15T10:02:14.598Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-15T10:02:14.756Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-15T10:02:14.795Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-15T10:05:45.139Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-15T10:05:45.333Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-15T10:05:45.403Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-15T10:11:11.829Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-15T10:11:12.014Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-15T10:11:12.070Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-15T10:14:29.756Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-15T10:14:30.338Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-15T10:14:30.377Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-15T10:25:21.805Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-15T10:25:21.862Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-15T10:25:27.241Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-15T10:26:15.881Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-10-15T10:26:15.888Z [[32minfo[39m]: Server running on port 5000 in development mode
+2024-10-15T10:26:27.778Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-15T10:26:27.819Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-15T10:26:32.669Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-15T10:30:30.816Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-15T10:30:30.856Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-15T10:30:36.382Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully

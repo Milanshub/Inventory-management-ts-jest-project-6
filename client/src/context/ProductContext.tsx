@@ -1,4 +1,4 @@
-import React, { createContext, useState, ReactNode } from 'react';
+import React, { createContext, useState, ReactNode, useEffect } from 'react';
 import { IProduct, IProductInput } from '../models/productModel';
 import { addProduct as apiAddProduct, getProducts, updateProduct as apiUpdateProduct, deleteProduct as apiDeleteProduct} from '../services/productService';
 import log from '../utils/logger';
@@ -19,15 +19,18 @@ export const ProductProvider: React.FC<{ children: ReactNode}> = ({children}) =>
     const fetchProducts = async () => {
         try {
             const fetchedProducts = await getProducts();
-            
             // Update state only if the fetched products are different from the current state
             if (JSON.stringify(fetchedProducts) !== JSON.stringify(products)) {
                 setProducts(fetchedProducts); 
             }
         } catch (error) {
-            log.error('Failed to fetch products', error);
+            console.error('Failed to fetch products', error);
         }
     };
+
+    useEffect(() => {
+        fetchProducts();
+    }, []); 
 
     const addProduct = async (productData: IProductInput) => {
         try {

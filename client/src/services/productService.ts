@@ -5,6 +5,7 @@ import log from "../utils/logger";
 export const getProducts = async (): Promise<IProduct[]> => {
     try {
         const response = await api.get('/products'); 
+        log.info('Fetched Products:', response.data); 
         return response.data;
     } catch (error) {
         log.error('Error fetching all products:', error); 
