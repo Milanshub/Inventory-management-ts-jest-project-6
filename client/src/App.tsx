@@ -6,6 +6,8 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme/theme'; 
 import ErrorBoundary from "./components/errorBoundary";
 import { ProductProvider } from "./context/ProductContext";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; 
 
 const App: React.FC = () => {
   return (
@@ -15,6 +17,7 @@ const App: React.FC = () => {
           <ProductProvider>
             <ThemeProvider theme={theme}>
               <AppRoutes /> 
+              <ToastContainer />
             </ThemeProvider>
           </ProductProvider>
         </AuthProvider>

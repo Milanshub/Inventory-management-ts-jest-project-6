@@ -1529,3 +1529,11 @@
 2024-10-15T10:30:30.816Z [[32minfo[39m]: Retrieved all products: 4 found
 2024-10-15T10:30:30.856Z [[32minfo[39m]: Retrieved all products: 4 found
 2024-10-15T10:30:36.382Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-15T11:35:46.868Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-10-15T11:35:46.877Z [[32minfo[39m]: Server running on port 5000 in development mode
+2024-10-15T11:37:27.742Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-15T11:37:27.790Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-15T11:37:33.732Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-15T11:37:57.163Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-15T11:37:57.211Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-15T11:38:01.983Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully

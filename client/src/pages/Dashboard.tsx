@@ -3,6 +3,7 @@ import { Typography, Box, Grid, Card, CardContent, CircularProgress } from '@mui
 import { ProductContext } from "../context/ProductContext";
 import log from '../utils/logger'; 
 import PieChart from '../components/PieChart'; // Import the PieChart component
+import LowStockAlert from '../components/LowStockAlert'; // Import the LowStockAlert component
 
 const Dashboard: React.FC = () => {
     const productContext = useContext(ProductContext); 
@@ -62,6 +63,15 @@ const Dashboard: React.FC = () => {
                         <CardContent>
                             <Typography variant="h5">Stock Distribution by Product</Typography>
                             <PieChart /> {/* Just use the PieChart without passing products */}
+                        </CardContent>
+                    </Card>
+                </Grid>
+
+                {/* Low Stock Alert - Moved Below PieChart */}
+                <Grid item xs={12}>
+                    <Card>
+                        <CardContent>
+                            <LowStockAlert /> {/* Add the LowStockAlert component here */}
                         </CardContent>
                     </Card>
                 </Grid>
