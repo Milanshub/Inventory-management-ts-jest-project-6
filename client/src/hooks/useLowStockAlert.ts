@@ -14,7 +14,8 @@ const useLowStockAlert = (products: IProduct[], threshold = 5) => {
     if (lowStock.length > 0) {
       lowStock.forEach(product => {
         toast.warn(`${product.name}: Only ${product.quantity} left!`, {
-          position: "top-right", // Position of the toast notification
+          position: "top-right",
+          style: { backgroundColor: '#007bff', color: '#fff' }, // Position of the toast notification
           autoClose: 5000, // Duration before the toast closes
           hideProgressBar: false, // Show progress bar
           closeOnClick: true, // Allow clicking to close

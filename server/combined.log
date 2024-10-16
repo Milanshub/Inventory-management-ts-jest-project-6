@@ -1537,3 +1537,31 @@
 2024-10-15T11:37:57.163Z [[32minfo[39m]: Retrieved all products: 4 found
 2024-10-15T11:37:57.211Z [[32minfo[39m]: Retrieved all products: 4 found
 2024-10-15T11:38:01.983Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-16T07:31:39.467Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-10-16T07:31:39.476Z [[32minfo[39m]: Server running on port 5000 in development mode
+2024-10-16T07:32:04.624Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-16T07:32:04.725Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-16T07:32:12.404Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-16T07:32:23.293Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-16T07:32:23.337Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-16T07:32:25.515Z [[32minfo[39m]: Deleted new product with id {"_id":"670e006ab4b8248eca2e7a66","name":"heyya Milan","quantity":1,"price":1,"__v":0}
+2024-10-16T07:32:25.616Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-16T07:32:26.826Z [[32minfo[39m]: Deleted new product with id {"_id":"670e00b3b4b8248eca2e7a6e","name":"heyya Milannn","quantity":1,"price":0,"__v":0}
+2024-10-16T07:32:26.895Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-16T07:32:27.780Z [[32minfo[39m]: Deleted new product with id {"_id":"670e00b9b4b8248eca2e7a72","name":"c","quantity":0,"price":0,"__v":0}
+2024-10-16T07:32:27.863Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-16T07:32:28.593Z [[32minfo[39m]: Deleted new product with id {"_id":"670e1158edeb5bd506416eec","name":"44","quantity":10,"price":500,"__v":0}
+2024-10-16T07:32:28.680Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-10-16T07:32:28.721Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-10-16T07:32:46.432Z [[32minfo[39m]: Added product: {"name":"Table ","quantity":105,"price":13,"_id":"670f6c1e58161060ecb1f88b","__v":0}
+2024-10-16T07:32:46.524Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-16T07:32:46.636Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-16T07:33:00.218Z [[32minfo[39m]: Added product: {"name":"Chair","quantity":4,"price":7,"_id":"670f6c2c58161060ecb1f88f","__v":0}
+2024-10-16T07:33:00.290Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-16T07:33:00.367Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-16T07:33:27.803Z [[32minfo[39m]: Added product: {"name":"Lamp","quantity":6,"price":26,"_id":"670f6c4758161060ecb1f893","__v":0}
+2024-10-16T07:33:27.884Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-16T07:33:28.009Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-16T07:38:23.066Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-16T07:38:23.114Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-16T07:41:16.494Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully

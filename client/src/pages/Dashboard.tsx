@@ -1,9 +1,10 @@
 import React, { useContext, useEffect, useState } from "react";
-import { Typography, Box, Grid, Card, CardContent, CircularProgress } from '@mui/material';
+import { CircularProgress, Card, CardContent, Typography } from '@mui/material';
 import { ProductContext } from "../context/ProductContext";
 import log from '../utils/logger'; 
 import PieChart from '../components/PieChart'; // Import the PieChart component
 import LowStockAlert from '../components/LowStockAlert'; // Import the LowStockAlert component
+import Grid from '@mui/material/Grid'; // Use the stable Grid component
 
 const Dashboard: React.FC = () => {
     const productContext = useContext(ProductContext); 
@@ -38,56 +39,47 @@ const Dashboard: React.FC = () => {
 
     const { products } = productContext; // Ensure products is defined
 
-    // Log products for debugging
-    console.log('Products:', products);
-
     return (
-        <Box sx={{ width: '100%', p: 4 }}>
-            <Typography variant="h4" gutterBottom>Dashboard</Typography>
-            <Typography variant="body1" gutterBottom>This is your inventory dashboard.</Typography>
-
-            <Grid container spacing={4}>
-                {/* Key Performance Indicators */}
-                <Grid item xs={12} sm={6} md={4}>
-                    <Card>
-                        <CardContent>
-                            <Typography variant="h5">Total Inventory Value</Typography>
-                            <Typography variant="h6">${totalValue.toFixed(2)}</Typography>
-                        </CardContent>
-                    </Card>
-                </Grid>
-
-                {/* Pie Chart for Stock Distribution */}
-                <Grid item xs={12}>
-                    <Card>
-                        <CardContent>
-                            <Typography variant="h5">Stock Distribution by Product</Typography>
-                            <PieChart /> {/* Just use the PieChart without passing products */}
-                        </CardContent>
-                    </Card>
-                </Grid>
-
-                {/* Low Stock Alert - Moved Below PieChart */}
-                <Grid item xs={12}>
-                    <Card>
-                        <CardContent>
-                            <LowStockAlert /> {/* Add the LowStockAlert component here */}
-                        </CardContent>
-                    </Card>
-                </Grid>
-
-                {/* Recent Activity */}
-                <Grid item xs={12}>
-                    <Card>
-                        <CardContent>
-                            <Typography variant="h5">Recent Activity</Typography>
-                            <Typography variant="body1">Last updated: 10/10/2024</Typography>
-                            {/* You can list recent activities here */}
-                        </CardContent>
-                    </Card>
-                </Grid>
+        <Grid container spacing={2}>
+            {/* Total Inventory Value */}
+            <Grid item xs={8}>
+                <Card>
+                    <CardContent>
+                        <Typography variant="h5">Total Inventory Value</Typography>
+                        <Typography variant="h6">${totalValue.toFixed(2)}</Typography>
+                    </CardContent>
+                </Card>
             </Grid>
-        </Box>
+
+            {/* Pie Chart for Stock Distribution */}
+            <Grid item xs={4}>
+                <Card>
+                    <CardContent>
+                        <Typography variant="h5">Stock Distribution by Product</Typography>
+                        <PieChart />
+                    </CardContent>
+                </Card>
+            </Grid>
+
+            {/* Low Stock Alert */}
+            <Grid item xs={4}>
+                <Card>
+                    <CardContent>
+                        <LowStockAlert />
+                    </CardContent>
+                </Card>
+            </Grid>
+
+            {/* Recent Activity */}
+            <Grid item xs={12}>
+                <Card>
+                    <CardContent>
+                        <Typography variant="h5">Recent Activity</Typography>
+                        <Typography variant="body1">Last updated: 10/10/2024</Typography>
+                    </CardContent>
+                </Card>
+            </Grid>
+        </Grid>
     );
 };
 
