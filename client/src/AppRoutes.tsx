@@ -23,9 +23,7 @@ const AppRoutes: React.FC = () => {
         element={
           <ProtectedRoute>
             <MainLayout>
-              <DashboardLayout>
-                <Dashboard />
-              </DashboardLayout>
+              <Dashboard />
             </MainLayout>
           </ProtectedRoute>
         }
