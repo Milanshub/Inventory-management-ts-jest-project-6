@@ -3,10 +3,11 @@ export interface IProduct {
     name: string;
     quantity: number; 
     price: number;
+    lastUpdated: Date; 
 }; 
 
 export interface IProductInput {
     name: string;
     quantity: number;
-    price: number
+    price: number;
 }; 

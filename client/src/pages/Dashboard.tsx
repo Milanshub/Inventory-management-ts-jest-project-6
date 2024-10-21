@@ -6,6 +6,7 @@ import PieChart from '../components/PieChart';
 import LowStockAlert from '../components/LowStockAlert'; 
 import Grid2 from '@mui/material/Grid2'; 
 import DashboardLayout from "../layouts/DashboardLayout";
+import LastActivity from "../components/LastActivity";
 
 const Dashboard: React.FC = () => {
     const productContext = useContext(ProductContext); 
@@ -74,8 +75,7 @@ const Dashboard: React.FC = () => {
             >
                 <Card sx={{ padding: 3 }}>
                     <CardContent>
-                        <Typography variant="h5">Recent Activity</Typography>
-                        <Typography variant="body1">Last updated: 10/10/2024</Typography>
+                        <LastActivity />
                     </CardContent>
                 </Card>
             </Grid2>

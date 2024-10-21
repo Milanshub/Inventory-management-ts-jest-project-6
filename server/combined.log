@@ -1716,3 +1716,115 @@
 2024-10-21T12:38:11.783Z [[32minfo[39m]: Retrieved all products: 3 found
 2024-10-21T12:38:11.836Z [[32minfo[39m]: Retrieved all products: 3 found
 2024-10-21T12:38:16.004Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-21T13:28:08.688Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T13:29:05.596Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T13:29:05.675Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T13:31:39.552Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T13:39:00.638Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T13:39:00.682Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T13:39:40.611Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T13:40:51.626Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T13:52:49.671Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-21T13:52:58.192Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T13:52:58.238Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T13:53:08.264Z [[32minfo[39m]: Added product: {"name":"mil","quantity":10,"price":4,"_id":"67165cc4775730a61e52f960","__v":0}
+2024-10-21T13:53:08.364Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T13:53:08.431Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T13:53:08.526Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T13:53:08.568Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T13:53:08.614Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T13:53:08.654Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T13:53:25.549Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T13:53:25.593Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T13:53:32.197Z [[32minfo[39m]: Deleted new product with id {"_id":"670f6c4758161060ecb1f893","name":"Lamp","quantity":6,"price":26,"__v":0}
+2024-10-21T13:53:32.326Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T13:53:32.376Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T13:53:47.209Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T13:53:47.253Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T13:53:50.219Z [[32minfo[39m]: Deleted new product with id {"_id":"670f6c2c58161060ecb1f88f","name":"Chair","quantity":4,"price":7,"__v":0}
+2024-10-21T13:53:50.332Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-21T13:53:50.407Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-21T13:54:04.075Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-21T13:54:04.115Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-21T13:54:16.937Z [[32minfo[39m]: Added product: {"name":"TV","quantity":4,"price":500,"_id":"67165d08775730a61e52f974","__v":0}
+2024-10-21T13:54:17.061Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T13:54:17.125Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T13:54:17.192Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T13:54:17.236Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T13:54:17.276Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T13:54:17.316Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T13:54:30.948Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T13:54:30.991Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T13:54:33.712Z [[32minfo[39m]: Deleted new product with id {"_id":"67165cc4775730a61e52f960","name":"mil","quantity":10,"price":4,"__v":0}
+2024-10-21T13:54:33.836Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-21T13:54:33.886Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-21T13:55:00.458Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-21T13:55:00.506Z [[32minfo[39m]: Retrieved all products: 2 found
+2024-10-21T13:55:12.562Z [[32minfo[39m]: Added product: {"name":"Chair","quantity":50,"price":7,"_id":"67165d40775730a61e52f983","__v":0}
+2024-10-21T13:55:12.652Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T13:55:12.750Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T13:55:12.822Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T13:55:12.868Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T13:55:12.912Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T13:55:12.952Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T13:55:29.022Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T13:55:29.067Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T13:55:44.909Z [[32minfo[39m]: Added product: {"name":"Vase","quantity":5,"price":5,"_id":"67165d60775730a61e52f98d","__v":0}
+2024-10-21T13:55:44.999Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T13:55:45.094Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T13:55:45.170Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T13:55:45.211Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T13:55:45.253Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T13:55:45.299Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T13:55:54.367Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T13:55:54.407Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T13:56:03.826Z [[32minfo[39m]: Updated new product with id {"_id":"67165d40775730a61e52f983","name":"Chair","quantity":57,"price":7,"__v":0}
+2024-10-21T13:56:04.013Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T13:56:04.055Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T13:56:37.569Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T13:56:37.659Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T13:56:46.179Z [[32minfo[39m]: Updated new product with id {"_id":"67165d08775730a61e52f974","name":"TV","quantity":4,"price":505,"__v":0}
+2024-10-21T13:56:46.379Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T13:56:46.429Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T13:57:02.008Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T13:57:02.070Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T13:57:16.497Z [[32minfo[39m]: Added product: {"name":"Lamp","quantity":10,"price":10,"_id":"67165dbc775730a61e52f9a1","__v":0}
+2024-10-21T13:57:16.618Z [[32minfo[39m]: Retrieved all products: 5 found
+2024-10-21T13:57:16.747Z [[32minfo[39m]: Retrieved all products: 5 found
+2024-10-21T13:57:16.859Z [[32minfo[39m]: Retrieved all products: 5 found
+2024-10-21T13:57:16.902Z [[32minfo[39m]: Retrieved all products: 5 found
+2024-10-21T13:57:16.950Z [[32minfo[39m]: Retrieved all products: 5 found
+2024-10-21T13:57:16.997Z [[32minfo[39m]: Retrieved all products: 5 found
+2024-10-21T13:57:26.895Z [[32minfo[39m]: Retrieved all products: 5 found
+2024-10-21T13:57:26.943Z [[32minfo[39m]: Retrieved all products: 5 found
+2024-10-21T13:57:29.994Z [[32minfo[39m]: Deleted new product with id {"_id":"67165d40775730a61e52f983","name":"Chair","quantity":57,"price":7,"__v":0}
+2024-10-21T13:57:30.129Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T13:57:30.188Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T13:57:43.759Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T13:57:43.815Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T13:57:45.732Z [[32minfo[39m]: Deleted new product with id {"_id":"67165d08775730a61e52f974","name":"TV","quantity":4,"price":505,"__v":0}
+2024-10-21T13:57:45.836Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T13:57:45.887Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T13:58:00.512Z [[32minfo[39m]: Updated new product with id {"_id":"67165d60775730a61e52f98d","name":"Vase","quantity":7,"price":5,"__v":0}
+2024-10-21T13:58:00.754Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T13:58:00.803Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T14:03:01.832Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T14:03:09.668Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T14:03:09.722Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T14:03:24.672Z [[32minfo[39m]: Added product: {"name":"Mac","quantity":11,"price":1000,"_id":"67165f2c775730a61e52f9b9","__v":0}
+2024-10-21T14:03:24.789Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T14:03:24.883Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T14:03:24.950Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T14:03:24.997Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T14:03:25.039Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T14:03:25.081Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T14:03:31.278Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T14:03:31.328Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T14:03:38.094Z [[32minfo[39m]: Updated new product with id {"_id":"67165f2c775730a61e52f9b9","name":"Mac","quantity":111,"price":1000,"__v":0}
+2024-10-21T14:03:38.262Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T14:03:38.308Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T14:03:56.315Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T14:03:56.357Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T14:04:02.896Z [[32minfo[39m]: Updated new product with id {"_id":"670f6c1e58161060ecb1f88b","name":"Table ","quantity":107,"price":13,"__v":0}
+2024-10-21T14:04:03.054Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-21T14:04:03.097Z [[32minfo[39m]: Retrieved all products: 4 found

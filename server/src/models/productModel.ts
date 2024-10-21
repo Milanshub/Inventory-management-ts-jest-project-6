@@ -6,6 +6,7 @@ export interface IProduct extends Document {
     name: string;
     quantity: number; 
     price: number; 
+    lastUpdated: Date; 
 };
 
 export interface IProductInput {
@@ -18,7 +19,8 @@ export interface IProductInput {
 const productSchema: Schema = new Schema<IProduct>({
     name: {type: String, required: true}, 
     quantity: {type: Number, required: true, min: 0}, 
-    price: {type: Number, required: true, min: 0}
+    price: {type: Number, required: true, min: 0}, 
+    lastUpdated: {type: Date, default: Date.now}
 })
 
 export const Product: Model<IProduct> = mongoose.model<IProduct>('Product', productSchema); 

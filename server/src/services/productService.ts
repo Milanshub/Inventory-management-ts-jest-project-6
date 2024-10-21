@@ -4,15 +4,18 @@ import mongoose from "mongoose";
 
 export const addProduct = async (productData: IProductInput): Promise<IProduct> => {
     try {
-        const newProduct = new Product(productData); 
+        const newProduct = new Product({
+            ...productData,
+            lastUpdated: new Date() 
+        });
         await newProduct.save(); 
         logger.info(`Added product: ${JSON.stringify(newProduct)}`); 
         return newProduct; 
     } catch (error) {
         if (error instanceof Error) {
-            logger.error(`failed to add product: ${error.message}`);
+            logger.error(`Failed to add product: ${error.message}`);
         } else {
-            logger.error('An unknown error ocurred while adding new product ')
+            logger.error('An unknown error occurred while adding new product');
         }
         throw error; 
     }
@@ -56,23 +59,28 @@ export const getAllProducts = async (): Promise <IProduct[]> => {
     }
 }; 
 
-export const updateProduct = async (id: string, update: Partial<IProductInput>): Promise <IProduct | null> => {
-     try {
+export const updateProduct = async (id: string, update: Partial<IProductInput>): Promise<IProduct | null> => {
+    try {
         if (!mongoose.Types.ObjectId.isValid(id)) {
-        throw new Error("Invalid product ID!"); 
+            throw new Error("Invalid product ID!"); 
         }
-        const updateProduct = await Product.findByIdAndUpdate(id, update, { new: true }); 
-        if (!updateProduct) {
-            logger.error(`Product with id ${id} not found!`);
+    
+        const updatedProduct = await Product.findByIdAndUpdate(
+            id, 
+            { ...update, lastUpdated: new Date() }, 
+            { new: true }
+        ); 
+        if (!updatedProduct) {
+            logger.error(`Product with ID ${id} not found!`);
             return null;
         }
-        logger.info(`Updated new product with id ${JSON.stringify(updateProduct)}`); 
-        return updateProduct;
-        } catch (error) {
+        logger.info(`Updated product with ID ${JSON.stringify(updatedProduct)}`); 
+        return updatedProduct;
+    } catch (error) {
         if (error instanceof Error) {
-            logger.error(`Failed to update new product with id ${id}: ${error.message}`); 
+            logger.error(`Failed to update product with ID ${id}: ${error.message}`); 
         } else {
-            logger.error(`An unknown error occurred while update product with id ${id}`); 
+            logger.error(`An unknown error occurred while updating product with ID ${id}`); 
         }
         throw error; 
     }
@@ -83,7 +91,7 @@ export const deleteProduct = async (id: string): Promise<boolean> => {
         if (!mongoose.Types.ObjectId.isValid(id)) {
             throw new Error('Invalid product ID!')
         }
-        const deletedProduct = await Product.findByIdAndDelete(id); 
+        const deletedProduct = await Product.findByIdAndDelete(id, { lastUpdated: new Date(), deleted: true }); 
         if (!deletedProduct) {
             logger.error(`Product with id ${id} is not found`); 
             return false;
