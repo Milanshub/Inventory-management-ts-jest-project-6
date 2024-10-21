@@ -11,9 +11,11 @@ import LastActivity from "../components/LastActivity";
 const Dashboard: React.FC = () => {
     const productContext = useContext(ProductContext); 
     const [totalValue, setTotalValue] = useState<number>(0); 
+    const [hasFetched, setHasFetched] = useState<boolean>(false); 
+
 
     useEffect(() => {
-        if (productContext) {
+        if (productContext && !hasFetched) {
             const { products, fetchProducts } = productContext; 
 
             const calculateTotalValue = () => {
@@ -21,17 +23,25 @@ const Dashboard: React.FC = () => {
                 setTotalValue(total);
             };
 
+            const fetchAndCalculate = async () => {
+                try {
+                    await fetchProducts(); // Await fetchProducts to ensure completion
+                    calculateTotalValue(); // Now calculate total value after fetch
+                    setHasFetched(true); // Set fetched to true
+                } catch (error) {
+                    log.error('Error fetching products:', error);
+                }
+            };
+
             if (products.length === 0) {
-                fetchProducts()
-                    .then(() => {
-                        calculateTotalValue();  
-                    })
-                    .catch((error) => log.error('Error fetching products:', error));
+                fetchAndCalculate(); // Call the async function only if products are empty
             } else {
-                calculateTotalValue(); 
+                calculateTotalValue(); // Calculate total value if products are already present
+                setHasFetched(true); // Ensure we mark as fetched
             }
         }
-    }, [productContext]); 
+    }, [productContext, hasFetched]); 
+    
 
     if (!productContext || !productContext.products) {
         return <CircularProgress />;

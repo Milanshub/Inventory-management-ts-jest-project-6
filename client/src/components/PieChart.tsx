@@ -8,18 +8,21 @@ Chart.register(...registerables);
 
 const PieChart: React.FC = () => {
     const productContext = useContext(ProductContext);
-    const [chartData, setChartData] = useState<any>(null); // Initially null to indicate no data
+    const [chartData, setChartData] = useState<any>(null);
+    const [loading, setLoading] = useState<boolean>(true);
 
     useEffect(() => {
-        if (!productContext || !productContext.products) {
+        if (!productContext?.products) {
             console.error('Product context or products not available');
+            setLoading(false);
             return;
         }
 
-        const products: IProduct[] = productContext.products; // Ensure products is an array of IProduct
+        const products: IProduct[] = productContext.products;
 
         if (products.length === 0) {
             console.error('No products available to display in the chart');
+            setLoading(false);
             return;
         }
 
@@ -52,10 +55,16 @@ const PieChart: React.FC = () => {
                 },
             ],
         });
-    }, [productContext]);
+
+        setLoading(false); // Ensure loading is set to false after data is ready
+    }, [productContext?.products]);
+
+    if (loading) {
+        return <div>Loading chart data...</div>; // Display a loading state
+    }
 
     if (!chartData) {
-        return <div>No chart data available.</div>; // Handle empty chart data
+        return <div>No chart data available.</div>; // Handle no chart data scenario
     }
 
     return (

@@ -17,10 +17,15 @@ export const ProductContext = createContext<ProductContextType | undefined>(unde
 export const ProductProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
     const [products, setProducts] = useState<IProduct[]>([]);
     const [lastUpdated, setLastUpdated] = useState<Date | null>(null); 
+    const [isProductsFetched, setIsProductsFetched] = useState(false);
+
 
     const fetchProducts = async () => {
+        if (isProductsFetched) return; // Prevent multiple fetches
+
         try {
             const fetchedProducts = await getProducts();
+            console.log('Fetched Products:', fetchedProducts); // Add this for debugging
             if (JSON.stringify(fetchedProducts) !== JSON.stringify(products)) {
                 setProducts(fetchedProducts);
                 const latestUpdate = fetchedProducts.reduce((latest, product) => {
@@ -28,15 +33,16 @@ export const ProductProvider: React.FC<{ children: ReactNode }> = ({ children })
                     return productLastUpdated > latest ? productLastUpdated : latest;
                 }, new Date(0)); 
                 setLastUpdated(latestUpdate); 
+                setIsProductsFetched(true);
             }
         } catch (error) {
-            console.error('Failed to fetch products', error);
+            console.error('Failed to fetch products in context', error);
         }
     };
 
-    useEffect(() => {
-        fetchProducts();
-    });
+    // useEffect(() => {
+    //     fetchProducts();
+    // }   );
 
     const addProduct = async (productData: IProductInput) => {
         try {
