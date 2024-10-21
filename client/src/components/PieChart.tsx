@@ -59,9 +59,8 @@ const PieChart: React.FC = () => {
     }
 
     return (
-        <div>
-            <h3>Product Quantities</h3>
-            <Pie data={chartData} options={{ responsive: true }} />
+        <div style={{ position: 'relative', width: '100%', height: '550px' }}>
+            <Pie data={chartData} style={{padding: 8}} options={{ responsive: true, maintainAspectRatio: false }} />
         </div>
     );
 };

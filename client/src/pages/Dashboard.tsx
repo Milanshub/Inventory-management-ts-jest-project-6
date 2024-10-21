@@ -4,7 +4,7 @@ import { ProductContext } from "../context/ProductContext";
 import log from '../utils/logger'; 
 import PieChart from '../components/PieChart'; 
 import LowStockAlert from '../components/LowStockAlert'; 
-import Grid2 from '@mui/material/Grid2'; // Ensure you have the right import
+import Grid2 from '@mui/material/Grid2'; 
 import DashboardLayout from "../layouts/DashboardLayout";
 
 const Dashboard: React.FC = () => {
@@ -39,24 +39,28 @@ const Dashboard: React.FC = () => {
     return (
         <DashboardLayout>
             {/* Total Inventory Value */}
-            <Grid2 size={6}>
-                <Card>
+            <Grid2
+                size={{ xs: 12, sm: 6, md: 6 }}
+            >
+                <Card sx={{ paddingY: 11.7 }} >
                     <CardContent>
                         <Typography variant="h5">Total Inventory Value</Typography>
-                        <Typography variant="h6">${totalValue.toFixed(2)}</Typography>
+                        <Typography variant="h3">${totalValue.toFixed(2)}</Typography>
                     </CardContent>
-                </Card>
+                </Card>  
 
-                <Card>
+                {/* Pie Chart for Stock Distribution */}
+                <Card sx={{paddingY: 11.7 }}>
                     <CardContent>
                         <LowStockAlert />
                     </CardContent>
                 </Card>
             </Grid2>
-
-            {/* Pie Chart for Stock Distribution */}
-            <Grid2 size={6}>
-                <Card>
+            
+            <Grid2
+               size={{ xs: 12, sm: 6, md: 6 }}
+            >
+                <Card sx={{ padding: 3,  height: '100%'  }}>
                     <CardContent>
                         <Typography variant="h5">Stock Distribution by Product</Typography>
                         <PieChart />
@@ -65,8 +69,10 @@ const Dashboard: React.FC = () => {
             </Grid2>
 
             {/* Recent Activity */}
-            <Grid2 size={12}>
-                <Card>
+            <Grid2
+                size={{ xs: 12, sm: 12, md: 12 }}
+            >
+                <Card sx={{ padding: 3 }}>
                     <CardContent>
                         <Typography variant="h5">Recent Activity</Typography>
                         <Typography variant="body1">Last updated: 10/10/2024</Typography>

@@ -8,7 +8,6 @@ import ProductPage from './pages/ProductPage'; // Import your ProductPage
 import NotFoundPage from './pages/NotFoundPage';
 import ProtectedRoute from './components/ProtectedRoute';
 import MainLayout from './layouts/MainLayout';
-import DashboardLayout from './layouts/DashboardLayout';
 
 const AppRoutes: React.FC = () => {
   return (
