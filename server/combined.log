@@ -4727,3 +4727,64 @@
 2024-10-21T17:36:56.650Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
 2024-10-21T17:36:56.875Z [[32minfo[39m]: Retrieved all products: 3 found
 2024-10-21T17:36:56.946Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T17:51:23.159Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T17:51:23.281Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T17:52:41.923Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-10-21T17:52:41.933Z [[32minfo[39m]: Server running on port 5000 in development mode
+2024-10-21T17:52:54.271Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T17:52:54.314Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T17:54:04.823Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-10-21T17:54:04.830Z [[32minfo[39m]: Server running on port 5000 in development mode
+2024-10-21T17:54:48.341Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T17:54:48.399Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T17:55:00.790Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-21T17:55:55.237Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-21T17:56:07.929Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T17:56:07.979Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T17:56:14.773Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T17:56:14.826Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T17:56:21.266Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-21T17:56:25.908Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T17:56:25.950Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T17:56:27.819Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T17:56:27.872Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T17:57:43.347Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T17:57:43.468Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T17:57:57.325Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T17:57:57.378Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T17:58:00.754Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T17:58:00.799Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T17:58:55.551Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T17:58:55.591Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T17:59:03.957Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-21T18:02:05.344Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T18:02:05.507Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T18:02:14.073Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-21T18:06:04.945Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T18:06:04.991Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T18:09:23.697Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-21T18:09:58.674Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T18:09:58.721Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T18:10:04.806Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-21T18:12:40.967Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T18:12:41.013Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T18:13:36.608Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T18:13:36.649Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T18:13:42.736Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T18:13:42.787Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T18:19:51.379Z [[32minfo[39m]: Added user: {"name":"heyya Milannn","email":"mil_654@hotmail.com","password":"$2a$10$zGuOMgPZNNzlJNrDQcvbqOQ6V0MZf/KaJyy5fOoUIMKrov4ILXqSS","role":"user","_id":"67169b476f4dec0e23dbab20","createdAt":"2024-10-21T18:19:51.318Z","updatedAt":"2024-10-21T18:19:51.318Z","__v":0}
+2024-10-21T18:20:06.025Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T18:20:06.064Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T18:20:10.112Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T18:20:10.151Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T18:20:17.644Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T18:20:17.694Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T18:20:31.750Z [[32minfo[39m]: User mil_654@hotmail.com logged in successfully
+2024-10-21T18:21:22.949Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T18:21:23.003Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T18:21:39.596Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T18:21:39.670Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T18:26:20.899Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-21T18:26:21.119Z [[32minfo[39m]: Retrieved all products: 3 found
+2024-10-21T18:26:48.296Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-21T18:26:48.482Z [[32minfo[39m]: Retrieved all products: 3 found

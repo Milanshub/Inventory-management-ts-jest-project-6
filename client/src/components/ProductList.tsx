@@ -1,4 +1,5 @@
-import React, { useContext, useEffect, useState } from 'react';
+// components/ProductList.tsx
+import React, { useContext, useState } from 'react';
 import {
     Box,
     Table,
@@ -20,7 +21,6 @@ import {
 } from '@mui/material';
 import { ProductContext } from '../context/ProductContext'; // Import the ProductContext
 import log from '../utils/logger'; // Import the logger for error handling
-import { IProduct } from '../models/productModel';
 
 const ProductList: React.FC = () => {
     const productContext = useContext(ProductContext); // Use the context
@@ -32,30 +32,11 @@ const ProductList: React.FC = () => {
     const [quantity, setQuantity] = useState(0);
     const [price, setPrice] = useState(0);
 
-    // Fetch products only if not already fetched
-    useEffect(() => {
-        const fetchProducts = async () => {
-            if (productContext && productContext.products.length === 0) {
-                try {
-                    await productContext.fetchProducts();
-                } catch (error) {
-                    log.error('Failed to fetch products on ProductList mount', error);
-                }
-            }
-        };
-
-        fetchProducts();
-    }, [productContext]); // This ensures the fetch only happens if products are not already fetched
-
-    // If the context or products aren't available yet, show a loading spinner
     if (!productContext) {
         return <CircularProgress />;
     }
 
     const { products, updateProduct, deleteProduct } = productContext;
-
-    // Debugging: Check the products array
-    console.log(products);
 
     const handleOpenDialog = (product: any) => {
         setSelectedProduct(product);
@@ -82,14 +63,10 @@ const ProductList: React.FC = () => {
             price: price
         };
     
-       
         updateProduct(selectedProduct._id, updateData);
         handleCloseDialog();  
     };
     
-    
-    
-
     const handleDelete = (_id: string) => {
         if (!_id) {
             console.error("Product ID is not defined.");
@@ -125,9 +102,7 @@ const ProductList: React.FC = () => {
                                     <TableCell align="right">{product.price.toFixed(2)}</TableCell>
                                     <TableCell align="right">
                                         <Button onClick={() => handleOpenDialog(product)}>Update</Button>
-                                        <Button onClick={() => handleDelete(product._id)} color="error">
-                                            Delete
-                                        </Button>
+                                        <Button onClick={() => handleDelete(product._id)}>Delete</Button>
                                     </TableCell>
                                 </TableRow>
                             ))}
@@ -135,20 +110,18 @@ const ProductList: React.FC = () => {
                     </Table>
                 </TableContainer>
             )}
-
-            {/* Edit Dialog */}
+            {/* Update Dialog */}
             <Dialog open={open} onClose={handleCloseDialog}>
-                <DialogTitle>Edit Product</DialogTitle>
+                <DialogTitle>Update Product</DialogTitle>
                 <DialogContent>
                     <DialogContentText>
-                        To update this product, please edit the fields below.
+                        Update the product details below.
                     </DialogContentText>
                     <TextField
                         autoFocus
                         margin="dense"
                         label="Name"
                         fullWidth
-                        variant="standard"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                     />
@@ -157,16 +130,14 @@ const ProductList: React.FC = () => {
                         label="Quantity"
                         type="number"
                         fullWidth
-                        variant="standard"
                         value={quantity}
                         onChange={(e) => setQuantity(Number(e.target.value))}
                     />
                     <TextField
                         margin="dense"
-                        label="Price ($)"
+                        label="Price"
                         type="number"
                         fullWidth
-                        variant="standard"
                         value={price}
                         onChange={(e) => setPrice(Number(e.target.value))}
                     />

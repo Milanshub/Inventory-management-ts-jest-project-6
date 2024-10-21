@@ -1,4 +1,5 @@
-import React, { useContext, useState, useEffect} from "react";
+// components/ProductForm.tsx
+import React, { useContext, useState } from "react";
 import { TextField, Button, Box, Typography, Stack, Paper } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { ProductContext } from "../context/ProductContext";
@@ -17,14 +18,6 @@ const ProductForm: React.FC = () => {
 
     const productContext = useContext(ProductContext); 
 
-    useEffect(() => {
-        if (productContext) {
-            productContext.fetchProducts().catch((error) => {
-                log.error('Failed to fetch products on mount', error);
-            }); 
-        };
-    }, [productContext]); 
-
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault(); 
         if (productContext) {
@@ -37,7 +30,7 @@ const ProductForm: React.FC = () => {
     };
 
     return (
-        <Box  component="form" onSubmit={handleSubmit} sx={{ mt: 2 }}>
+        <Box component="form" onSubmit={handleSubmit} sx={{ mt: 2 }}>
             <Typography variant="h5" gutterBottom>Add Product</Typography>
             <Stack spacing={2}>
                 <Item>
