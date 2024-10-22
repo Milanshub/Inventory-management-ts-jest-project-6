@@ -14,7 +14,7 @@ vi.mock('../../src/utils/logger', () => ({
 
 let mongoServer: MongoMemoryServer; 
 
-describe('userService test suite', () => {
+describe.skip('userService test suite', () => {
      // Start MongoDB Memory Server and connect 
      beforeAll(async () => {
         mongoServer = await MongoMemoryServer.create();

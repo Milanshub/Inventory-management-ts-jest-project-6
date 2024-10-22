@@ -25,12 +25,12 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      # Install server dependencies and run tests
+      # Install server dependencies and run tests with Yarn
       - name: Install and test server
         run: |
           cd server
-          npm ci
-          npm test
+          yarn install  # Install backend dependencies with Yarn
+          yarn test     # Run backend tests with Yarn
 
       # Set up Node.js for the client (frontend)
       - name: Setup Node.js for client
@@ -38,9 +38,9 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      # Install client dependencies and run tests
+      # Install client dependencies and run tests with Yarn
       - name: Install and test client
         run: |
           cd client
-          npm ci
-          npm test
+          yarn install  # Install frontend dependencies with Yarn
+          yarn test     # Run frontend tests with Yarn
