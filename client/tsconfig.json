@@ -11,12 +11,16 @@
     "paths": {
       "@/*": ["*"]
     },
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "types": ["jest", "node"]  // Ensure Jest types are included
   },
   "include": [
-    "src",
-     "tests"  
-    ],
+    "src/**/*.ts",          // Include .ts files in src
+    "src/**/*.tsx",         // Include .tsx files in src
+    "src/tests/**/*.ts", // Include .ts files in client/tests
+    "src/tests/**/*.tsx",// Include .tsx files in client/tests
+    "src/setupTests.ts"         // Ensure setupTests.ts is included
+  ],
   "exclude": [
     "node_modules",
     "dist"

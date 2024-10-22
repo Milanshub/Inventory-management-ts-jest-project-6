@@ -115,3 +115,47 @@
 2024-10-22T10:48:21.620Z [[32minfo[39m]: Retrieved all products: 3 found
 2024-10-22T10:48:36.189Z [[32minfo[39m]: Updated product with ID {"_id":"67165f2c775730a61e52f9b9","name":"Mac","quantity":110,"price":1000,"__v":0,"lastUpdated":"2024-10-22T10:48:36.149Z"}
 2024-10-22T10:48:40.170Z [[32minfo[39m]: Updated product with ID {"_id":"671781e0a10abd5a0f719fc7","name":"heyya Milannn","quantity":4,"price":50,"lastUpdated":"2024-10-22T10:48:40.124Z","__v":0}
+2024-10-22T11:02:01.214Z [[32minfo[39m]: Updated product with ID {"_id":"671781e0a10abd5a0f719fc7","name":"Table","quantity":4,"price":50,"lastUpdated":"2024-10-22T11:02:01.123Z","__v":0}
+2024-10-22T11:02:10.596Z [[32minfo[39m]: Updated product with ID {"_id":"6717826da10abd5a0f719fde","name":"Chair","quantity":9,"price":19,"lastUpdated":"2024-10-22T11:02:10.556Z","__v":0}
+2024-10-22T11:02:33.698Z [[32minfo[39m]: Added product: {"name":"TV","quantity":100,"price":550,"lastUpdated":"2024-10-22T11:02:33.651Z","_id":"67178649a10abd5a0f719fff","__v":0}
+2024-10-22T11:03:20.256Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-22T11:03:20.540Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-22T11:37:33.361Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-10-22T11:37:33.368Z [[32minfo[39m]: Server running on port 5000 in development mode
+2024-10-22T11:37:53.887Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-22T11:37:54.174Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-22T11:38:19.853Z [[32minfo[39m]: Added product: {"name":"Anzhelika","quantity":1,"price":1000000000,"lastUpdated":"2024-10-22T11:38:19.770Z","_id":"67178eabc56c33d1eccf7e3d","__v":0}
+2024-10-22T11:38:42.847Z [[32minfo[39m]: Deleted new product with id {"_id":"67178eabc56c33d1eccf7e3d","name":"Anzhelika","quantity":1,"price":1000000000,"lastUpdated":"2024-10-22T11:38:19.770Z","__v":0}
+2024-10-22T11:45:56.070Z [[32minfo[39m]: Deleted new product with id {"_id":"67165f2c775730a61e52f9b9","name":"Mac","quantity":110,"price":1000,"__v":0,"lastUpdated":"2024-10-22T10:48:36.149Z"}
+2024-10-22T11:45:56.642Z [[32minfo[39m]: Deleted new product with id {"_id":"671781e0a10abd5a0f719fc7","name":"Table","quantity":4,"price":50,"lastUpdated":"2024-10-22T11:02:01.123Z","__v":0}
+2024-10-22T11:45:57.615Z [[32minfo[39m]: Deleted new product with id {"_id":"6717826da10abd5a0f719fde","name":"Chair","quantity":9,"price":19,"lastUpdated":"2024-10-22T11:02:10.556Z","__v":0}
+2024-10-22T11:45:58.248Z [[32minfo[39m]: Deleted new product with id {"_id":"67178649a10abd5a0f719fff","name":"TV","quantity":100,"price":550,"lastUpdated":"2024-10-22T11:02:33.651Z","__v":0}
+2024-10-22T11:48:25.564Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-22T11:48:46.152Z [[32minfo[39m]: Added product: {"name":"Cocaine","quantity":50,"price":150,"lastUpdated":"2024-10-22T11:48:46.097Z","_id":"6717911ec56c33d1eccf7e45","__v":0}
+2024-10-22T11:49:01.673Z [[32minfo[39m]: Added product: {"name":"Marihuana","quantity":100,"price":5,"lastUpdated":"2024-10-22T11:49:01.623Z","_id":"6717912dc56c33d1eccf7e47","__v":0}
+2024-10-22T11:49:17.454Z [[32minfo[39m]: Added product: {"name":"MDMA","quantity":10,"price":25,"lastUpdated":"2024-10-22T11:49:17.405Z","_id":"6717913dc56c33d1eccf7e49","__v":0}
+2024-10-22T11:49:45.490Z [[32minfo[39m]: Added product: {"name":"McCallan","quantity":20,"price":80,"lastUpdated":"2024-10-22T11:49:45.434Z","_id":"67179159c56c33d1eccf7e4b","__v":0}
+2024-10-22T11:50:18.150Z [[32minfo[39m]: Updated product with ID {"_id":"6717912dc56c33d1eccf7e47","name":"Marihuana","quantity":4,"price":5,"lastUpdated":"2024-10-22T11:50:18.076Z","__v":0}
+2024-10-22T11:52:32.730Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-22T11:52:44.948Z [[32minfo[39m]: Deleted new product with id {"_id":"6717911ec56c33d1eccf7e45","name":"Cocaine","quantity":50,"price":150,"lastUpdated":"2024-10-22T11:48:46.097Z","__v":0}
+2024-10-22T11:52:45.849Z [[32minfo[39m]: Deleted new product with id {"_id":"6717912dc56c33d1eccf7e47","name":"Marihuana","quantity":4,"price":5,"lastUpdated":"2024-10-22T11:50:18.076Z","__v":0}
+2024-10-22T11:52:46.799Z [[32minfo[39m]: Deleted new product with id {"_id":"6717913dc56c33d1eccf7e49","name":"MDMA","quantity":10,"price":25,"lastUpdated":"2024-10-22T11:49:17.405Z","__v":0}
+2024-10-22T14:02:54.416Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-10-22T14:02:54.423Z [[32minfo[39m]: Server running on port 5000 in development mode
+2024-10-22T14:03:06.900Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-22T14:03:07.155Z [[32minfo[39m]: Retrieved all products: 1 found
+2024-10-22T14:03:14.935Z [[32minfo[39m]: Deleted new product with id {"_id":"67179159c56c33d1eccf7e4b","name":"McCallan","quantity":20,"price":80,"lastUpdated":"2024-10-22T11:49:45.434Z","__v":0}
+2024-10-22T14:09:56.197Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-22T14:09:56.408Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-10-22T14:11:31.080Z [[32minfo[39m]: Added product: {"name":"Chair","quantity":5,"price":20,"lastUpdated":"2024-10-22T14:11:31.012Z","_id":"6717b293918f0054f66e5b0f","__v":0}
+2024-10-22T14:11:39.798Z [[32minfo[39m]: Added product: {"name":"Table","quantity":10,"price":55,"lastUpdated":"2024-10-22T14:11:39.755Z","_id":"6717b29b918f0054f66e5b11","__v":0}
+2024-10-22T14:11:52.567Z [[32minfo[39m]: Added product: {"name":"Lamp","quantity":4,"price":44,"lastUpdated":"2024-10-22T14:11:52.521Z","_id":"6717b2a8918f0054f66e5b13","__v":0}
+2024-10-22T14:12:31.965Z [[32minfo[39m]: Added product: {"name":"Kitchen Appliance","quantity":6,"price":303,"lastUpdated":"2024-10-22T14:12:31.917Z","_id":"6717b2cf918f0054f66e5b15","__v":0}
+2024-10-22T15:19:49.346Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-10-22T15:19:49.350Z [[32minfo[39m]: Server running on port 5000 in development mode
+2024-10-22T15:20:18.522Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-22T15:20:18.786Z [[32minfo[39m]: Retrieved all products: 4 found
+2024-10-22T21:55:14.796Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-10-22T21:55:14.802Z [[32minfo[39m]: Server running on port 5000 in development mode
+2024-10-22T21:57:38.650Z [[32minfo[39m]: User shubaevmilan@gmail.com logged in successfully
+2024-10-22T21:57:39.034Z [[32minfo[39m]: Retrieved all products: 4 found
