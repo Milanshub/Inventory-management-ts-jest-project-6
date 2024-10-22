@@ -1,4 +1,3 @@
-// useLowStockAlert.ts
 import { useEffect, useState } from 'react';
 import { IProduct } from '../models/productModel';
 import { toast } from 'react-toastify';
@@ -16,7 +15,11 @@ const useLowStockAlert = (products: IProduct[], threshold = 5) => {
       if (!alertedProducts.includes(product._id)) { // Check if already alerted
         toast.warn(`${product.name}: Only ${product.quantity} left!`, {
           position: "top-right",
-          style: { backgroundColor: '#007bff', color: '#fff' },
+          style: { 
+            backgroundColor: '#E74C3C', // Coral Red for warning
+            color: '#FFFFFF', // White text for readability
+            fontWeight: 'bold', // Bold text for emphasis
+          },
           autoClose: 5000,
           hideProgressBar: false,
           closeOnClick: true,

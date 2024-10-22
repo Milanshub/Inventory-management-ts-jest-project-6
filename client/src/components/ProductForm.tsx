@@ -1,15 +1,6 @@
-// components/ProductForm.tsx
 import React, { useContext, useState } from "react";
-import { TextField, Button, Box, Typography, Stack, Paper } from '@mui/material';
-import { styled } from '@mui/material/styles';
+import { TextField, Button, Box, Typography, Stack } from '@mui/material';
 import { ProductContext } from "../context/ProductContext";
-import log from "../utils/logger";
-
-const Item = styled(Paper)(({ theme }) => ({
-    padding: theme.spacing(2),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-}));
 
 const ProductForm: React.FC = () => {
     const [name, setName] = useState('');
@@ -30,45 +21,65 @@ const ProductForm: React.FC = () => {
     };
 
     return (
-        <Box component="form" onSubmit={handleSubmit} sx={{ mt: 2 }}>
-            <Typography variant="h5" gutterBottom>Add Product</Typography>
+        <Box 
+            component="form" 
+            onSubmit={handleSubmit} 
+            sx={{ 
+                mt: 4, 
+                backgroundColor: '#F7F9F9', 
+                padding: 3, 
+                borderRadius: '12px', 
+                boxShadow: 3 
+            }}
+        >
+        
             <Stack spacing={2}>
-                <Item>
-                    <TextField
-                        label='Name'
-                        variant="outlined"
-                        fullWidth
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-                        required
-                    />
-                </Item>
-                <Item>
-                    <TextField
-                        label="Quantity"
-                        variant="outlined"
-                        fullWidth
-                        value={quantity}
-                        onChange={(e) => setQuantity(e.target.value)}
-                        required
-                    />
-                </Item>
-                <Item>
-                    <TextField
-                        label="Price"
-                        variant="outlined"
-                        fullWidth
-                        value={price}
-                        onChange={(e) => setPrice(e.target.value)}
-                        required
-                    />
-                </Item>
-                <Item>
-                    <Button type="submit" variant="contained" color="primary" fullWidth>Save Product</Button>
-                </Item>
+                <TextField
+                    label="Name"
+                    variant="outlined"
+                    fullWidth
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    required
+                    sx={{ backgroundColor: '#fff', borderRadius: '8px' }}
+                />
+                <TextField
+                    label="Quantity"
+                    variant="outlined"
+                    fullWidth
+                    value={quantity}
+                    onChange={(e) => setQuantity(e.target.value)}
+                    required
+                    sx={{ backgroundColor: '#fff', borderRadius: '8px' }}
+                />
+                <TextField
+                    label="Price"
+                    variant="outlined"
+                    fullWidth
+                    value={price}
+                    onChange={(e) => setPrice(e.target.value)}
+                    required
+                    sx={{ backgroundColor: '#fff', borderRadius: '8px' }}
+                />
+                <Button 
+                    type="submit" 
+                    variant="contained" 
+                    fullWidth 
+                    sx={{ 
+                        backgroundColor: '#1ABC9C', 
+                        color: '#fff', 
+                        padding: 1.5, 
+                        borderRadius: '8px', 
+                        '&:hover': {
+                            backgroundColor: '#17A589'
+                        } 
+                    }}
+                >
+                    Save Product
+                </Button>
             </Stack>
         </Box>
     );
 };
 
-export default ProductForm; 
+export default ProductForm;

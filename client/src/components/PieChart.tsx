@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useContext } from 'react';
+import { CircularProgress, Box, Typography } from '@mui/material';
 import { Pie } from 'react-chartjs-2';
 import { Chart, registerables } from 'chart.js';
 import { ProductContext } from '../context/ProductContext';
@@ -36,41 +37,65 @@ const PieChart: React.FC = () => {
                     label: 'Quantity per Product',
                     data: data,
                     backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(153, 102, 255, 0.2)',
-                        'rgba(255, 159, 64, 0.2)',
+                        '#FF6384', // Red
+                        '#36A2EB', // Blue
+                        '#FFCE56', // Yellow
+                        '#4BC0C0', // Teal
+                        '#9966FF', // Purple
+                        '#FF9F40', // Orange
                     ],
                     borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)',
-                        'rgba(255, 159, 64, 1)',
+                        '#FF6384',
+                        '#36A2EB',
+                        '#FFCE56',
+                        '#4BC0C0',
+                        '#9966FF',
+                        '#FF9F40',
                     ],
                     borderWidth: 1,
                 },
             ],
         });
 
-        setLoading(false); // Ensure loading is set to false after data is ready
+        setLoading(false); // Data is ready, stop loading
     }, [productContext?.products]);
 
     if (loading) {
-        return <div>Loading chart data...</div>; // Display a loading state
+        return (
+            <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '550px' }}>
+                <CircularProgress />
+            </Box>
+        );
     }
 
     if (!chartData) {
-        return <div>No chart data available.</div>; // Handle no chart data scenario
+        return (
+            <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '550px' }}>
+                <Typography variant="h6">No chart data available</Typography>
+            </Box>
+        );
     }
 
     return (
-        <div style={{ position: 'relative', width: '100%', height: '550px' }}>
-            <Pie data={chartData} style={{padding: 8}} options={{ responsive: true, maintainAspectRatio: false }} />
-        </div>
+        <Box sx={{ position: 'relative', width: '100%', height: '550px', padding: 2 }}>
+            <Pie
+                data={chartData}
+                options={{
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                            labels: {
+                                font: {
+                                    size: 14,
+                                },
+                            },
+                        },
+                    },
+                }}
+            />
+        </Box>
     );
 };
 

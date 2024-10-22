@@ -3,7 +3,7 @@ import { AppBar, Toolbar, Typography, Box, Link } from '@mui/material';
 
 const Footer: React.FC = () => {
   return (
-    <AppBar position="static" color="primary" sx={{ top: 'auto', bottom: 0 }}>
+    <AppBar position="static" color="primary" sx={{ top: 'auto', bottom: 0, backgroundColor: '#1ABC9C' }}>
       <Toolbar>
         <Box sx={{ flexGrow: 1 }}>
           <Typography variant="body1" align="left">

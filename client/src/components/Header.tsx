@@ -36,9 +36,6 @@ export const Header: React.FC = () => {
               <Button component={Link} to="/products" color="inherit">
                 Products
               </Button>
-              <Button component={Link} to="/orders" color="inherit">
-                Orders
-              </Button>
               <IconButton color="inherit" onClick={handleLogout}>
                 <Logout />
               </IconButton>
