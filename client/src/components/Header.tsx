@@ -3,7 +3,7 @@ import { AppBar, Toolbar, Typography, Button, Box, IconButton } from '@mui/mater
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
 import { Logout } from '@mui/icons-material';
-
+ 
 export const Header: React.FC = () => {
     const authContext = useContext(AuthContext); // Get the context
     const navigate = useNavigate();
