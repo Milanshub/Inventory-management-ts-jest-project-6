@@ -15,6 +15,7 @@
     "types": ["jest", "node"]  // Ensure Jest types are included
   },
   "include": [
+    "./",
     "src/**/*.ts",          // Include .ts files in src
     "src/**/*.tsx",         // Include .tsx files in src
     "src/tests/**/*.ts", // Include .ts files in client/tests
