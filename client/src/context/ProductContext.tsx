@@ -2,8 +2,9 @@ import React, { createContext, useState, ReactNode, useEffect, useContext } from
 import { IProduct, IProductInput } from '../models/productModel';
 import { addProduct as apiAddProduct, getProducts, updateProduct as apiUpdateProduct, deleteProduct as apiDeleteProduct } from '../services/productService';
 import log from '../utils/logger';
-import { AuthContext} from './AuthContext'; // Import AuthContext and its type
+import { AuthContext } from './AuthContext'; // Import AuthContext and its type
 
+// Define the shape of the Product context
 interface ProductContextType {
     products: IProduct[];
     addProduct: (productData: IProductInput) => Promise<void>;
@@ -12,15 +13,18 @@ interface ProductContextType {
     lastUpdated: Date | null;
 }
 
+// Create the Product Context
 export const ProductContext = createContext<ProductContextType | undefined>(undefined);
 
-export const ProductProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
+// Product Provider Component
+export const ProductProvider: React.FC<{ children: ReactNode; fetchProducts?: boolean }> = ({ children, fetchProducts = true }) => {
     const [products, setProducts] = useState<IProduct[]>([]);
     const [lastUpdated, setLastUpdated] = useState<Date | null>(null);
     const authContext = useContext(AuthContext); // Get auth context
     const user = authContext?.user; // Use optional chaining to safely access user
     const [isProductsFetched, setIsProductsFetched] = useState(false);
 
+    // useEffect to fetch products based on the fetchProducts flag
     useEffect(() => {
         const fetchProducts = async () => {
             if (isProductsFetched || !user) return; // Prevent multiple fetches and check if authenticated
@@ -38,9 +42,13 @@ export const ProductProvider: React.FC<{ children: ReactNode }> = ({ children })
                 console.error('Failed to fetch products in context', error);
             }
         };
-        fetchProducts();
-    }, [isProductsFetched, user]); // Add user as a dependency
+        
+        if (fetchProducts && user) {
+            fetchProducts(); // Only fetch if the fetchProducts flag is true and user is authenticated
+        }
+    }, [fetchProducts, user]); // Add fetchProducts and user as dependencies
 
+    // Function to add a product
     const addProduct = async (productData: IProductInput) => {
         if (!user) {
             log.warn('User not authenticated, cannot add product');
@@ -55,6 +63,7 @@ export const ProductProvider: React.FC<{ children: ReactNode }> = ({ children })
         }
     };
 
+    // Function to update a product
     const updateProduct = async (id: string, productData: Partial<IProduct>) => {
         if (!user) {
             log.warn('User not authenticated, cannot update product');
@@ -71,6 +80,7 @@ export const ProductProvider: React.FC<{ children: ReactNode }> = ({ children })
         }
     };
 
+    // Function to delete a product
     const deleteProduct = async (_id: string) => {
         if (!user) {
             log.warn('User not authenticated, cannot delete product');
