@@ -20,7 +20,7 @@
     "src/tests/**/*.ts", // Include .ts files in client/tests
     "src/tests/**/*.tsx",// Include .tsx files in client/tests
     "src/setupTests.ts"         // Ensure setupTests.ts is included
-  ],
+, "src/mocks/mockContext.ts", "src/mocks/mockContext.tsx"  ],
   "exclude": [
     "node_modules",
     "dist"

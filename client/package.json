@@ -5,23 +5,27 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --coverage",
+    "test": "react-scripts test --all --coverage",
     "eject": "react-scripts eject"
   },
   "jest": {
     "testMatch": [
       "**/?(*.)+(test).[jt]s?(x)"
+    ],
+    "collectCoverageFrom": [
+      "src/components/**/*.{js,jsx,ts,tsx}",
+      "src/tests/components/**.{js,jsx,ts,tsx}",
+      "!**/node_modules/**"
     ]
   },
   "dependencies": {
+    "@craco/craco": "^7.1.0",
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^6.1.4",
     "@mui/material": "^6.1.4",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
+    "@testing-library/dom": "^10.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "axios": "^1.7.7",
     "chart.js": "^4.4.4",
     "dotenv": "^16.4.5",
     "loglevel": "^1.9.2",
@@ -37,11 +41,22 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
+    "@cypress/react": "^8.0.2",
+    "@cypress/webpack-dev-server": "^3.11.0",
+    "@testing-library/jest-dom": "^6.6.2",
+    "@testing-library/react": "^16.0.1",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.108",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
-    "@types/react-toastify": "^4.0.2"
+    "@types/react-toastify": "^4.0.2",
+    "axios": "^1.7.7",
+    "axios-mock-adapter": "^2.1.0",
+    "css-loader": "^7.1.2",
+    "cypress": "^13.15.0",
+    "msw": "^2.5.1",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.1"
   },
   "browserslist": {
     "production": [
