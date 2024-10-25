@@ -1,6 +1,6 @@
 // cypress/component/ErrorBoundary.spec.tsx
 import React from 'react';
-import { mount } from 'cypress/react';
+import { mount } from 'cypress/react18'
 import ErrorBoundary from '../../src/components/ErrorBoundary';
 
 // Define a faulty component that throws an error

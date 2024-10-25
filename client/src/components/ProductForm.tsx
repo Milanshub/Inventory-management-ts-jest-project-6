@@ -36,6 +36,7 @@ const ProductForm: React.FC = () => {
             <Stack spacing={2}>
                 <TextField
                     label="Name"
+                    type="name"
                     variant="outlined"
                     fullWidth
                     value={name}
@@ -45,6 +46,7 @@ const ProductForm: React.FC = () => {
                 />
                 <TextField
                     label="Quantity"
+                    type="quantity"
                     variant="outlined"
                     fullWidth
                     value={quantity}
@@ -54,6 +56,7 @@ const ProductForm: React.FC = () => {
                 />
                 <TextField
                     label="Price"
+                    type="price"
                     variant="outlined"
                     fullWidth
                     value={price}

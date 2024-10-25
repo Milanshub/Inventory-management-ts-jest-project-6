@@ -16,5 +16,22 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 
+// cypress/support/e2e.js
+
+Cypress.Commands.add('login', (email, password) => {
+    cy.request({
+        method: 'POST',
+        url: 'http://localhost:3000/auth/login',
+        body: {
+            email: 'newusers@example.com',
+            password: 'newspassword',
+        },
+        failOnStatusCode: false // Will not fail the test on 4xx or 5xx responses
+    }).then((response) => {
+        cy.log(response.body); // Log the response body for debugging
+    });
+    
+});
+
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

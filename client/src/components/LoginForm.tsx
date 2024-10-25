@@ -67,6 +67,7 @@ const LoginForm = () => {
         <Item>
           <TextField
             fullWidth
+            type='email'
             label="Email"
             variant="outlined"
             value={email}

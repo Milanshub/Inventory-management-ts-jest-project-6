@@ -1,6 +1,6 @@
 // cypress/component/Footer.spec.tsx
 import React from 'react';
-import { mount } from 'cypress/react'; // Import mount from Cypress
+import { mount } from 'cypress/react18'
 import Footer from '../../src/components/Footer'; // Adjust the path as necessary
 
 describe('Footer Component', () => {

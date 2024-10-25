@@ -4,7 +4,8 @@ const { defineConfig } = require("cypress");
 const path = require("path");
 
 module.exports = defineConfig({
-  projectId: '3eej9n',
+  projectId: "3eej9n",
+
   component: {
     devServer: {
       framework: "react",
@@ -14,11 +15,17 @@ module.exports = defineConfig({
   },
 
   // Optional: Disable video recording for headless runs
-  video: false,
-
   // e2e: {
   //   setupNodeEvents(on, config) {
   //     // implement node event listeners here
   //   },
   // },
+  video: false,
+
+  e2e: {
+    setupNodeEvents() {
+      // implement node event listeners here
+    },
+    baseUrl: 'http://localhost:3000', // Adjust this to your app's URL
+  },
 });

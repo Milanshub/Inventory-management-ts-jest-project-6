@@ -55,6 +55,7 @@ const RegisterForm: React.FC = () => {
                 <Item>
                     <TextField
                         label="Name"
+                        type="name"
                         variant="outlined"
                         fullWidth
                         margin="normal"
