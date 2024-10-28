@@ -35,8 +35,7 @@ const ProductForm: React.FC = () => {
         
             <Stack spacing={2}>
                 <TextField
-                    label="Name"
-                    type="name"
+                    name="name"
                     variant="outlined"
                     fullWidth
                     value={name}
@@ -45,7 +44,7 @@ const ProductForm: React.FC = () => {
                     sx={{ backgroundColor: '#fff', borderRadius: '8px' }}
                 />
                 <TextField
-                    label="Quantity"
+                    name="quantity"
                     type="quantity"
                     variant="outlined"
                     fullWidth
@@ -55,7 +54,7 @@ const ProductForm: React.FC = () => {
                     sx={{ backgroundColor: '#fff', borderRadius: '8px' }}
                 />
                 <TextField
-                    label="Price"
+                    name="price"
                     type="price"
                     variant="outlined"
                     fullWidth

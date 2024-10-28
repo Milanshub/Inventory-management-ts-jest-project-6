@@ -123,7 +123,9 @@ const ProductList: React.FC = () => {
                                 <Box sx={{ mt: 2 }}>
                                     <Button 
                                         onClick={() => handleOpenDialog(product)} 
-                                        sx={{ color: '#1ABC9C', fontWeight: 'bold', marginRight: 2 }}>
+                                        sx={{ color: '#1ABC9C', fontWeight: 'bold', marginRight: 2 }}
+                                        data-testid="update-button" 
+                                        >
                                         Update
                                     </Button>
                                     <Button 
@@ -180,7 +182,7 @@ const ProductList: React.FC = () => {
                         <Button onClick={handleCloseDialog} sx={{ color: '#1ABC9C', fontWeight: 'bold' }}>
                             Cancel
                         </Button>
-                        <Button onClick={handleUpdate} variant="contained" sx={{ backgroundColor: '#1ABC9C', fontWeight: 'bold' }}>
+                        <Button onClick={handleUpdate} data-testid="update-button" type="submit" variant="contained" sx={{ backgroundColor: '#1ABC9C', fontWeight: 'bold' }}>
                             Update
                         </Button>
                     </Box>
