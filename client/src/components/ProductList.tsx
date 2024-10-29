@@ -154,14 +154,14 @@ const ProductList: React.FC = () => {
                 <DialogContent sx={{ paddingTop: '16px' }}>
                     <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3, padding: "3 1.5" }}>
                         <TextField
-                            label="Name"
+                            name="name"
                             fullWidth
                             value={name}
                             onChange={(e) => setName(e.target.value)}
                             sx={{ marginBottom: '16px' }}
                         />
                         <TextField
-                            label="Quantity"
+                            name="quantity"
                             fullWidth
                             type="number"
                             value={quantity}
@@ -169,7 +169,7 @@ const ProductList: React.FC = () => {
                             sx={{ marginBottom: '16px' }}
                         />
                         <TextField
-                            label="Price"
+                            name="price"
                             fullWidth
                             type="number"
                             value={price}

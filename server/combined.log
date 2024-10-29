@@ -664,3 +664,134 @@
 2024-10-28T16:40:34.653Z [[32minfo[39m]: Retrieved all products: 12 found
 2024-10-28T16:40:35.820Z [[32minfo[39m]: Added product: {"name":"Deletable Product","quantity":8,"price":80,"lastUpdated":"2024-10-28T16:40:35.776Z","_id":"671fbe83d58954dd6ab8f411","__v":0}
 2024-10-28T16:40:36.164Z [[32minfo[39m]: Deleted new product with id {"_id":"671fbe83d58954dd6ab8f411","name":"Deletable Product","quantity":8,"price":80,"lastUpdated":"2024-10-28T16:40:35.776Z","__v":0}
+2024-10-29T07:13:59.015Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-10-29T07:13:59.021Z [[32minfo[39m]: Server running on port 5000 in development mode
+2024-10-29T07:41:04.385Z [[32minfo[39m]: Added user: {"name":"John Doe","email":"newusers@example.com","password":"$2a$10$dWVe.jpFyRhL03m.7g7mjOjhIwQ9BGcXBx2s3x52vsg2Xd3ANn.Xa","role":"user","_id":"67209190b664f7245af822f5","createdAt":"2024-10-29T07:41:04.316Z","updatedAt":"2024-10-29T07:41:04.316Z","__v":0}
+2024-10-29T07:41:04.956Z [[32minfo[39m]: Retrieved all products: 12 found
+2024-10-29T07:41:06.780Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:41:06.935Z [[32minfo[39m]: Retrieved all products: 12 found
+2024-10-29T07:41:08.424Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:41:08.543Z [[32minfo[39m]: Retrieved all products: 12 found
+2024-10-29T07:41:09.687Z [[32minfo[39m]: Added product: {"name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-10-29T07:41:09.650Z","_id":"67209195b664f7245af822fc","__v":0}
+2024-10-29T07:41:11.560Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:41:11.777Z [[32minfo[39m]: Retrieved all products: 13 found
+2024-10-29T07:41:12.862Z [[32minfo[39m]: Added product: {"name":"Editable Product","quantity":5,"price":50,"lastUpdated":"2024-10-29T07:41:12.818Z","_id":"67209198b664f7245af82300","__v":0}
+2024-10-29T07:41:18.704Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:41:18.843Z [[32minfo[39m]: Retrieved all products: 14 found
+2024-10-29T07:41:19.946Z [[32minfo[39m]: Added product: {"name":"Deletable Product","quantity":8,"price":80,"lastUpdated":"2024-10-29T07:41:19.908Z","_id":"6720919fb664f7245af82304","__v":0}
+2024-10-29T07:41:20.175Z [[32minfo[39m]: Deleted new product with id {"_id":"6720919fb664f7245af82304","name":"Deletable Product","quantity":8,"price":80,"lastUpdated":"2024-10-29T07:41:19.908Z","__v":0}
+2024-10-29T07:44:36.819Z [[31merror[39m]: failed to add user: E11000 duplicate key error collection: milanshub.users index: email_1 dup key: { email: "newusers@example.com" }
+2024-10-29T07:44:42.975Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:44:43.726Z [[32minfo[39m]: Retrieved all products: 14 found
+2024-10-29T07:44:46.226Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:44:46.360Z [[32minfo[39m]: Retrieved all products: 14 found
+2024-10-29T07:44:47.554Z [[32minfo[39m]: Added product: {"name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-10-29T07:44:47.517Z","_id":"6720926fb664f7245af8230d","__v":0}
+2024-10-29T07:44:49.357Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:44:49.494Z [[32minfo[39m]: Retrieved all products: 15 found
+2024-10-29T07:44:50.623Z [[32minfo[39m]: Added product: {"name":"Editable Product","quantity":5,"price":50,"lastUpdated":"2024-10-29T07:44:50.528Z","_id":"67209272b664f7245af82311","__v":0}
+2024-10-29T07:44:56.556Z [[31merror[39m]: User with email newusers@example.com not found
+2024-10-29T07:45:09.092Z [[32minfo[39m]: Added user: {"name":"John Doe","email":"newusers@example.com","password":"$2a$10$llLmSfrWS1BcvqdZfJeuuOJdE7amK0o9SvDa0CKARfFa4LVgKU2CC","role":"user","_id":"67209285b664f7245af82314","createdAt":"2024-10-29T07:45:09.053Z","updatedAt":"2024-10-29T07:45:09.053Z","__v":0}
+2024-10-29T07:45:09.199Z [[32minfo[39m]: Retrieved all products: 16 found
+2024-10-29T07:45:10.696Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:45:10.826Z [[32minfo[39m]: Retrieved all products: 16 found
+2024-10-29T07:45:12.277Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:45:12.416Z [[32minfo[39m]: Retrieved all products: 16 found
+2024-10-29T07:45:13.408Z [[32minfo[39m]: Added product: {"name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-10-29T07:45:13.366Z","_id":"67209289b664f7245af8231b","__v":0}
+2024-10-29T07:45:14.971Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:45:15.111Z [[32minfo[39m]: Retrieved all products: 17 found
+2024-10-29T07:45:16.163Z [[32minfo[39m]: Added product: {"name":"Editable Product","quantity":5,"price":50,"lastUpdated":"2024-10-29T07:45:16.125Z","_id":"6720928cb664f7245af8231f","__v":0}
+2024-10-29T07:45:21.970Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:45:22.164Z [[32minfo[39m]: Retrieved all products: 18 found
+2024-10-29T07:45:23.199Z [[32minfo[39m]: Added product: {"name":"Deletable Product","quantity":8,"price":80,"lastUpdated":"2024-10-29T07:45:23.162Z","_id":"67209293b664f7245af82323","__v":0}
+2024-10-29T07:45:23.440Z [[32minfo[39m]: Deleted new product with id {"_id":"67209293b664f7245af82323","name":"Deletable Product","quantity":8,"price":80,"lastUpdated":"2024-10-29T07:45:23.162Z","__v":0}
+2024-10-29T07:49:09.330Z [[31merror[39m]: failed to add user: E11000 duplicate key error collection: milanshub.users index: email_1 dup key: { email: "newusers@example.com" }
+2024-10-29T07:49:16.067Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:49:16.216Z [[32minfo[39m]: Retrieved all products: 18 found
+2024-10-29T07:49:17.812Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:49:17.961Z [[32minfo[39m]: Retrieved all products: 18 found
+2024-10-29T07:49:19.039Z [[32minfo[39m]: Added product: {"name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-10-29T07:49:18.962Z","_id":"6720937eb664f7245af8232c","__v":0}
+2024-10-29T07:49:20.574Z [[31merror[39m]: User with email newusers@example.com not found
+2024-10-29T07:49:26.219Z [[31merror[39m]: User with email newusers@example.com not found
+2024-10-29T07:49:28.959Z [[32minfo[39m]: Added user: {"name":"John Doe","email":"newusers@example.com","password":"$2a$10$Oto7jBloMHm0R3wTPDUny.VOrPFUAiz6zzjGOyodK6ZQJ8WFED5E.","role":"user","_id":"67209388b664f7245af82330","createdAt":"2024-10-29T07:49:28.924Z","updatedAt":"2024-10-29T07:49:28.924Z","__v":0}
+2024-10-29T07:49:29.075Z [[32minfo[39m]: Retrieved all products: 19 found
+2024-10-29T07:49:30.697Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:49:30.842Z [[32minfo[39m]: Retrieved all products: 19 found
+2024-10-29T07:49:32.437Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:49:32.549Z [[32minfo[39m]: Retrieved all products: 19 found
+2024-10-29T07:49:33.572Z [[32minfo[39m]: Added product: {"name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-10-29T07:49:33.534Z","_id":"6720938db664f7245af82337","__v":0}
+2024-10-29T07:49:35.238Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:49:35.389Z [[32minfo[39m]: Retrieved all products: 20 found
+2024-10-29T07:49:36.443Z [[32minfo[39m]: Added product: {"name":"Editable Product","quantity":5,"price":50,"lastUpdated":"2024-10-29T07:49:36.407Z","_id":"67209390b664f7245af8233b","__v":0}
+2024-10-29T07:49:42.517Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:49:42.717Z [[32minfo[39m]: Retrieved all products: 21 found
+2024-10-29T07:49:43.762Z [[32minfo[39m]: Added product: {"name":"Deletable Product","quantity":8,"price":80,"lastUpdated":"2024-10-29T07:49:43.727Z","_id":"67209397b664f7245af8233f","__v":0}
+2024-10-29T07:49:44.006Z [[32minfo[39m]: Deleted new product with id {"_id":"67209397b664f7245af8233f","name":"Deletable Product","quantity":8,"price":80,"lastUpdated":"2024-10-29T07:49:43.727Z","__v":0}
+2024-10-29T07:51:13.460Z [[31merror[39m]: failed to add user: E11000 duplicate key error collection: milanshub.users index: email_1 dup key: { email: "newusers@example.com" }
+2024-10-29T07:51:19.332Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:51:19.666Z [[32minfo[39m]: Retrieved all products: 21 found
+2024-10-29T07:51:21.326Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:51:21.432Z [[32minfo[39m]: Retrieved all products: 21 found
+2024-10-29T07:51:22.527Z [[32minfo[39m]: Added product: {"name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-10-29T07:51:22.490Z","_id":"672093fab664f7245af82348","__v":0}
+2024-10-29T07:51:24.050Z [[31merror[39m]: User with email newusers@example.com not found
+2024-10-29T07:51:28.170Z [[32minfo[39m]: Added user: {"name":"John Doe","email":"newusers@example.com","password":"$2a$10$NEmCCPi3Snv3mLYp8IINE.qVmxuvRrVMqdW3quwfajXMhKHaharja","role":"user","_id":"67209400b664f7245af8234b","createdAt":"2024-10-29T07:51:28.135Z","updatedAt":"2024-10-29T07:51:28.135Z","__v":0}
+2024-10-29T07:51:28.270Z [[32minfo[39m]: Retrieved all products: 22 found
+2024-10-29T07:51:29.847Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:51:29.975Z [[32minfo[39m]: Retrieved all products: 22 found
+2024-10-29T07:51:31.399Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:51:31.508Z [[32minfo[39m]: Retrieved all products: 22 found
+2024-10-29T07:51:32.508Z [[32minfo[39m]: Added product: {"name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-10-29T07:51:32.471Z","_id":"67209404b664f7245af82352","__v":0}
+2024-10-29T07:51:34.053Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:51:34.167Z [[32minfo[39m]: Retrieved all products: 23 found
+2024-10-29T07:51:35.239Z [[32minfo[39m]: Added product: {"name":"Editable Product","quantity":5,"price":50,"lastUpdated":"2024-10-29T07:51:35.201Z","_id":"67209407b664f7245af82356","__v":0}
+2024-10-29T07:51:41.197Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:51:41.364Z [[32minfo[39m]: Retrieved all products: 24 found
+2024-10-29T07:51:42.437Z [[32minfo[39m]: Added product: {"name":"Deletable Product","quantity":8,"price":80,"lastUpdated":"2024-10-29T07:51:42.402Z","_id":"6720940eb664f7245af8235a","__v":0}
+2024-10-29T07:51:42.721Z [[32minfo[39m]: Deleted new product with id {"_id":"6720940eb664f7245af8235a","name":"Deletable Product","quantity":8,"price":80,"lastUpdated":"2024-10-29T07:51:42.402Z","__v":0}
+2024-10-29T07:56:05.481Z [[31merror[39m]: failed to add user: E11000 duplicate key error collection: milanshub.users index: email_1 dup key: { email: "newusers@example.com" }
+2024-10-29T07:56:11.732Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:56:12.087Z [[32minfo[39m]: Retrieved all products: 24 found
+2024-10-29T07:56:15.228Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:56:15.443Z [[32minfo[39m]: Retrieved all products: 24 found
+2024-10-29T07:56:16.528Z [[32minfo[39m]: Added product: {"name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-10-29T07:56:16.485Z","_id":"67209520b664f7245af82363","__v":0}
+2024-10-29T07:56:18.132Z [[31merror[39m]: User with email newusers@example.com not found
+2024-10-29T07:56:25.382Z [[32minfo[39m]: Added user: {"name":"John Doe","email":"newusers@example.com","password":"$2a$10$G3ZI3jKsoTMJvgFN4p5SIeeBGlSrup3TpoxZfmZ15hP9SdBT5YC8i","role":"user","_id":"67209529b664f7245af82366","createdAt":"2024-10-29T07:56:25.344Z","updatedAt":"2024-10-29T07:56:25.344Z","__v":0}
+2024-10-29T07:56:25.514Z [[32minfo[39m]: Retrieved all products: 25 found
+2024-10-29T07:56:27.061Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:56:27.198Z [[32minfo[39m]: Retrieved all products: 25 found
+2024-10-29T07:56:28.627Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:56:28.733Z [[32minfo[39m]: Retrieved all products: 25 found
+2024-10-29T07:56:29.736Z [[32minfo[39m]: Added product: {"name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-10-29T07:56:29.700Z","_id":"6720952db664f7245af8236d","__v":0}
+2024-10-29T07:56:31.324Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:56:31.433Z [[32minfo[39m]: Retrieved all products: 26 found
+2024-10-29T07:56:32.633Z [[32minfo[39m]: Added product: {"name":"Editable Product","quantity":5,"price":50,"lastUpdated":"2024-10-29T07:56:32.596Z","_id":"67209530b664f7245af82371","__v":0}
+2024-10-29T07:56:38.826Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:56:38.943Z [[32minfo[39m]: Retrieved all products: 27 found
+2024-10-29T07:57:06.641Z [[31merror[39m]: failed to add user: E11000 duplicate key error collection: milanshub.users index: email_1 dup key: { email: "newusers@example.com" }
+2024-10-29T07:57:12.236Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:57:12.384Z [[32minfo[39m]: Retrieved all products: 27 found
+2024-10-29T07:57:14.429Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:57:14.756Z [[32minfo[39m]: Retrieved all products: 27 found
+2024-10-29T07:57:16.281Z [[32minfo[39m]: Added product: {"name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-10-29T07:57:16.246Z","_id":"6720955cb664f7245af8237b","__v":0}
+2024-10-29T07:57:18.157Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:57:18.323Z [[32minfo[39m]: Retrieved all products: 28 found
+2024-10-29T07:57:20.059Z [[32minfo[39m]: Added product: {"name":"Editable Product","quantity":5,"price":50,"lastUpdated":"2024-10-29T07:57:20.021Z","_id":"67209560b664f7245af8237f","__v":0}
+2024-10-29T07:57:22.133Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:57:22.277Z [[32minfo[39m]: Retrieved all products: 29 found
+2024-10-29T07:57:23.571Z [[32minfo[39m]: Added product: {"name":"Deletable Product","quantity":8,"price":80,"lastUpdated":"2024-10-29T07:57:23.536Z","_id":"67209563b664f7245af82383","__v":0}
+2024-10-29T07:57:23.814Z [[32minfo[39m]: Deleted new product with id {"_id":"67209563b664f7245af82383","name":"Deletable Product","quantity":8,"price":80,"lastUpdated":"2024-10-29T07:57:23.536Z","__v":0}
+2024-10-29T07:57:34.696Z [[32minfo[39m]: Added user: {"name":"John Doe","email":"newusers@example.com","password":"$2a$10$9ONdNMlXR49BJZdCHgYPAuh5WEP8KcRXs6HBW/sR.mcdtmk.B2bFy","role":"user","_id":"6720956eb664f7245af82386","createdAt":"2024-10-29T07:57:34.656Z","updatedAt":"2024-10-29T07:57:34.656Z","__v":0}
+2024-10-29T07:57:34.811Z [[32minfo[39m]: Retrieved all products: 29 found
+2024-10-29T07:57:36.394Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:57:36.525Z [[32minfo[39m]: Retrieved all products: 29 found
+2024-10-29T07:57:37.973Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:57:38.090Z [[32minfo[39m]: Retrieved all products: 29 found
+2024-10-29T07:57:39.117Z [[32minfo[39m]: Added product: {"name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-10-29T07:57:39.081Z","_id":"67209573b664f7245af8238d","__v":0}
+2024-10-29T07:57:40.646Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:57:40.988Z [[32minfo[39m]: Retrieved all products: 30 found
+2024-10-29T07:57:42.085Z [[32minfo[39m]: Added product: {"name":"Editable Product","quantity":5,"price":50,"lastUpdated":"2024-10-29T07:57:42.047Z","_id":"67209576b664f7245af82391","__v":0}
+2024-10-29T07:57:44.016Z [[32minfo[39m]: User newusers@example.com logged in successfully
+2024-10-29T07:57:44.135Z [[32minfo[39m]: Retrieved all products: 31 found
+2024-10-29T07:57:45.362Z [[32minfo[39m]: Added product: {"name":"Deletable Product","quantity":8,"price":80,"lastUpdated":"2024-10-29T07:57:45.325Z","_id":"67209579b664f7245af82395","__v":0}
+2024-10-29T07:57:45.621Z [[32minfo[39m]: Deleted new product with id {"_id":"67209579b664f7245af82395","name":"Deletable Product","quantity":8,"price":80,"lastUpdated":"2024-10-29T07:57:45.325Z","__v":0}
+2024-10-29T15:06:15.114Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-10-29T15:06:15.125Z [[32minfo[39m]: Server running on port 5000 in development mode
