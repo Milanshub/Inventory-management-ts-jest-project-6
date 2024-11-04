@@ -795,3 +795,5 @@
 2024-10-29T07:57:45.621Z [[32minfo[39m]: Deleted new product with id {"_id":"67209579b664f7245af82395","name":"Deletable Product","quantity":8,"price":80,"lastUpdated":"2024-10-29T07:57:45.325Z","__v":0}
 2024-10-29T15:06:15.114Z [[32minfo[39m]: Connected to MongoDB Atlas
 2024-10-29T15:06:15.125Z [[32minfo[39m]: Server running on port 5000 in development mode
+2024-11-04T10:53:37.788Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-11-04T10:53:37.792Z [[32minfo[39m]: Server running on port 5000 in development mode
