@@ -1,8 +1,8 @@
 import React, { ReactNode } from 'react';
-import { AuthContext } from '../../src/context/AuthContext'; // Adjust the path as necessary
-import { ProductContext } from '../../src/context/ProductContext'; // Adjust the path as necessary
-import { IUser, IUserInput } from '../../src/models/userModel'; // Adjust the path as necessary
-import { IProduct, IProductInput } from '../../src/models/productModel'; // Adjust the path as necessary
+import { AuthContext } from '../../../src/context/AuthContext'; // Adjust the path as necessary
+import { ProductContext } from '../../../src/context/ProductContext'; // Adjust the path as necessary
+import { IUser, IUserInput } from '../../../src/models/userModel'; // Adjust the path as necessary
+import { IProduct, IProductInput } from '../../../src/models/productModel'; // Adjust the path as necessary
 
 // Define the shape of the mocked AuthContext
 const mockAuthContextValue = {

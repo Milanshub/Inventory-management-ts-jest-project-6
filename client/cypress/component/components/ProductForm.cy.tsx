@@ -1,9 +1,9 @@
 import React from 'react';
 import { mount } from 'cypress/react18';
-import ProductForm from '../../src/components/ProductForm'; // Adjust the path as necessary
-import { MockProductProvider } from '../../src/mocks/mockContext'; // Use your mock context
+import ProductForm from '../../../src/components/ProductForm'; // Adjust the path as necessary
+import { MockProductProvider } from '../../../src/mocks/mockContext'; // Use your mock context
 import sinon from 'sinon'; // Import Sinon
-import { IProductInput } from '../../src/models/productModel'; // Adjust the path as necessary
+import { IProductInput } from '../../../src/models/productModel'; // Adjust the path as necessary
 
 describe('ProductForm Component', () => {
   let mockAddProduct: sinon.SinonStub<[IProductInput], Promise<void>>; // Ensure correct typing

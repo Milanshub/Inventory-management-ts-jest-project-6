@@ -2,8 +2,8 @@
 import React from 'react';
 import { mount } from '@cypress/react';
 import { MemoryRouter, Routes, Route } from 'react-router-dom';
-import { Header } from '../../src/components/Header';
-import { MockAuthProvider } from '../../src/mocks/mockContext';
+import { Header } from '../../../src/components/Header';
+import { MockAuthProvider } from '../../../src/mocks/mockContext';
 
 describe('Header Component', () => {
     const mountWithProviders = () => {

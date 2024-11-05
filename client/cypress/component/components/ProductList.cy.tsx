@@ -2,9 +2,9 @@
 
 import React from 'react';
 import { mount } from 'cypress/react18';
-import ProductList from '../../src/components/ProductList'; // Adjust the path as necessary
-import { MockProductProvider } from '../../src/mocks/mockContext'; // Adjust the path as necessary
-import { IProduct, IProductInput } from '../../src/models/productModel'; // Adjust the path as necessary
+import ProductList from '../../../src/components/ProductList'; // Adjust the path as necessary
+import { MockProductProvider } from '../../../src/mocks/mockContext'; // Adjust the path as necessary
+import { IProduct, IProductInput } from '../../../src/models/productModel'; // Adjust the path as necessary
 import sinon from 'sinon'; // Import Sinon
 
 describe('ProductList Component', () => {

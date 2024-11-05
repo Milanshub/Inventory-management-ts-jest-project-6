@@ -1,9 +1,9 @@
 // cypress/component/PieChart.cy.tsx
 import React from 'react';
 import { mount } from '@cypress/react';
-import PieChart from '../../src/components/PieChart';
-import { ProductContext } from '../../src/context/ProductContext';
-import { IProduct } from '../../src/models/productModel';
+import PieChart from '../../../src/components/PieChart';
+import { ProductContext } from '../../../src/context/ProductContext';
+import { IProduct } from '../../../src/models/productModel';
 
 describe('PieChart Component', () => {
     const mountWithProviders = (products: IProduct[]) => {
