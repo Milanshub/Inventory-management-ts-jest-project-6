@@ -41,7 +41,8 @@ export const getProductById = async (id: string): Promise< IProduct | null> => {
         }
         throw error;
     }
-}
+}; 
+
 
 
 export const getAllProducts = async (): Promise <IProduct[]> => {

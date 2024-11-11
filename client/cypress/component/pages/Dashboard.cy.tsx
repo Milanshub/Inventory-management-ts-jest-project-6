@@ -1,4 +1,3 @@
-// cypress/component/DashboardLayout.cy.tsx
 import React from 'react';
 import { mount } from '@cypress/react';
 import Dashboard from '../../../src/pages/Dashboard';  
