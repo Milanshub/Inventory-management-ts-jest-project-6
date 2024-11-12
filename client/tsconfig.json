@@ -9,8 +9,7 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl":  "." ,
     "paths": {
-      "@/*": ["*"],
-      "@cypress/*": ["cypress/*"]
+      "@/*": ["src/*"],
     },
     "moduleResolution": "node",
     "types": ["jest", "node"]  // Ensure Jest types are included
