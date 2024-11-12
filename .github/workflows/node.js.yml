@@ -8,7 +8,6 @@ on:
 
 jobs:
   test:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -25,12 +24,17 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      # Install server dependencies and run tests with Yarn
-      - name: Install and test server
+      # Install server dependencies
+      - name: Install server dependencies
         run: |
           cd server
           yarn install  # Install backend dependencies with Yarn
-          yarn test     # Run backend tests with Yarn
+
+      # Start server in the background
+      - name: Start server
+        run: |
+          cd server
+          nohup yarn start &  # Start server in the background
 
       # Set up Node.js for the client (frontend)
       - name: Setup Node.js for client
@@ -38,9 +42,33 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      # Install client dependencies and run tests with Yarn
-      - name: Install and test client
+      # Install client dependencies
+      - name: Install client dependencies
         run: |
           cd client
           yarn install  # Install frontend dependencies with Yarn
-          yarn test     # Run frontend tests with Yarn
+
+      # Start client in the background
+      - name: Start client
+        run: |
+          cd client
+          nohup yarn start &  # Start client in the background
+
+      # Wait for the applications to be ready
+      - name: Wait for applications to be ready
+        run: |
+          # Wait for server and client to be accessible
+          until curl -s http://localhost:5000 > /dev/null; do echo "Waiting for server..."; sleep 5; done
+          until curl -s http://localhost:3000 > /dev/null; do echo "Waiting for client..."; sleep 5; done
+
+      # Run Cypress component tests
+      - name: Run Cypress Component Tests
+        run: |
+          cd client
+          yarn cypress:run:component  # Run component tests headlessly
+
+      # Run Cypress e2e tests
+      - name: Run Cypress E2E Tests
+        run: |
+          cd client
+          yarn cypress:run:e2e  # Run e2e tests headlessly

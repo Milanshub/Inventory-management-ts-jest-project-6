@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --all --coverage",
-    "eject": "react-scripts eject"
-  },
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test --all --coverage",
+  "eject": "react-scripts eject",
+  "cypress:run:component": "cypress run --component",
+  "cypress:run:e2e": "cypress run --e2e"
+},
   "jest": {
     "testMatch": [
       "**/?(*.)+(test).[jt]s?(x)"

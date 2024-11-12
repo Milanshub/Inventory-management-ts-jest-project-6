@@ -4,13 +4,16 @@ describe('Authentication Flow', () => {
     });
 
     it('should register a new user and log them out', () => {
+        // Generate a unique email using a timestamp
+        const uniqueEmail = `newuser${Date.now()}@example.com`;
+
         // Navigate to the registration page
         cy.contains('Register').click(); // Click the register button
         cy.url().should('include', '/register'); // Assert we are on the registration page
 
         // Fill in the registration form
         cy.get('input[type="name"]').type('John Doe');
-        cy.get('input[type="email"]').type('newusers@example.com');
+        cy.get('input[type="email"]').type(uniqueEmail); // Use unique email
         cy.get('input[type="password"]').type('newpassword'); // Use a unique password
         cy.get('button[type="submit"]').click(); // Click the register button
 
@@ -38,93 +41,72 @@ describe('Authentication Flow', () => {
     });
 
     context('Product Management Flow', () => {
+        it('should add a new product', () => {
+            cy.contains('Login').click();
+            cy.url().should('include', '/login');
 
-        
-    it('should add a new product', () => {
-        cy.contains('Login').click(); // Click the login button
-        cy.url().should('include', '/login'); // Assert we are on the login page
+            cy.get('input[type="email"]').type('newusers@example.com');
+            cy.get('input[type="password"]').type('newpassword');
+            cy.get('button[type="submit"]').click();
 
-        // Fill in the login form
-        cy.get('input[type="email"]').type('newusers@example.com'); // Use the registered email
-        cy.get('input[type="password"]').type('newpassword'); // Use the same password
-        cy.get('button[type="submit"]').click(); // Click the login button
+            cy.url().should('include', '/dashboard');
+            cy.contains('Products').click();
 
-        cy.url().should('include', '/dashboard'); // Assert we are on the dashboard
-        cy.contains('Products').click(); // Click the Products link to navigate to the products page
+            cy.url().should('include', '/products');
 
-        // Assert that we are on the products page
-        cy.url().should('include', '/products'); // Assert we are on the products page
+            cy.get('input[name="name"]').type('New Product');
+            cy.get('input[name="quantity"]').type('10');
+            cy.get('input[name="price"]').type('100');
+            cy.get('button[type="submit"]').click();
 
-        // Fill in the product form
-        cy.get('input[name="name"]').type('New Product');
-        cy.get('input[name="quantity"]').type('10');
-        cy.get('input[name="price"]').type('100');
-        cy.get('button[type="submit"]').click(); // Click the save product button 
+            cy.contains('New Product').should('be.visible');
+        });
 
-        // Assert that the product is displayed in the list
-        cy.contains('New Product').should('be.visible');
-    });it('should edit the quantity of an existing product', () => {
-        // Click the login button
-        cy.contains('Login').click(); 
-        cy.url().should('include', '/login'); // Assert we are on the login page
-    
-        // Fill in the login form
-        cy.get('input[type="email"]').type('newusers@example.com'); // Use the registered email
-        cy.get('input[type="password"]').type('newpassword'); // Use the same password
-        cy.get('button[type="submit"]').click(); // Click the login button
-    
-        // Assert we are on the dashboard
-        cy.url().should('include', '/dashboard'); 
-        cy.contains('Products').click(); // Click the Products link to navigate to the products page
-    
-        // Assert that we are on the products page
-        cy.url().should('include', '/products'); 
-    
-        // First, add a product to edit later
-        cy.get('input[name="name"]').type('Editable Product'); // Add a product
-        cy.get('input[name="quantity"]').type('5'); // Set quantity
-        cy.get('input[name="price"]').type('50'); // Set price
-        cy.get('button[type="submit"]').click(); // Save the new product
-    
-        // Now, edit the quantity of the product
-        cy.contains('Editable Product').parents('tr').find('button').contains('Update').click({ multiple: true }); // Click the update button for the product
-    
-        // Ensure the update dialog is visible
-        cy.contains('Update Product').should('be.visible'); 
+        it('should edit the quantity of an existing product', () => {
+            cy.contains('Login').click();
+            cy.url().should('include', '/login');
 
-    });
-    
-    
-    
+            cy.get('input[type="email"]').type('newusers@example.com');
+            cy.get('input[type="password"]').type('newpassword');
+            cy.get('button[type="submit"]').click();
+
+            cy.url().should('include', '/dashboard');
+            cy.contains('Products').click();
+
+            cy.url().should('include', '/products');
+
+            cy.get('input[name="name"]').type('Editable Product');
+            cy.get('input[name="quantity"]').type('5');
+            cy.get('input[name="price"]').type('50');
+            cy.get('button[type="submit"]').click();
+
+            cy.contains('Editable Product').parents('tr').find('button').contains('Update').click({ multiple: true });
+
+            cy.contains('Update Product').should('be.visible');
+        });
+
         it('should delete a product', () => {
-            cy.contains('Login').click(); // Click the login button
-            cy.url().should('include', '/login'); // Assert we are on the login page
-    
-            // Fill in the login form
-            cy.get('input[type="email"]').type('newusers@example.com'); // Use the registered email
-            cy.get('input[type="password"]').type('newpassword'); // Use the same password
-            cy.get('button[type="submit"]').click(); // Click the login button
-    
-            cy.url().should('include', '/dashboard'); // Assert we are on the dashboard
-            cy.contains('Products').click(); // Click the Products link to navigate to the products page
-    
-            // Assert that we are on the products page
-            cy.url().should('include', '/products'); // Assert we are on the products page
-    
-            // First, add a product to delete later
+            cy.contains('Login').click();
+            cy.url().should('include', '/login');
+
+            cy.get('input[type="email"]').type('newusers@example.com');
+            cy.get('input[type="password"]').type('newpassword');
+            cy.get('button[type="submit"]').click();
+
+            cy.url().should('include', '/dashboard');
+            cy.contains('Products').click();
+
+            cy.url().should('include', '/products');
+
             cy.get('input[name="name"]').type('Deletable Product');
             cy.get('input[name="quantity"]').type('8');
             cy.get('input[name="price"]').type('80');
-            cy.get('button[type="submit"]').click(); // Save the new product
+            cy.get('button[type="submit"]').click();
 
-            // Now, delete the product
-            cy.contains('Deletable Product').parents('tr').find('button').contains('Delete').click(); // Click the delete button
+            cy.contains('Deletable Product').parents('tr').find('button').contains('Delete').click();
+            cy.on('window:confirm', () => true);
 
-            // Confirm the deletion in the confirmation dialog
-            cy.on('window:confirm', () => true); // Automatically confirm the delete action
-
-            // Assert that the product is removed
-            cy.contains('Deletable Product').should('not.exist'); // Check that the product no longer exists
+            cy.contains('Deletable Product').should('not.exist');
         });
     });
 });
