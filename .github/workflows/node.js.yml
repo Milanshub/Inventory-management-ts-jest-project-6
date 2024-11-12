@@ -62,13 +62,9 @@ jobs:
           until curl -s http://localhost:3000 > /dev/null; do echo "Waiting for client..."; sleep 5; done
 
       # Run Cypress component tests
-      - name: Run Cypress Component Tests
+      - name: Install and test client with Cypress
         run: |
           cd client
-          yarn cypress:run:component  # Run component tests headlessly
-
-      # Run Cypress e2e tests
-      - name: Run Cypress E2E Tests
-        run: |
-          cd client
-          yarn cypress:run:e2e  # Run e2e tests headlessly
+          yarn install  # Ensure all dependencies, including Cypress, are installed
+          yarn cypress:run:component  # Run component tests
+          yarn cypress:run:e2e  # Run e2e tests
