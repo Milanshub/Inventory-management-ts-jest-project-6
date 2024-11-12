@@ -19,6 +19,13 @@ jobs:
       # Checkout the repository
       - uses: actions/checkout@v4
 
+      # Clear any existing cache for a fresh run (optional)
+      - name: Clear Webpack and Yarn Cache
+        run: |
+          rm -rf client/node_modules/.cache
+          rm -rf client/node_modules
+          yarn cache clean
+
       # Set up Node.js for the server (backend)
       - name: Setup Node.js for server
         uses: actions/setup-node@v4
