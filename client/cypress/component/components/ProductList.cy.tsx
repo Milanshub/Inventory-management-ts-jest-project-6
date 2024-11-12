@@ -26,7 +26,7 @@ describe('ProductList Component', () => {
             addProduct: mockAddProduct,
             updateProduct: mockUpdateProduct,
             deleteProduct: mockDeleteProduct,
-            lastUpdated: null
+            lastUpdated: new Date(),
         };
 
         // Mount the ProductList component with the mocked provider

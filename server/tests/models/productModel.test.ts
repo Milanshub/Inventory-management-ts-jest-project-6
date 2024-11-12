@@ -5,7 +5,7 @@ import { MongoMemoryServer } from 'mongodb-memory-server';
 
 let mongoServer: MongoMemoryServer;
 
-describe.skip('Product model test suite', () => {
+describe('Product model test suite', () => {
     beforeAll(async () => {
         // Start MongoDB Memory Server
         mongoServer = await MongoMemoryServer.create();

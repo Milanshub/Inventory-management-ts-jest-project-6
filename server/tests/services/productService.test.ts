@@ -15,7 +15,7 @@ vi.mock('../../src/utils/logger', () => ({
 
 let mongoServer: MongoMemoryServer;
 
-describe.skip('Product Service Tests', () => {
+describe('Product Service Tests', () => {
     // Start MongoDB Memory Server and connect 
     beforeAll(async () => {
         mongoServer = await MongoMemoryServer.create();
@@ -57,7 +57,7 @@ describe.skip('Product Service Tests', () => {
 
         await expect(addProduct(mockProductInput)).rejects.toThrow('Save error');
         
-        expect(logger.error).toHaveBeenCalledWith("failed to add product: Save error")
+        expect(logger.error).toHaveBeenCalledWith("Failed to add product: Save error")
     }); 
 
     // creates mock object with no 'name' and tries to add 
@@ -65,8 +65,10 @@ describe.skip('Product Service Tests', () => {
         const invalidProductInput = { quantity: 100, price: 50 }; 
         // @ts-ignore
         await expect(addProduct(invalidProductInput)).rejects.toThrowError();
-
-        expect(logger.error).toHaveBeenCalledWith(expect.stringContaining('failed to add product:'))
+    
+        expect(logger.error).toHaveBeenCalledWith(
+            expect.stringContaining('Failed to add product:')
+        );
     })
 
     // created mock object with wrong 'quantity' and tries to add
@@ -74,17 +76,21 @@ describe.skip('Product Service Tests', () => {
         const invalidProductInput = { name: 'Sample Product', quantity: -10, price: 50 }; // Negative quantity
     
         await expect(addProduct(invalidProductInput)).rejects.toThrowError();
-
-        expect(logger.error).toHaveBeenCalledWith(expect.stringContaining('failed to add product:'))
+    
+        expect(logger.error).toHaveBeenCalledWith(
+            expect.stringContaining('Failed to add product:')
+        );
     });
 
-    it('should fail to add a product with invalid price',async () => {
-        const invalidProductInput = {name: 'name', quantity: 100, price: -50}; 
-
-        await expect(addProduct(invalidProductInput)).rejects.toThrowError()
-
-        expect(logger.error).toHaveBeenCalledWith(expect.stringContaining('failed to add product:'))
-    })
+    it('should fail to add a product with invalid price', async () => {
+        const invalidProductInput = { name: 'name', quantity: 100, price: -50 };
+    
+        await expect(addProduct(invalidProductInput)).rejects.toThrowError();
+    
+        expect(logger.error).toHaveBeenCalledWith(
+            expect.stringContaining('Failed to add product:')
+        );
+    });
 
     // creates mock object that is added and then retrieved using getProductById
     it('should get a product by ID', async () => {
@@ -176,7 +182,7 @@ describe.skip('Product Service Tests', () => {
     
         await expect(updateProduct(invalidId, updateData)).rejects.toThrow('Invalid product ID!');
     
-        expect(logger.error).toHaveBeenCalledWith('Failed to update new product with id invalidId123: Invalid product ID!');
+        expect(logger.error).toHaveBeenCalledWith('Failed to update product with ID invalidId123: Invalid product ID!');
       });
 
     // returns null if updating with incorrect id 

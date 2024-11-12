@@ -25,7 +25,7 @@ describe('ProductPage Component', () => {
             addProduct: mockAddProduct,
             updateProduct: mockUpdateProduct,
             deleteProduct: mockDeleteProduct,
-            lastUpdated: null
+            lastUpdated: new Date(),
         };
 
         // Mount ProductPage with mocked provider

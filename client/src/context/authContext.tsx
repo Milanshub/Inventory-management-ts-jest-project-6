@@ -1,57 +1,82 @@
-import React, { createContext, useState, ReactNode } from 'react';
+import React, { createContext, useState, ReactNode, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { loginUser, registerUser } from '../services/authService';  
-import { IUser, IUserInput } from '../models/userModel';           
+import { loginUser, registerUser, logoutUser } from '../services/authService';
+import { fetchUserById } from '../services/userService';
+import { IUser, IUserInput } from '../models/userModel';
+import { jwtDecode } from 'jwt-decode';
 
-// Define the shape of the context
-interface AuthContextType {
-  user: IUser | null;                  // Holds the logged-in user data
-  login: (email: string, password: string) => Promise<void>;  // Login function
-  logout: () => void;                  // Logout function
-  register: (userData: IUserInput) => Promise<void>;  // Register function
+interface DecodedToken {
+  id: string;
 }
 
-// Create the context
+interface AuthContextType {
+  user: IUser | null;
+  loading: boolean; // Added loading state
+  login: (email: string, password: string) => Promise<void>;
+  logout: () => void;
+  register: (userData: IUserInput) => Promise<void>;
+}
+
 export const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
-// Create the provider component
 export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [user, setUser] = useState<IUser | null>(null);  // User state
-  const navigate = useNavigate();  // For navigating after login/logout
+  const [user, setUser] = useState<IUser | null>(null);
+  const [loading, setLoading] = useState(true); // Initialize loading state
+  const navigate = useNavigate();
 
-  // Function to handle user login
+  useEffect(() => {
+    const initializeUser = async () => {
+      const token = localStorage.getItem('token');
+      if (token) {
+        try {
+          const decoded = jwtDecode<DecodedToken>(token);
+          if (decoded.id) {
+            const fetchedUser = await fetchUserById(decoded.id);
+            setUser(fetchedUser);
+          }
+        } catch (error) {
+          console.error("Failed to fetch user on load", error);
+          localStorage.removeItem('token');
+        }
+      }
+      setLoading(false); // Set loading to false after attempt
+    };
+    initializeUser();
+  }, []);
+
   const login = async (email: string, password: string) => {
     try {
-      const loggedInUser = await loginUser(email, password);  // Call API to login
-      setUser(loggedInUser);  // Set the user data in state
-      navigate('/dashboard');  // Navigate to the dashboard after login
+      const loggedInUser = await loginUser(email, password);
+      setUser(loggedInUser);
+      navigate('/dashboard');
     } catch (error) {
-      console.error("Login failed", error);  // Handle login errors
-      // You might want to add user feedback here
+      console.error("Login failed", error);
     }
   };
 
-  // Function to handle user logout
-  const logout = () => {
-    setUser(null);  // Clear the user state
-    navigate('/login');  // Navigate back to the login page
+  const logout = async () => {
+    try {
+      await logoutUser();
+      setUser(null);
+      localStorage.removeItem('token');
+      navigate('/login');
+    } catch (error) {
+      console.error('Error during logout', error);
+    }
   };
 
-  // Function to handle user registration
   const register = async (userData: IUserInput) => {
     try {
-      const registeredUser = await registerUser(userData);  // Call API to register
-      setUser(registeredUser);  // Set the user data in state
-      navigate('/dashboard');  // Navigate to the dashboard after registration
+      const registeredUser = await registerUser(userData);
+      setUser(registeredUser);
+      navigate('/dashboard');
     } catch (error) {
-      console.error("Registration failed", error);  // Handle registration errors
-      // Consider adding user feedback here as well
+      console.error("Registration failed", error);
     }
   };
 
-  // This context provider wraps the entire app, providing authentication state
   return (
-    <AuthContext.Provider value={{ user, login, logout, register }}>
+    <AuthContext.Provider value={{ user, loading, login, logout, register }}>
       {children}
     </AuthContext.Provider>
   );

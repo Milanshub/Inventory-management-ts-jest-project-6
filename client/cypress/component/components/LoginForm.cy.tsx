@@ -19,6 +19,7 @@ describe('LoginForm Component', () => {
 
     const mockAuthContext = {
       user: null,
+      loading: false,
       login: mockLogin,
       logout: mockLogout,
       register: mockRegister

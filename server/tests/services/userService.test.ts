@@ -14,7 +14,7 @@ vi.mock('../../src/utils/logger', () => ({
 
 let mongoServer: MongoMemoryServer; 
 
-describe.skip('userService test suite', () => {
+describe('userService test suite', () => {
      // Start MongoDB Memory Server and connect 
      beforeAll(async () => {
         mongoServer = await MongoMemoryServer.create();
@@ -35,7 +35,7 @@ describe.skip('userService test suite', () => {
         vi.clearAllMocks();
     });
 
-    it.skip('should add a user successfully',async () => {
+    it('should add a user successfully',async () => {
         const mockUserInput = {
             name: "someUser", 
             email: "someEmail", 
@@ -70,7 +70,7 @@ describe.skip('userService test suite', () => {
     })
 
 
-    it.skip('should get a user by ID', async () => {
+    it('should get a user by ID', async () => {
         const mockUserInput = {
             name: "someUser", 
             email: "someEmail", 
@@ -111,7 +111,7 @@ describe.skip('userService test suite', () => {
         expect(result).toBeNull();
     });
 
-    it.skip('should get all user', async () => {
+    it('should get all user', async () => {
         const mockUserInput1 = {
             name: "someUser", 
             email: "someEmail", 
@@ -149,7 +149,7 @@ describe.skip('userService test suite', () => {
         expect(logger.error).toHaveBeenCalledWith('Failed to retreive all users: Find error');
     })
 
-    it.skip('should updated a user succesfully',async () => {
+    it('should updated a user succesfully',async () => {
         const mockUserInput1 = {
             name: "someUser", 
             email: "someEmail", 
@@ -186,7 +186,7 @@ describe.skip('userService test suite', () => {
         expect(result).toBeNull(); 
     })
 
-    it.skip('should delete a user succesfully', async () => {
+    it('should delete a user succesfully', async () => {
         const mockUserInput1 = {
             name: "someUser", 
             email: "someEmail", 

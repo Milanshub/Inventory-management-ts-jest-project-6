@@ -17,7 +17,7 @@ describe('ProductForm Component', () => {
       addProduct: mockAddProduct,
       updateProduct: sinon.stub().resolves(), // Add stubs for other methods if necessary
       deleteProduct: sinon.stub().resolves(), // Add stubs for other methods if necessary
-      lastUpdated: null,
+      lastUpdated: new Date(), 
     }; 
 
     // Mount the ProductForm component with the ProductContext provider

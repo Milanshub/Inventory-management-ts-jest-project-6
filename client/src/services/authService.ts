@@ -3,17 +3,17 @@ import log from "../utils/logger";
 import {IUser, IUserInput} from '../models/userModel'; 
 
 
-export const loginUser = async (email: string, password: string):Promise<IUser> => {
+export const loginUser = async (email: string, password: string): Promise<IUser> => {
     try {
-        const response = await api.post(`/auth/login`, {email, password}); 
-        const token = response.data.token;
-        localStorage.setItem('token', token);
-        return response.data.user;
+      const response = await api.post(`/auth/login`, { email, password });
+      const token = response.data.token;
+      localStorage.setItem('token', token); // Store the token in localStorage
+      return response.data.user;
     } catch (error) {
-        log.error('Error logging user', error); 
-        throw error;
+      log.error('Error logging user', error);
+      throw error;
     }
-}; 
+  };
 
 export const registerUser = async (useData: IUserInput): Promise <IUser> => {
     try {

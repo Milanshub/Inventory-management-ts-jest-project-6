@@ -13,7 +13,7 @@ import {app, startServer} from '../src/app'
 
 dotenv.config();
 
-describe.skip('Server Tests', () => {
+describe('Server Tests', () => {
     let mongoServer: MongoMemoryServer;
 
     // Setup the in-memory MongoDB server before all tests
@@ -37,7 +37,7 @@ describe.skip('Server Tests', () => {
     });
 
     it('should respond with 200 OK on the /ap/users route', async () => {
-        const response = await request(app).get('/ap/users'); // Adjust according to your actual user routes
+        const response = await request(app).get('/api/users'); // Adjust according to your actual user routes
         expect(response.status).toBe(200);
         // Add more assertions based on expected response
     });

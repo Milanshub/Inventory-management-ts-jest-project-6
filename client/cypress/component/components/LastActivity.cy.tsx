@@ -16,6 +16,7 @@ const mockAuthContextValue = {
     register: async (userData: IUserInput) => {
         console.log('Mock registration for:', userData); // Mock registration
     },
+    loading: false, 
 };
 
 // Define the shape of the mocked ProductContext
