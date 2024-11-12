@@ -4,6 +4,9 @@ const path = require('path');
 module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'], // Add your file extensions
+    alias: {
+      '@': path.resolve(__dirname, '../src') // Make sure this points to the `src` folder
+    }
   },
   module: {
     rules: [
