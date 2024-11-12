@@ -32,7 +32,9 @@ app.use('/api', userRouter);
 
 const startServer = async () => {
     try {
-        await connectToMongoDb();
+        if (mongoose.connection.readyState === 0) { 
+            await connectToMongoDb();
+        }
         app.listen(serverConfig.port, () => {
             logger.info(`Server running on port ${serverConfig.port} in ${serverConfig.env} mode`);
         });

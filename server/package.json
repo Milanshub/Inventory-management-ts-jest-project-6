@@ -6,7 +6,7 @@
   "scripts": {
     "start": "ts-node src/app.ts",
     "build": "tsc",
-     "test": "vitest --coverage --watch"
+     "test": "vitest --coverage"
   },
   "author": "",
   "license": "ISC",

@@ -12,3 +12,89 @@
 2024-11-12T14:13:58.335Z [[32minfo[39m]: Server running on port 5000 in test mode
 2024-11-12T14:15:46.405Z [[32minfo[39m]: Connected to MongoDB Atlas
 2024-11-12T14:15:46.411Z [[32minfo[39m]: Server running on port 5000 in test mode
+2024-11-12T14:20:01.212Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-11-12T14:20:01.216Z [[32minfo[39m]: Server running on port 5000 in test mode
+2024-11-12T14:20:50.441Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-11-12T14:20:50.446Z [[32minfo[39m]: Server running on port 5000 in test mode
+2024-11-12T14:21:18.028Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-11-12T14:21:18.032Z [[32minfo[39m]: Server running on port 5000 in development mode
+2024-11-12T14:22:08.706Z [[32minfo[39m]: User m@m.com logged in successfully
+2024-11-12T14:22:08.955Z [[32minfo[39m]: Retrieved all products: 31 found
+2024-11-12T14:23:32.061Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-11-12T14:23:32.066Z [[32minfo[39m]: Server running on port 5000 in test mode
+2024-11-12T14:23:34.199Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-11-12T14:23:34.232Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-11-12T14:25:55.663Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-11-12T14:25:55.667Z [[32minfo[39m]: Server running on port 5000 in test mode
+2024-11-12T14:25:56.945Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-11-12T14:27:22.555Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-11-12T14:27:22.560Z [[32minfo[39m]: Server running on port 5000 in test mode
+2024-11-12T14:27:23.956Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-11-12T14:28:45.246Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-11-12T14:28:45.253Z [[32minfo[39m]: Server running on port 5000 in test mode
+2024-11-12T14:28:46.536Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-11-12T14:30:43.289Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-11-12T14:30:43.295Z [[32minfo[39m]: Server running on port 5000 in test mode
+2024-11-12T14:31:13.056Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-11-12T14:31:13.060Z [[32minfo[39m]: Server running on port 5000 in test mode
+2024-11-12T14:31:33.581Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-11-12T14:31:33.585Z [[32minfo[39m]: Server running on port 5000 in test mode
+2024-11-12T14:33:14.177Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-11-12T14:33:14.181Z [[32minfo[39m]: Server running on port 5000 in test mode
+2024-11-12T14:33:15.504Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-11-12T14:33:15.527Z [[32minfo[39m]: Server running on port 5000
+2024-11-12T14:38:07.226Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-11-12T14:38:07.231Z [[32minfo[39m]: Server running on port 5000 in test mode
+2024-11-12T14:38:10.174Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-11-12T14:38:10.191Z [[32minfo[39m]: Retreived all users: 0 found
+2024-11-12T14:38:10.194Z [[32minfo[39m]: Server running on port 5000
+2024-11-12T14:38:35.083Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-11-12T14:38:35.090Z [[32minfo[39m]: Server running on port 5000 in test mode
+2024-11-12T14:38:36.684Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-11-12T14:38:36.701Z [[32minfo[39m]: Retreived all users: 0 found
+2024-11-12T14:38:36.704Z [[32minfo[39m]: Server running on port 5000
+2024-11-12T14:41:25.590Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-11-12T14:41:25.594Z [[32minfo[39m]: Server running on port 5000 in test mode
+2024-11-12T14:41:29.306Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-11-12T14:41:29.403Z [[32minfo[39m]: Retreived all users: 0 found
+2024-11-12T14:41:29.409Z [[32minfo[39m]: Server running on port 5000
+2024-11-12T14:44:36.951Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-11-12T14:44:36.958Z [[32minfo[39m]: Server running on port 5000 in test mode
+2024-11-12T14:44:38.839Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-11-12T14:44:38.862Z [[32minfo[39m]: Retreived all users: 0 found
+2024-11-12T14:44:38.872Z [[32minfo[39m]: Server running on port 5000
+2024-11-12T14:44:48.404Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-11-12T14:44:48.408Z [[32minfo[39m]: Server running on port 5000 in test mode
+2024-11-12T14:44:49.978Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-11-12T14:44:50.001Z [[32minfo[39m]: Retreived all users: 0 found
+2024-11-12T14:44:50.007Z [[32minfo[39m]: Server running on port 5000
+2024-11-12T14:59:35.144Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-11-12T14:59:35.152Z [[32minfo[39m]: Server running on port 5000 in test mode
+2024-11-12T14:59:37.018Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-11-12T14:59:37.034Z [[32minfo[39m]: Retreived all users: 0 found
+2024-11-12T14:59:37.037Z [[32minfo[39m]: Server running on port 5000
+2024-11-12T15:09:09.763Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-11-12T15:09:09.773Z [[32minfo[39m]: Server running on port 5000 in test mode
+2024-11-12T15:09:11.447Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-11-12T15:09:11.464Z [[32minfo[39m]: Retreived all users: 0 found
+2024-11-12T15:09:11.470Z [[32minfo[39m]: Server running on port 5000
+2024-11-12T15:11:09.157Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-11-12T15:11:09.162Z [[32minfo[39m]: Server running on port 5000 in test mode
+2024-11-12T15:11:11.130Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-11-12T15:11:11.148Z [[32minfo[39m]: Retreived all users: 0 found
+2024-11-12T15:11:11.155Z [[32minfo[39m]: Server running on port 5000
+2024-11-12T15:12:16.435Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-11-12T15:12:16.440Z [[32minfo[39m]: Server running on port 5000 in test mode
+2024-11-12T15:12:18.570Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-11-12T15:12:18.586Z [[32minfo[39m]: Retreived all users: 0 found
+2024-11-12T15:12:18.589Z [[32minfo[39m]: Server running on port 5000
+2024-11-12T15:13:05.378Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-11-12T15:13:05.388Z [[32minfo[39m]: Server running on port 5000 in test mode
+2024-11-12T15:13:07.071Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-11-12T15:13:07.086Z [[32minfo[39m]: Retreived all users: 0 found
+2024-11-12T15:13:07.088Z [[32minfo[39m]: Server running on port 5000
+2024-11-12T15:31:13.204Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-11-12T15:31:13.208Z [[32minfo[39m]: Server running on port 5000 in test mode
+2024-11-12T15:31:14.721Z [[32minfo[39m]: Retrieved all products: 0 found
+2024-11-12T15:31:14.752Z [[32minfo[39m]: Retreived all users: 0 found
+2024-11-12T15:31:14.757Z [[32minfo[39m]: Server running on port 5000

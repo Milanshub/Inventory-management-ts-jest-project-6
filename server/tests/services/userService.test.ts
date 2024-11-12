@@ -35,29 +35,32 @@ describe('userService test suite', () => {
         vi.clearAllMocks();
     });
 
-    it('should add a user successfully',async () => {
+    it('should add a user successfully', async () => {
         const mockUserInput = {
-            name: "someUser", 
-            email: "someEmail", 
-            password: "somePassword", 
+            name: "someUser",
+            email: "someEmail@email.com",
+            password: "somePassword",
             role: 'user' as 'user'
-        }; 
-
-       const result = await addUser(mockUserInput); 
-
-       expect(result).toHaveProperty('_id'); 
-       expect(result.name).toBe(mockUserInput.name); 
-       expect(result.email).toBe(mockUserInput.email); 
-       expect(result.password).toBe(mockUserInput.password); 
-       expect(result.role).toBe(mockUserInput.role); 
-
-       expect(logger.info).toHaveBeenCalledWith(`Added user: ${JSON.stringify(result)}`)
-    }); 
+        };
+    
+        const result = await addUser(mockUserInput);
+    
+        expect(result).toHaveProperty('_id');
+        expect(result.name).toBe(mockUserInput.name);
+        expect(result.email).toBe(mockUserInput.email);
+        expect(result.role).toBe(mockUserInput.role);
+    
+        // Expect the password to be hashed (by checking typical bcrypt characteristics)
+        expect(result.password).not.toBe(mockUserInput.password); // Confirm it's not plain text
+        expect(result.password).toMatch(/^\$2[abxy]?\$.{56}$/); // Confirm bcrypt hash pattern
+    
+        expect(logger.info).toHaveBeenCalledWith(`Added user: ${JSON.stringify(result)}`);
+    });
 
     it('should fail to add a user and log an error', async () => {
         const mockUserInput = {
             name: "someUser", 
-            email: "someEmail", 
+            email: "someEmail@email.com", 
             password: "somePassword", 
             role: 'user' as 'user'
         }; 
@@ -72,29 +75,31 @@ describe('userService test suite', () => {
 
     it('should get a user by ID', async () => {
         const mockUserInput = {
-            name: "someUser", 
-            email: "someEmail", 
-            password: "somePassword", 
+            name: "someUser",
+            email: "someEmail@email.com",
+            password: "somePassword",
             role: 'user' as 'user'
-        }; 
-
-        const addedUSer = await addUser(mockUserInput);
-        
-        const addedUserWithId = addedUSer as IUser; 
-
+        };
+    
+        const addedUser = await addUser(mockUserInput);
+    
+        // Clear previous logger calls to isolate retrieval logging
+        vi.clearAllMocks();
         // @ts-ignore
-        const result = await getUserById(addedUserWithId._id.toString()); 
-
+        const result = await getUserById(addedUser._id.toString());
+    
         expect(result).toMatchObject({
-            _id: addedUserWithId._id,
-            name: mockUserInput.name, 
-            email: mockUserInput.email, 
-            password: mockUserInput.password, 
-            role: mockUserInput.role
-        }); 
-
-        expect(logger.info).toHaveBeenCalledWith(`Retreived user: ${JSON.stringify(result)}`)
-    }); 
+            _id: addedUser._id,
+            name: mockUserInput.name,
+            email: mockUserInput.email,
+            role: mockUserInput.role,
+        });
+    
+        // Expect only the "retrieved user" log message
+        expect(logger.info).toHaveBeenCalledWith(`Retreived user: ${JSON.stringify(result)}`);
+    });
+    
+    
 
     it('should log an error and throw if getUserById is called with invalid ID', async () => {
         const invalidId = 'invalidId123';
@@ -111,35 +116,45 @@ describe('userService test suite', () => {
         expect(result).toBeNull();
     });
 
-    it('should get all user', async () => {
-        const mockUserInput1 = {
-            name: "someUser", 
-            email: "someEmail", 
-            password: "somePassword", 
-            role: 'user' as 'user'
-        }; 
-        const mockUserInput2 = {
-            name: "someUser", 
-            email: "someEmail", 
-            password: "somePassword", 
-            role: 'user' as 'user'
-        }; 
+ 
+it('should get all users', async () => {
+    const mockUserInput1 = {
+        name: "someUser1", 
+        email: "uniqueEmail1@email.com", 
+        password: "somePassword", 
+        role: 'user' as 'user'
+    }; 
+    const mockUserInput2 = {
+        name: "someUser2", 
+        email: "uniqueEmail2@email.com", 
+        password: "somePassword", 
+        role: 'user' as 'user'
+    }; 
 
-        await addUser(mockUserInput1); 
-        await addUser(mockUserInput2); 
+    await addUser(mockUserInput1); 
+    await addUser(mockUserInput2); 
 
-        const users = await getAllUsers(); 
+    const users = await getAllUsers(); 
 
-        expect(users).toHaveLength(2); 
-        expect(users).toEqual(
-            expect.arrayContaining([
-                expect.objectContaining(mockUserInput1), 
-                expect.objectContaining(mockUserInput2),
-            ])
-        ); 
+    // Exclude password from comparison because it’s hashed
+    expect(users).toEqual(
+        expect.arrayContaining([
+            expect.objectContaining({
+                name: mockUserInput1.name,
+                email: mockUserInput1.email,
+                role: mockUserInput1.role,
+            }),
+            expect.objectContaining({
+                name: mockUserInput2.name,
+                email: mockUserInput2.email,
+                role: mockUserInput2.role,
+            }),
+        ])
+    );
 
-        expect(logger.info).toHaveBeenCalledWith(`Retreived all users: ${users.length} found`)
-    }); 
+    expect(logger.info).toHaveBeenCalledWith(`Retreived all users: ${users.length} found`);
+});
+    
 
     it('should fail to getAllUsers and log an error', async () => {
         vi.spyOn(User, 'find').mockRejectedValueOnce(new Error('Find error'));
@@ -152,7 +167,7 @@ describe('userService test suite', () => {
     it('should updated a user succesfully',async () => {
         const mockUserInput1 = {
             name: "someUser", 
-            email: "someEmail", 
+            email: "someEmail@email.com", 
             password: "somePassword", 
             role: 'user' as 'user'
         }; 
@@ -189,7 +204,7 @@ describe('userService test suite', () => {
     it('should delete a user succesfully', async () => {
         const mockUserInput1 = {
             name: "someUser", 
-            email: "someEmail", 
+            email: "someEmail@email.com", 
             password: "somePassword", 
             role: 'user' as 'user'
         }; 
@@ -217,5 +232,6 @@ describe('userService test suite', () => {
         const nonExistentId ='123456789012345678901234'; 
         const result = await deleteUser(nonExistentId); 
         expect(result).toBe(false); 
-    })
-})
+    });
+
+});
