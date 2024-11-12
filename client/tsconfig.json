@@ -7,9 +7,10 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "baseUrl": "src",
+    "baseUrl":  "." ,
     "paths": {
-      "@/*": ["*"]
+      "@/*": ["*"],
+      "@cypress/*": ["cypress/*"]
     },
     "moduleResolution": "node",
     "types": ["jest", "node"]  // Ensure Jest types are included

@@ -12,7 +12,8 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [22.x]
+        node-version: [20.x] # Match the Node version you're using locally
+        cypress-version: [13.15.0] # Match the Cypress version you're using locally
 
     steps:
       # Checkout the repository
@@ -42,11 +43,12 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      # Install client dependencies
+      # Install client dependencies and Cypress version
       - name: Install client dependencies
         run: |
           cd client
           yarn install  # Install frontend dependencies with Yarn
+          yarn add cypress@${{ matrix.cypress-version }} # Explicitly install Cypress version
 
       # Start client in the background
       - name: Start client
@@ -62,9 +64,8 @@ jobs:
           until curl -s http://localhost:3000 > /dev/null; do echo "Waiting for client..."; sleep 5; done
 
       # Run Cypress component tests
-      - name: Install and test client with Cypress
+      - name: Run Cypress component and e2e tests
         run: |
           cd client
-          yarn install  # Ensure all dependencies, including Cypress, are installed
           yarn cypress:run:component  # Run component tests
           yarn cypress:run:e2e  # Run e2e tests
