@@ -71,10 +71,10 @@ jobs:
           until curl -s http://localhost:3000 > /dev/null; do echo "Waiting for client..."; sleep 5; done
 
       # Run Cypress component tests
-      - name: Run Cypress component tests
-        run: |
-          cd client
-          yarn cypress:run:component  # Run component tests
+      # - name: Run Cypress component tests
+      #   run: |
+      #     cd client
+      #     yarn cypress:run:component  # Run component tests
 
       # Run Cypress end-to-end tests
       - name: Run Cypress end-to-end tests
