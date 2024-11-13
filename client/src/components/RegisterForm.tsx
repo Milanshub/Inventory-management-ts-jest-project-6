@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react';
 import { TextField, Button, Typography, Box, Stack, Paper } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import log from '../utils/logger';
-import { AuthContext } from '../context/AuthContext';
+import { AuthContext } from '../context/authContext';
 
 // Creating a custom-styled component called 'Item' based on the 'Paper' component
 const Item = styled(Paper)(({ theme }) => ({

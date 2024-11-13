@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount } from 'cypress/react18';
 import ProtectedRoute from '../../../src/components/ProtectedRoute'; // Adjust the path as necessary
-import { AuthContext } from '../../../src/context/AuthContext'; // Adjust the path as necessary
+import { AuthContext } from '../../../src/context/authContext'; // Adjust the path as necessary
 import { MemoryRouter, Route, Routes } from 'react-router-dom'; // Import MemoryRouter for routing
 import sinon from 'sinon'; // Import Sinon
 

@@ -2,7 +2,7 @@ import React, { createContext, useState, ReactNode, useEffect, useContext } from
 import { IProduct, IProductInput } from '../models/productModel';
 import { addProduct as apiAddProduct, getProducts, updateProduct as apiUpdateProduct, deleteProduct as apiDeleteProduct } from '../services/productService';
 import log from '../utils/logger';
-import { AuthContext } from './AuthContext'; // Import AuthContext and its type
+import { AuthContext } from './authContext'; // Import AuthContext and its type
 
 // Define the shape of the Product context
 interface ProductContextType {

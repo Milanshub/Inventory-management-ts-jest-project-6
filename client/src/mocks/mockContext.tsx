@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { AuthContext } from '../context/AuthContext'; // Adjust the path as necessary
+import { AuthContext } from '../context/authContext'; // Adjust the path as necessary
 import { ProductContext } from '../context/ProductContext'; // Adjust the path as necessary
 import { IUser, IUserInput } from '../models/userModel'; // Adjust the path as necessary
 import { IProduct, IProductInput } from '../models/productModel'; // Adjust the path as necessary
