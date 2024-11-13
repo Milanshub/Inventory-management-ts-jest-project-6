@@ -40,6 +40,12 @@ jobs:
           cd server
           yarn install
 
+      # Run server tests
+      - name: Run server tests
+        run: |
+          cd server
+          yarn test
+
       # Start server in the background
       - name: Start server
         run: |
@@ -93,9 +99,3 @@ jobs:
           cd client
           yarn cypress:run:e2e
 
-      # List all files in the client/src directory for verification
-      - name: List all files in client/src
-        run: |
-          echo "Listing all files in client/src:"
-          cd client/src
-          ls -R
