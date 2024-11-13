@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    env_file:
+      - ./server/.env
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    restart: always
+
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"  # Maps host port 3000 to Nginx's port 80 inside the container
+    depends_on:
+      - server
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    restart: always

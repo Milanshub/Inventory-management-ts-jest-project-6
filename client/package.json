@@ -5,6 +5,7 @@
   "scripts": {
   "start": "react-scripts start",
   "build": "react-scripts build",
+  "start:build": "npx serve -s build",
   "test": "react-scripts test --all --coverage",
   "eject": "react-scripts eject",
   "cypress:run:component": "cypress run --component",

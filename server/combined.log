@@ -259,3 +259,64 @@
 2024-11-13T10:29:51.927Z [[32minfo[39m]: Retrieved all products: 53 found
 2024-11-13T10:29:52.989Z [[32minfo[39m]: Added product: {"name":"Deletable Product","quantity":8,"price":80,"lastUpdated":"2024-11-13T10:29:52.946Z","_id":"67347fa00fa14eb1f6277c4b","__v":0}
 2024-11-13T10:29:53.250Z [[32minfo[39m]: Deleted new product with id {"_id":"67347fa00fa14eb1f6277c4b","name":"Deletable Product","quantity":8,"price":80,"lastUpdated":"2024-11-13T10:29:52.946Z","__v":0}
+2024-11-13T11:55:52.163Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-11-13T11:55:52.170Z [[32minfo[39m]: Server running on port 5000 in development mode
+2024-11-13T11:56:16.990Z [[32minfo[39m]: User m@m.com logged in successfully
+2024-11-13T11:56:17.131Z [[32minfo[39m]: Retrieved all products: 57 found
+2024-11-13T11:56:37.367Z [[32minfo[39m]: Deleted new product with id {"_id":"673490395bbc53dfbf42fc7c","name":"Editable Product","quantity":5,"price":50,"lastUpdated":"2024-11-13T11:40:41.359Z","__v":0}
+2024-11-13T11:56:38.014Z [[32minfo[39m]: Deleted new product with id {"_id":"67348ce4099cf38cefef3b53","name":"Editable Product","quantity":5,"price":50,"lastUpdated":"2024-11-13T11:26:28.036Z","__v":0}
+2024-11-13T11:56:38.816Z [[32minfo[39m]: Deleted new product with id {"_id":"67348ce1099cf38cefef3b4f","name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-11-13T11:26:25.752Z","__v":0}
+2024-11-13T11:56:39.181Z [[32minfo[39m]: Deleted new product with id {"_id":"67347f9d0fa14eb1f6277c47","name":"Editable Product","quantity":5,"price":50,"lastUpdated":"2024-11-13T10:29:49.916Z","__v":0}
+2024-11-13T11:56:39.385Z [[32minfo[39m]: Deleted new product with id {"_id":"67347f9b0fa14eb1f6277c43","name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-11-13T10:29:47.230Z","__v":0}
+2024-11-13T11:56:39.546Z [[32minfo[39m]: Deleted new product with id {"_id":"67347f5f0fa14eb1f6277c35","name":"Editable Product","quantity":5,"price":50,"lastUpdated":"2024-11-13T10:28:47.003Z","__v":0}
+2024-11-13T11:56:39.694Z [[32minfo[39m]: Deleted new product with id {"_id":"67347f5b0fa14eb1f6277c31","name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-11-13T10:28:43.978Z","__v":0}
+2024-11-13T11:56:39.863Z [[32minfo[39m]: Deleted new product with id {"_id":"67337cc1a3a04f35939502e9","name":"Editable Product","quantity":5,"price":50,"lastUpdated":"2024-11-12T16:05:21.454Z","__v":0}
+2024-11-13T11:56:40.025Z [[32minfo[39m]: Deleted new product with id {"_id":"67337cbda3a04f35939502e5","name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-11-12T16:05:17.795Z","__v":0}
+2024-11-13T11:56:40.162Z [[32minfo[39m]: Deleted new product with id {"_id":"67337cb0a3a04f35939502d7","name":"Editable Product","quantity":5,"price":50,"lastUpdated":"2024-11-12T16:05:04.919Z","__v":0}
+2024-11-13T11:56:40.284Z [[32minfo[39m]: Deleted new product with id {"_id":"67337caea3a04f35939502d3","name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-11-12T16:05:02.083Z","__v":0}
+2024-11-13T11:56:40.430Z [[32minfo[39m]: Deleted new product with id {"_id":"67337b8e8ff24519301979da","name":"Editable Product","quantity":5,"price":50,"lastUpdated":"2024-11-12T16:00:14.706Z","__v":0}
+2024-11-13T11:56:40.560Z [[32minfo[39m]: Deleted new product with id {"_id":"67337b8b8ff24519301979d6","name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-11-12T16:00:11.714Z","__v":0}
+2024-11-13T11:56:41.131Z [[32minfo[39m]: Deleted new product with id {"_id":"67337a7c8ff24519301979c9","name":"Editable Product","quantity":5,"price":50,"lastUpdated":"2024-11-12T15:55:40.248Z","__v":0}
+2024-11-13T11:56:41.248Z [[32minfo[39m]: Deleted new product with id {"_id":"67337a798ff24519301979c5","name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-11-12T15:55:37.293Z","__v":0}
+2024-11-13T11:56:41.398Z [[32minfo[39m]: Deleted new product with id {"_id":"67337a458ff24519301979b7","name":"Editable Product","quantity":5,"price":50,"lastUpdated":"2024-11-12T15:54:45.969Z","__v":0}
+2024-11-13T11:56:41.721Z [[32minfo[39m]: Deleted new product with id {"_id":"67337a428ff24519301979b3","name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-11-12T15:54:42.232Z","__v":0}
+2024-11-13T11:56:41.883Z [[32minfo[39m]: Deleted new product with id {"_id":"67337a2f8ff24519301979a6","name":"Editable Product","quantity":5,"price":50,"lastUpdated":"2024-11-12T15:54:23.086Z","__v":0}
+2024-11-13T11:56:42.053Z [[32minfo[39m]: Deleted new product with id {"_id":"67337a2c8ff24519301979a2","name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-11-12T15:54:20.312Z","__v":0}
+2024-11-13T11:56:42.231Z [[32minfo[39m]: Deleted new product with id {"_id":"67337a108ff2451930197995","name":"Editable Product","quantity":5,"price":50,"lastUpdated":"2024-11-12T15:53:52.513Z","__v":0}
+2024-11-13T11:56:42.418Z [[32minfo[39m]: Deleted new product with id {"_id":"67337a0d8ff2451930197991","name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-11-12T15:53:49.732Z","__v":0}
+2024-11-13T11:56:42.598Z [[32minfo[39m]: Deleted new product with id {"_id":"673379b98ff2451930197984","name":"Editable Product","quantity":5,"price":50,"lastUpdated":"2024-11-12T15:52:25.912Z","__v":0}
+2024-11-13T11:56:42.764Z [[32minfo[39m]: Deleted new product with id {"_id":"673379b78ff2451930197980","name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-11-12T15:52:23.087Z","__v":0}
+2024-11-13T11:56:42.914Z [[32minfo[39m]: Deleted new product with id {"_id":"673378c028e013612edbe8b7","name":"Editable Product","quantity":5,"price":50,"lastUpdated":"2024-11-12T15:48:16.760Z","__v":0}
+2024-11-13T11:56:43.100Z [[32minfo[39m]: Deleted new product with id {"_id":"673378bd28e013612edbe8b3","name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-11-12T15:48:13.954Z","__v":0}
+2024-11-13T11:56:43.282Z [[32minfo[39m]: Deleted new product with id {"_id":"67209576b664f7245af82391","name":"Editable Product","quantity":5,"price":50,"lastUpdated":"2024-10-29T07:57:42.047Z","__v":0}
+2024-11-13T11:56:43.549Z [[32minfo[39m]: Deleted new product with id {"_id":"67209573b664f7245af8238d","name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-10-29T07:57:39.081Z","__v":0}
+2024-11-13T11:56:43.716Z [[32minfo[39m]: Deleted new product with id {"_id":"67209560b664f7245af8237f","name":"Editable Product","quantity":5,"price":50,"lastUpdated":"2024-10-29T07:57:20.021Z","__v":0}
+2024-11-13T11:56:43.865Z [[32minfo[39m]: Deleted new product with id {"_id":"6720955cb664f7245af8237b","name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-10-29T07:57:16.246Z","__v":0}
+2024-11-13T11:56:44.024Z [[32minfo[39m]: Deleted new product with id {"_id":"67209530b664f7245af82371","name":"Editable Product","quantity":5,"price":50,"lastUpdated":"2024-10-29T07:56:32.596Z","__v":0}
+2024-11-13T11:56:44.183Z [[32minfo[39m]: Deleted new product with id {"_id":"6720952db664f7245af8236d","name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-10-29T07:56:29.700Z","__v":0}
+2024-11-13T11:56:44.365Z [[32minfo[39m]: Deleted new product with id {"_id":"67209520b664f7245af82363","name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-10-29T07:56:16.485Z","__v":0}
+2024-11-13T11:56:44.514Z [[32minfo[39m]: Deleted new product with id {"_id":"67209407b664f7245af82356","name":"Editable Product","quantity":5,"price":50,"lastUpdated":"2024-10-29T07:51:35.201Z","__v":0}
+2024-11-13T11:56:44.682Z [[32minfo[39m]: Deleted new product with id {"_id":"67209404b664f7245af82352","name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-10-29T07:51:32.471Z","__v":0}
+2024-11-13T11:56:44.849Z [[32minfo[39m]: Deleted new product with id {"_id":"672093fab664f7245af82348","name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-10-29T07:51:22.490Z","__v":0}
+2024-11-13T11:56:44.998Z [[32minfo[39m]: Deleted new product with id {"_id":"67209390b664f7245af8233b","name":"Editable Product","quantity":5,"price":50,"lastUpdated":"2024-10-29T07:49:36.407Z","__v":0}
+2024-11-13T11:56:45.148Z [[32minfo[39m]: Deleted new product with id {"_id":"6720938db664f7245af82337","name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-10-29T07:49:33.534Z","__v":0}
+2024-11-13T11:56:45.316Z [[32minfo[39m]: Deleted new product with id {"_id":"6720937eb664f7245af8232c","name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-10-29T07:49:18.962Z","__v":0}
+2024-11-13T11:56:45.480Z [[32minfo[39m]: Deleted new product with id {"_id":"6720928cb664f7245af8231f","name":"Editable Product","quantity":5,"price":50,"lastUpdated":"2024-10-29T07:45:16.125Z","__v":0}
+2024-11-13T11:56:45.656Z [[32minfo[39m]: Deleted new product with id {"_id":"67209289b664f7245af8231b","name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-10-29T07:45:13.366Z","__v":0}
+2024-11-13T11:56:45.813Z [[32minfo[39m]: Deleted new product with id {"_id":"67209272b664f7245af82311","name":"Editable Product","quantity":5,"price":50,"lastUpdated":"2024-10-29T07:44:50.528Z","__v":0}
+2024-11-13T11:56:45.964Z [[32minfo[39m]: Deleted new product with id {"_id":"6720926fb664f7245af8230d","name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-10-29T07:44:47.517Z","__v":0}
+2024-11-13T11:56:46.098Z [[32minfo[39m]: Deleted new product with id {"_id":"67209198b664f7245af82300","name":"Editable Product","quantity":5,"price":50,"lastUpdated":"2024-10-29T07:41:12.818Z","__v":0}
+2024-11-13T11:56:46.316Z [[32minfo[39m]: Deleted new product with id {"_id":"67209195b664f7245af822fc","name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-10-29T07:41:09.650Z","__v":0}
+2024-11-13T11:56:46.465Z [[32minfo[39m]: Deleted new product with id {"_id":"671fbe7dd58954dd6ab8f40c","name":"Editable Product","quantity":5,"price":50,"lastUpdated":"2024-10-28T16:40:29.848Z","__v":0}
+2024-11-13T11:56:46.770Z [[32minfo[39m]: Deleted new product with id {"_id":"671fbe7ad58954dd6ab8f408","name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-10-28T16:40:26.595Z","__v":0}
+2024-11-13T11:56:46.933Z [[32minfo[39m]: Deleted new product with id {"_id":"671fbe3dd58954dd6ab8f3fa","name":"Editable Product","quantity":5,"price":50,"lastUpdated":"2024-10-28T16:39:25.408Z","__v":0}
+2024-11-13T11:56:47.117Z [[32minfo[39m]: Deleted new product with id {"_id":"671fbe3ad58954dd6ab8f3f6","name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-10-28T16:39:22.660Z","__v":0}
+2024-11-13T11:56:47.264Z [[32minfo[39m]: Deleted new product with id {"_id":"671fbe17d58954dd6ab8f3e1","name":"Editable Product","quantity":5,"price":50,"lastUpdated":"2024-10-28T16:38:47.645Z","__v":0}
+2024-11-13T11:56:48.136Z [[32minfo[39m]: Deleted new product with id {"_id":"671fbe14d58954dd6ab8f3db","name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-10-28T16:38:44.650Z","__v":0}
+2024-11-13T11:56:48.958Z [[32minfo[39m]: Deleted new product with id {"_id":"671fbd84d58954dd6ab8f3ca","name":"Editable Product","quantity":5,"price":50,"lastUpdated":"2024-10-28T16:40:32.424Z","__v":0}
+2024-11-13T11:56:50.076Z [[32minfo[39m]: Deleted new product with id {"_id":"671fbd81d58954dd6ab8f3c6","name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-10-28T16:36:17.950Z","__v":0}
+2024-11-13T11:56:51.533Z [[32minfo[39m]: Deleted new product with id {"_id":"673490375bbc53dfbf42fc78","name":"New Product","quantity":10,"price":100,"lastUpdated":"2024-11-13T11:40:39.092Z","__v":0}
+2024-11-13T12:02:03.761Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-11-13T12:02:03.776Z [[32minfo[39m]: Server running on port 5000 in development mode
+2024-11-13T19:33:05.884Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-11-13T19:33:05.891Z [[32minfo[39m]: Server running on port 5000 in development mode
