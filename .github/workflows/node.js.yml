@@ -2,9 +2,9 @@ name: Node.js CI - Tests Only
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   test:
@@ -12,21 +12,12 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [20.x] # Match the Node version you're using locally
-        cypress-version: [13.15.0] # Match the Cypress version you're using locally
+        node-version: [20.x]
+        cypress-version: [13.15.0]
 
     steps:
       # Checkout the repository
       - uses: actions/checkout@v4
-
-      # Clear any existing cache to ensure a fresh run
-      - name: Clear local cache and remove old files
-        run: |
-          rm -rf client/node_modules/.cache
-          rm -rf client/node_modules
-          yarn cache clean
-          rm -f client/src/context/authContext.tsx
-          rm -f client/src/components/errorBoundary.tsx
 
       # Set up Node.js for the server (backend)
       - name: Setup Node.js for server
@@ -57,7 +48,7 @@ jobs:
         run: |
           cd client
           yarn install
-          yarn add cypress@${{ matrix.cypress-version }} # Explicitly install Cypress version
+          yarn add cypress@${{ matrix.cypress-version }}
 
       # Start client in the background
       - name: Start client
@@ -70,12 +61,6 @@ jobs:
         run: |
           until curl -s http://localhost:5000 > /dev/null; do echo "Waiting for server..."; sleep 5; done
           until curl -s http://localhost:3000 > /dev/null; do echo "Waiting for client..."; sleep 5; done
-
-      # Verify directory structure and file casing
-      - name: Verify updated directory structure
-        run: |
-          cd client/src
-          find . -type f | sort
 
       # Run Cypress component tests
       - name: Run Cypress component tests
