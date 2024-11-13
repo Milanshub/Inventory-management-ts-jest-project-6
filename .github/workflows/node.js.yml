@@ -2,9 +2,9 @@ name: Node.js CI - Tests Only
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   test:
@@ -12,72 +12,76 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [20.x] # Match the Node version you're using locally
-        cypress-version: [13.15.0] # Match the Cypress version you're using locally
+        node-version: [20.x] # Match local Node version
+        cypress-version: [13.15.0] # Match local Cypress version
 
     steps:
-      # Checkout the repository
       - uses: actions/checkout@v4
 
-      # Clear any existing cache for a fresh run (optional)
+      # Clear Cache
       - name: Clear Webpack and Yarn Cache
         run: |
           rm -rf client/node_modules/.cache
           rm -rf client/node_modules
           yarn cache clean
 
-      # Set up Node.js for the server (backend)
+      # Setup Node.js for Server
       - name: Setup Node.js for server
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
 
-      # Install server dependencies
       - name: Install server dependencies
         run: |
           cd server
-          yarn install  # Install backend dependencies with Yarn
+          yarn install
 
-      # Start server in the background
       - name: Start server
         run: |
           cd server
-          nohup yarn start &  # Start server in the background
+          nohup yarn start &
 
-      # Set up Node.js for the client (frontend)
+      # Setup Node.js for Client
       - name: Setup Node.js for client
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
 
-      # Install client dependencies and Cypress version
+      # Install Client Dependencies
       - name: Install client dependencies
         run: |
           cd client
-          yarn install  # Install frontend dependencies with Yarn
-          yarn add cypress@${{ matrix.cypress-version }} # Explicitly install Cypress version
+          yarn install
+          yarn add cypress@${{ matrix.cypress-version }}
 
-      # Start client in the background
       - name: Start client
         run: |
           cd client
-          nohup yarn start &  # Start client in the background
+          nohup yarn start &
 
-      # Wait for the applications to be ready
+      # Wait for Server and Client
       - name: Wait for applications to be ready
         run: |
-          # Wait for server and client to be accessible
           until curl -s http://localhost:5000 > /dev/null; do echo "Waiting for server..."; sleep 5; done
           until curl -s http://localhost:3000 > /dev/null; do echo "Waiting for client..."; sleep 5; done
 
-      # Run Cypress component tests
-      # - name: Run Cypress component tests
-      #   run: |
-      #     cd client
-      #     yarn cypress:run:component  # Run component tests
+      # Debug - List Directory Structure
+      - name: List client/src directory structure
+        run: |
+          cd client/src
+          find . -type f
+
+      # Print Environment Info
+      - name: Print Node and Cypress Info
+        run: |
+          node -v
+          npx cypress -v
+          cd client
+          cat cypress.config.js
+          cat tsconfig.json
 
       # Run Cypress end-to-end tests
       - name: Run Cypress end-to-end tests
         run: |
           cd client
-          yarn cypress:run:e2e  # Run e2e tests
+          yarn cypress:run:e2e
