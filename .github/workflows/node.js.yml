@@ -19,6 +19,15 @@ jobs:
       # Checkout the repository
       - uses: actions/checkout@v4
 
+      # Cache server dependencies
+      - name: Cache server dependencies
+        uses: actions/cache@v3
+        with:
+          path: server/node_modules
+          key: server-node-modules-${{ runner.os }}-${{ matrix.node-version }}-${{ hashFiles('server/package.json') }}
+          restore-keys: |
+            server-node-modules-${{ runner.os }}-${{ matrix.node-version }}-
+
       # Set up Node.js for the server (backend)
       - name: Setup Node.js for server
         uses: actions/setup-node@v4
@@ -36,6 +45,15 @@ jobs:
         run: |
           cd server
           nohup yarn start &
+
+      # Cache client dependencies
+      - name: Cache client dependencies
+        uses: actions/cache@v3
+        with:
+          path: client/node_modules
+          key: client-node-modules-${{ runner.os }}-${{ matrix.node-version }}-${{ hashFiles('client/package.json') }}
+          restore-keys: |
+            client-node-modules-${{ runner.os }}-${{ matrix.node-version }}-
 
       # Set up Node.js for the client (frontend)
       - name: Setup Node.js for client
@@ -59,6 +77,7 @@ jobs:
       # Wait for the applications to be ready
       - name: Wait for applications to be ready
         run: |
+          # Wait for server and client to be accessible
           until curl -s http://localhost:5000 > /dev/null; do echo "Waiting for server..."; sleep 5; done
           until curl -s http://localhost:3000 > /dev/null; do echo "Waiting for client..."; sleep 5; done
 
@@ -73,3 +92,10 @@ jobs:
         run: |
           cd client
           yarn cypress:run:e2e
+
+      # List all files in the client/src directory for verification
+      - name: List all files in client/src
+        run: |
+          echo "Listing all files in client/src:"
+          cd client/src
+          ls -R
