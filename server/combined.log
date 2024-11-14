@@ -320,3 +320,9 @@
 2024-11-13T12:02:03.776Z [[32minfo[39m]: Server running on port 5000 in development mode
 2024-11-13T19:33:05.884Z [[32minfo[39m]: Connected to MongoDB Atlas
 2024-11-13T19:33:05.891Z [[32minfo[39m]: Server running on port 5000 in development mode
+2024-11-14T08:29:47.879Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-11-14T08:29:47.886Z [[32minfo[39m]: Server running on port 5000 in development mode
+2024-11-14T08:31:16.866Z [[32minfo[39m]: Retreived user: {"_id":"671b3cb58eaa0de7b12011bf","name":"m","email":"m@m.com","password":"$2a$10$EkSwg9vTS0BUkzmlsUnGZeCAr2QMInhF3Mng/nftPPVISt5lyIWuS","role":"user","createdAt":"2024-10-25T06:37:41.256Z","updatedAt":"2024-10-25T06:37:41.256Z","__v":0}
+2024-11-14T08:31:17.112Z [[32minfo[39m]: Retrieved all products: 7 found
+2024-11-14T18:23:16.219Z [[32minfo[39m]: Connected to MongoDB Atlas
+2024-11-14T18:23:16.230Z [[32minfo[39m]: Server running on port 5000 in development mode

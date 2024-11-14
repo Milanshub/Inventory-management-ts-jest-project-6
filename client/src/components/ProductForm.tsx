@@ -32,37 +32,48 @@ const ProductForm: React.FC = () => {
                 boxShadow: 3 
             }}
         >
-        
             <Stack spacing={2}>
-                <TextField
-                    name="name"
-                    variant="outlined"
-                    fullWidth
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    required
-                    sx={{ backgroundColor: '#fff', borderRadius: '8px' }}
-                />
-                <TextField
-                    name="quantity"
-                    type="quantity"
-                    variant="outlined"
-                    fullWidth
-                    value={quantity}
-                    onChange={(e) => setQuantity(e.target.value)}
-                    required
-                    sx={{ backgroundColor: '#fff', borderRadius: '8px' }}
-                />
-                <TextField
-                    name="price"
-                    type="price"
-                    variant="outlined"
-                    fullWidth
-                    value={price}
-                    onChange={(e) => setPrice(e.target.value)}
-                    required
-                    sx={{ backgroundColor: '#fff', borderRadius: '8px' }}
-                />
+                <Box>
+                    <Typography variant="h6" gutterBottom>Name</Typography>
+                    <TextField
+                        name="name"
+                        variant="outlined"
+                        fullWidth
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        required
+                        sx={{ backgroundColor: '#fff', borderRadius: '8px' }}
+                    />
+                </Box>
+
+                <Box>
+                    <Typography variant="h6" gutterBottom>Quantity</Typography>
+                    <TextField
+                        name="quantity"
+                        type="number"
+                        variant="outlined"
+                        fullWidth
+                        value={quantity}
+                        onChange={(e) => setQuantity(e.target.value)}
+                        required
+                        sx={{ backgroundColor: '#fff', borderRadius: '8px' }}
+                    />
+                </Box>
+
+                <Box>
+                    <Typography variant="h6" gutterBottom>Price</Typography>
+                    <TextField
+                        name="price"
+                        type="number"
+                        variant="outlined"
+                        fullWidth
+                        value={price}
+                        onChange={(e) => setPrice(e.target.value)}
+                        required
+                        sx={{ backgroundColor: '#fff', borderRadius: '8px' }}
+                    />
+                </Box>
+
                 <Button 
                     type="submit" 
                     variant="contained" 

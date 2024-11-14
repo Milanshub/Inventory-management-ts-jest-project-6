@@ -10,9 +10,9 @@ ENV YARN_NETWORK_TIMEOUT=600000
 COPY package.json yarn.lock ./
 RUN yarn install --network-timeout $YARN_NETWORK_TIMEOUT --ignore-optional
 
-# Copy the rest of the application files and build it
+# Copy the rest of the application files and run build 
 COPY . .
-RUN yarn build
+RUN yarn run build
 
 # Stage 2: Use Nginx to serve the built application
 FROM nginx:alpine
